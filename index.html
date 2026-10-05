@@ -138,13 +138,26 @@ const backgroundMusic=document.querySelector('#background-music'),musicToggle=do
 let musicWanted=true,musicPending=true,musicAttempt=0;
 backgroundMusic.volume=.35;
 function updateMusicControl(){const playing=!backgroundMusic.paused;musicToggle.setAttribute('aria-pressed',String(playing));musicToggle.setAttribute('aria-label',playing?'暂停背景音乐 / Pause background music':'播放背景音乐 / Play background music');musicLabel.textContent=playing?'暂停音乐 / PAUSE':'播放音乐 / PLAY'}
-function startMusic(){if(!musicWanted||filmDialog.open||document.querySelector('.official-video-shell iframe'))return;const attempt=++musicAttempt;musicPending=false;backgroundMusic.play().catch(()=>{if(attempt===musicAttempt){musicPending=musicWanted;updateMusicControl()}})}
+function startMusic(){if(!musicWanted||document.hidden||filmDialog.open||document.querySelector('.official-video-shell iframe')||!backgroundMusic.paused)return;const attempt=++musicAttempt;musicPending=false;backgroundMusic.play().catch(()=>{if(attempt===musicAttempt){musicPending=musicWanted;updateMusicControl()}})}
 function stopMusic(){++musicAttempt;backgroundMusic.pause();updateMusicControl()}
-backgroundMusic.addEventListener('play',()=>{musicPending=false;updateMusicControl()});backgroundMusic.addEventListener('pause',updateMusicControl);backgroundMusic.addEventListener('error',()=>{musicPending=false;musicLabel.textContent='音乐加载失败 / RETRY'});
+backgroundMusic.addEventListener('play',()=>{musicPending=false;updateMusicControl()});backgroundMusic.addEventListener('pause',()=>{musicPending=musicWanted;updateMusicControl()});backgroundMusic.addEventListener('error',()=>{musicPending=false;musicLabel.textContent='音乐加载失败 / RETRY'});
 musicToggle.addEventListener('click',()=>{if(!backgroundMusic.paused){musicWanted=false;musicPending=false;stopMusic()}else{musicWanted=true;startMusic()}});
 document.addEventListener('pointerdown',event=>{if(musicPending&&musicWanted&&!filmDialog.open&&!event.target.closest('#music-toggle,.film-button,[data-official-video],[data-stop-official]'))startMusic()});
 document.addEventListener('keydown',event=>{if(musicPending&&musicWanted&&!filmDialog.open&&!event.target.closest('#music-toggle,.film-button,[data-official-video],[data-stop-official]'))startMusic()});
 document.querySelectorAll('.film-button').forEach(button=>button.addEventListener('click',stopMusic));filmPlayer.addEventListener('play',stopMusic);filmDialog.addEventListener('close',()=>{if(musicWanted)startMusic()});
+
+function retryMusicOnInteraction(event){
+ if(event.target?.closest?.('#music-toggle,.film-button,[data-official-video],[data-stop-official]'))return;
+ if(musicWanted&&backgroundMusic.paused)startMusic();
+}
+document.addEventListener('click',retryMusicOnInteraction);
+document.addEventListener('touchend',retryMusicOnInteraction,{passive:true});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopMusic();else if(musicWanted)startMusic()});
+window.addEventListener('pageshow',()=>{if(musicWanted)startMusic()});
+window.addEventListener('focus',()=>{if(musicWanted)startMusic()});
+document.addEventListener('WeixinJSBridgeReady',()=>{if(musicWanted)startMusic()});
+backgroundMusic.addEventListener('loadeddata',()=>{if(musicWanted)startMusic()});
+
 musicWanted=true;musicPending=true;updateMusicControl();startMusic();
 
 // Load official YouTube films only when the visitor chooses to play one.
@@ -197,7 +210,24 @@ window.addEventListener('hashchange',()=>{
 });
 document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',()=>{if(link.getAttribute('href')===location.hash)updateCategoryView(true)}));
 updateCategoryView(false);
-</script><script>const v=document.getElementById('film'),b=document.getElementById('play');v.muted=true;v.play().catch(()=>{b.textContent='播放 ▷';b.setAttribute('aria-label','播放背景视频')});b.onclick=()=>{if(v.paused){v.play().then(()=>{b.textContent='暂停 II';b.setAttribute('aria-label','暂停背景视频')}).catch(()=>{b.textContent='点击播放 ▷'})}else{v.pause();b.textContent='播放 ▷';b.setAttribute('aria-label','播放背景视频')}};document.addEventListener('visibilitychange',()=>{if(document.hidden)v.pause()});document.querySelectorAll('.film-button').forEach(x=>x.addEventListener('click',()=>v.pause()));filmDialog.addEventListener('close',()=>v.play().catch(()=>{}));</script></body></html>
+</script><script>const v=document.getElementById('film'),b=document.getElementById('play');
+let backgroundVideoWanted=true;
+v.muted=true;
+function updateVideoControl(){const playing=!v.paused;b.textContent=playing?'暂停 II':'播放 ▷';b.setAttribute('aria-label',playing?'暂停背景视频':'播放背景视频')}
+function resumeBackgroundVideo(){
+ if(!backgroundVideoWanted||document.hidden||filmDialog.open)return;
+ v.play().then(updateVideoControl).catch(updateVideoControl);
+}
+v.addEventListener('play',updateVideoControl);
+v.addEventListener('pause',updateVideoControl);
+b.onclick=()=>{if(v.paused){backgroundVideoWanted=true;resumeBackgroundVideo()}else{backgroundVideoWanted=false;v.pause()}};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)v.pause();else resumeBackgroundVideo()});
+window.addEventListener('pageshow',resumeBackgroundVideo);
+window.addEventListener('focus',resumeBackgroundVideo);
+document.querySelectorAll('.film-button').forEach(x=>x.addEventListener('click',()=>v.pause()));
+filmDialog.addEventListener('close',resumeBackgroundVideo);
+resumeBackgroundVideo();
+</script></body></html>
 
 
 
