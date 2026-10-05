@@ -223,16 +223,24 @@ function resumeBackgroundVideo(){
 v.addEventListener('play',updateVideoControl);
 v.addEventListener('pause',updateVideoControl);
 b.onclick=()=>{if(v.paused){backgroundVideoWanted=true;resumeBackgroundVideo()}else{backgroundVideoWanted=false;v.pause()}};
-document.addEventListener('visibilitychange',()=>{if(document.hidden)v.pause();else resumeBackgroundVideo()});
-window.addEventListener('pageshow',resumeBackgroundVideo);
-window.addEventListener('focus',resumeBackgroundVideo);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)v.pause();else resumeVideoInWeChat()});
+window.addEventListener('pageshow',resumeVideoInWeChat);
+window.addEventListener('focus',resumeVideoInWeChat);
 document.querySelectorAll('.film-button').forEach(x=>x.addEventListener('click',()=>v.pause()));
 filmDialog.addEventListener('close',resumeBackgroundVideo);
 
-document.addEventListener('WeixinJSBridgeReady',resumeBackgroundVideo);
+
+function resumeVideoInWeChat(){
+ resumeBackgroundVideo();
+ const bridge=window.WeixinJSBridge;
+ if(!backgroundVideoWanted||document.hidden||filmDialog.open||!bridge||typeof bridge.invoke!=='function')return;
+ try{bridge.invoke('getNetworkType',{},()=>{resumeBackgroundVideo()})}catch(error){}
+}
+
+document.addEventListener('WeixinJSBridgeReady',resumeVideoInWeChat);
 v.addEventListener('loadedmetadata',resumeBackgroundVideo);
-v.addEventListener('canplay',resumeBackgroundVideo);
-window.addEventListener('load',resumeBackgroundVideo);
+v.addEventListener('canplay',resumeVideoInWeChat);
+window.addEventListener('load',resumeVideoInWeChat);
 function retryVideoOnInteraction(event){
  if(event.target?.closest?.('#play,.film-button,[data-official-video],[data-stop-official]'))return;
  resumeBackgroundVideo();
@@ -241,7 +249,7 @@ document.addEventListener('touchend',retryVideoOnInteraction,{passive:true});
 document.addEventListener('click',retryVideoOnInteraction);
 document.addEventListener('keydown',retryVideoOnInteraction);
 
-resumeBackgroundVideo();
+resumeVideoInWeChat();
 </script></body></html>
 
 
