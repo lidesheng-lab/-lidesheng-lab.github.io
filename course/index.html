@@ -160,6 +160,7 @@ button img,dialog img{pointer-events:none!important}
   },{capture:true});
 })();
 
+window.addEventListener('DOMContentLoaded',()=>{
 document.querySelectorAll('[data-carousel]').forEach(carousel=>{
  const track=carousel.querySelector('.guest-track'),position=carousel.querySelector('[data-position]'),toggle=carousel.querySelector('[data-auto]');
  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -184,6 +185,8 @@ document.querySelectorAll('[data-carousel]').forEach(carousel=>{
  reduce.addEventListener('change',()=>{enabled=!reduce.matches;label();});
  setInterval(()=>{if(enabled&&visible&&!hover&&!touch&&!document.hidden&&!document.querySelector('dialog[open]')&&!carousel.contains(document.activeElement)&&Date.now()-last>=4000)move(1);},500);
  update();label();
+});
+
 });
 </script>
 
