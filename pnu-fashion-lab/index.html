@@ -350,7 +350,7 @@ film.addEventListener('play',updateFilmControl);film.addEventListener('pause',up
 $('#film-pause').addEventListener('click',()=>{filmWanted=film.paused;syncFilm();});
 film.addEventListener('playing',()=>{if(!previewAllowed(filmVisible,filmWanted))film.pause();});
 film.addEventListener('canplay',syncFilm);
-const letters=$('.letter');
+const letters=$$('.letter');
 letters.forEach((el,i)=>el.style.setProperty('--dance-index',i));
 
 const hero=$('.hero'), heroAnimations=new Set();
