@@ -149,7 +149,12 @@ html[lang=zh-CN] .about-signoff{font-size:clamp(28px,4.2vw,60px);line-height:1.4
 }
 @media(prefers-reduced-motion:reduce){.reel-stage video,.reel-watch{transition:none}.reel-live i{animation:none!important}}
 
+
+.sound-control{position:fixed;left:22px;bottom:20px;z-index:80;display:flex;align-items:center;gap:9px;min-height:42px;padding:9px 15px;border:1px solid #ffffff40;border-radius:25px;background:#151419ed;color:#f3f2ee;font-size:11px;box-shadow:0 3px 18px #0003;backdrop-filter:blur(12px)}
+.sound-control[aria-pressed="true"]{color:var(--lime);border-color:#c5ff3570}.sound-control:focus-visible{outline:2px solid var(--lime);outline-offset:4px}.sound-bars{display:flex;gap:3px;align-items:center;height:17px}.sound-bars i{display:block;width:3px;height:5px;background:currentColor;border-radius:2px}.sound-control[aria-pressed="true"] .sound-bars i{animation:musicBar .9s ease-in-out infinite alternate}.sound-bars i:nth-child(2){animation-delay:-.35s!important}.sound-bars i:nth-child(3){animation-delay:-.65s!important}.modal-open .sound-control{visibility:hidden}@keyframes musicBar{to{height:16px}}@media(max-width:760px){.sound-control{left:17px;bottom:17px;min-height:36px;padding:7px 12px;font-size:10px}}
 </style></head><body>
+<audio id="lab-music" src="assets/lab-background.m4a" autoplay loop preload="auto" playsinline></audio>
+<button id="music-toggle" class="sound-control" type="button" aria-label="배경 음악 켜기" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="music-label">음악 켜기</span></button>
 <a class="skip" href="#about" data-ko="본문으로 이동" data-en="Skip to content" data-zh="跳转到正文">본문으로 이동</a>
 <div class="site" id="top">
 <header>
@@ -172,7 +177,7 @@ html[lang=zh-CN] .about-signoff{font-size:clamp(28px,4.2vw,60px);line-height:1.4
 <section class="reel-section" id="showreel" aria-labelledby="reel-heading">
  <div class="reel-heading"><h2 id="reel-heading" data-ko="ideas in motion." data-en="ideas in motion." data-zh="让作品动起来。">ideas in motion.</h2><p>SELECTED FILMS / DESHENG LI</p></div>
  <div class="reel-stage" id="reel-stage">
-  <video id="work-reel" muted playsinline webkit-playsinline preload="none" poster="https://lidesheng.art/film-off-balance-20261014.jpg" aria-label="Selected fashion film previews"></video>
+  <video id="work-reel" src="https://lidesheng.art/film-off-balance-20261014.mp4" autoplay muted playsinline webkit-playsinline preload="metadata" poster="https://lidesheng.art/film-off-balance-20261014.jpg" aria-label="Selected fashion film previews"></video>
   <div class="reel-shade" aria-hidden="true"></div>
   <div class="reel-topline" aria-hidden="true"><span class="reel-live"><i></i>PLAY / FDL</span><span id="reel-count">01 / 05</span></div>
   <button class="reel-watch" id="reel-watch" type="button"><span data-ko="play ↗" data-en="play ↗" data-zh="播放 ↗">play ↗</span></button>
@@ -210,7 +215,7 @@ html[lang=zh-CN] .about-signoff{font-size:clamp(28px,4.2vw,60px);line-height:1.4
 </section>
 <section class="film-section pad" id="film" aria-labelledby="film-title">
  <div class="film-heading"><h2 id="film-title"><span data-ko="fashion, in motion." data-en="fashion, in motion." data-zh="时尚，动起来。">fashion, in motion.</span></h2><p><span data-ko="FASHION FILM / DESHENG LI" data-en="FASHION FILM / DESHENG LI" data-zh="时尚影像 / 李德胜">FASHION FILM / DESHENG LI</span></p></div>
- <div class="film-stage"><video id="lab-film" muted loop playsinline preload="metadata" poster="https://lidesheng.art/homepage-poster.jpg" aria-label="DESHENG LI의 패션 포트폴리오 영상"><source src="https://lidesheng.art/homepage-loop.mp4" type="video/mp4"></video><button type="button" class="film-play" id="open-film"><span data-ko="재생" data-en="PLAY" data-zh="播放">재생</span><br><span data-ko="필름 ↗" data-en="THE FILM ↗" data-zh="影像 ↗">필름 ↗</span></button><div class="film-caption"><div><small><span data-ko="MOVING IMAGE / 01" data-en="MOVING IMAGE / 01" data-zh="动态影像 / 01">MOVING IMAGE / 01</span></small><h3><span data-ko="Beyond form." data-en="Beyond form." data-zh="超越形态。">Beyond form.</span></h3></div><button id="film-pause" type="button" aria-label="영상 재생" aria-pressed="false">▶</button></div></div>
+ <div class="film-stage"><video id="lab-film" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="https://lidesheng.art/homepage-poster.jpg" aria-label="DESHENG LI의 패션 포트폴리오 영상"><source src="https://lidesheng.art/homepage-loop.mp4" type="video/mp4"></video><button type="button" class="film-play" id="open-film"><span data-ko="재생" data-en="PLAY" data-zh="播放">재생</span><br><span data-ko="필름 ↗" data-en="THE FILM ↗" data-zh="影像 ↗">필름 ↗</span></button><div class="film-caption"><div><small><span data-ko="MOVING IMAGE / 01" data-en="MOVING IMAGE / 01" data-zh="动态影像 / 01">MOVING IMAGE / 01</span></small><h3><span data-ko="Beyond form." data-en="Beyond form." data-zh="超越形态。">Beyond form.</span></h3></div><button id="film-pause" type="button" aria-label="영상 재생" aria-pressed="false">▶</button></div></div>
 </section>
 <section class="tech pad" id="future" aria-labelledby="future-title">
  <div class="tech-top"><h2 id="future-title"><span data-ko="the future" data-en="the future" data-zh="未来，">the future</span><br><em><span data-ko="is fluid." data-en="is fluid." data-zh="流动不息。">is fluid.</span></em></h2><p data-ko="디지털 공간, 몸, 그리고 의복. 화면을 드래그해 회전하고, 형태를 바꾸며 새로운 가능성을 상상해 보세요." data-en="Digital space, the body, and clothing. Drag to rotate, change the form, and imagine new possibilities." data-zh="数字空间、身体与服装。拖动旋转，切换形态，一起想象新的可能。">디지털 공간, 몸, 그리고 의복. 화면을 드래그해 회전하고, 형태를 바꾸며 새로운 가능성을 상상해 보세요.</p></div>
@@ -226,7 +231,7 @@ html[lang=zh-CN] .about-signoff{font-size:clamp(28px,4.2vw,60px);line-height:1.4
 <footer class="pad" id="contact"><div class="footer-top"><h2><span data-ko="let's make" data-en="let's make" data-zh="一起创造">let's make</span><br><span data-ko="what's next." data-en="what's next." data-zh="下一个可能。">what's next.</span></h2><button type="button" class="footer-face reaction" data-reaction="함께 만들어요!" data-reaction-zh="一起创造！" data-reaction-en="let's make it happen!" aria-label="함께 만들어요!"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" fill="#f7a3e9"/><g class="eyes"><ellipse cx="35" cy="40" rx="10" ry="15" fill="#fff"/><ellipse cx="66" cy="40" rx="10" ry="15" fill="#fff"/><circle cx="38" cy="43" r="5" fill="#17111b"/><circle cx="69" cy="43" r="5" fill="#17111b"/></g><path d="M27 65Q50 91 75 62" fill="none" stroke="#17111b" stroke-width="6" stroke-linecap="round"/></svg></button></div><div class="footer-grid"><div><h3 data-ko="연구 & 협업 문의" data-en="RESEARCH & COLLABORATION" data-zh="研究与合作咨询">연구 & 협업 문의</h3><a href="mailto:pollinalee@pusan.ac.kr" class="email">pollinalee@pusan.ac.kr ↗</a><p>Prof. Lee, Yoon Kyung</p></div><div><h3><span data-ko="COME SAY HELLO" data-en="COME SAY HELLO" data-zh="欢迎来访">COME SAY HELLO</span></h3><p data-ko="부산대학교 생활과학관 602동 221호" data-en="Room 221, Building 602, College of Human Ecology, PNU" data-zh="釜山大学生活科学馆 602 栋 221 室">부산대학교 생활과학관 602동 221호</p><p data-ko="부산광역시 금정구 부산대학로63번길 2 (46241)" data-en="2, Busandaehak-ro 63beon-gil, Geumjeong-gu, Busan 46241" data-zh="韩国釜山广域市金井区釜山大学路 63 番街 2 号（46241）">부산광역시 금정구 부산대학로63번길 2 (46241)</p><a href="tel:+82515102763">+82 (0)51 510 2763</a></div><div><h3><span data-ko="KEEP EXPLORING" data-en="KEEP EXPLORING" data-zh="继续探索">KEEP EXPLORING</span></h3><p><a href="https://fashiondesign.pusan.ac.kr/fashiondesign/index.do" target="_blank" rel="noopener noreferrer" data-ko="연구실 공식 아카이브 ↗" data-en="Official lab archive ↗" data-zh="研究室官方档案 ↗">연구실 공식 아카이브 ↗</a></p><p><a href="https://lidesheng.art/" target="_blank" rel="noopener noreferrer"><span data-ko="DESHENG LI / PORTFOLIO ↗" data-en="DESHENG LI / PORTFOLIO ↗" data-zh="李德胜 / 个人作品集 ↗">DESHENG LI / PORTFOLIO ↗</span></a></p></div></div><div class="footer-bottom"><p>PUSAN NATIONAL UNIVERSITY / FASHION DESIGN LAB<br><span data-ko="작품 저작권은 각 디자이너에게 있습니다." data-en="Artworks belong to their respective creators." data-zh="作品版权归各自创作者所有。">작품 저작권은 각 디자이너에게 있습니다.</span></p><a href="#top"><span data-ko="back to the top ↑" data-en="back to the top ↑" data-zh="返回顶部 ↑">back to the top ↑</span></a></div></footer>
 </div>
 <a class="cursor-progress" href="#top" aria-label="맨 위로 이동">↑</a>
-<dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-top"><span><span data-ko="FDL / A CLOSER LOOK" data-en="FDL / A CLOSER LOOK" data-zh="FDL / 走近作品">FDL / A CLOSER LOOK</span></span><button id="viewer-close" type="button" aria-label="작품 닫기">×</button></div><div class="viewer-body"><div class="viewer-media"><img id="viewer-image" alt="" hidden><video id="viewer-video" controls playsinline preload="none" hidden></video><p class="media-failure" id="viewer-failure" role="status" hidden></p></div><div class="viewer-info"><h2 id="viewer-title"></h2><p id="viewer-description"></p><p class="credit" id="viewer-credit"></p><a class="pill" id="viewer-source" href="https://lidesheng.art/" target="_blank" rel="noopener noreferrer"><span data-ko="작품 원문 보기" data-en="Original source" data-zh="查看作品原始出处">작품 원문 보기</span><span>↗</span></a></div></div><div class="viewer-bottom"><span id="viewer-count"></span><div id="viewer-nav"><button id="viewer-prev" type="button" aria-label="이전 작품"><span data-ko="← PREV" data-en="← PREV" data-zh="← 上一件">← PREV</span></button> <button id="viewer-next" type="button" aria-label="다음 작품"><span data-ko="NEXT →" data-en="NEXT →" data-zh="下一件 →">NEXT →</span></button></div><button id="viewer-fullscreen" type="button" hidden>FULLSCREEN ⤢</button></div></dialog>
+<dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-top"><span><span data-ko="FDL / A CLOSER LOOK" data-en="FDL / A CLOSER LOOK" data-zh="FDL / 走近作品">FDL / A CLOSER LOOK</span></span><button id="viewer-close" type="button" aria-label="작품 닫기">×</button></div><div class="viewer-body"><div class="viewer-media"><img id="viewer-image" alt="" hidden><video id="viewer-video" controls autoplay playsinline webkit-playsinline preload="metadata" hidden></video><p class="media-failure" id="viewer-failure" role="status" hidden></p></div><div class="viewer-info"><h2 id="viewer-title"></h2><p id="viewer-description"></p><p class="credit" id="viewer-credit"></p><a class="pill" id="viewer-source" href="https://lidesheng.art/" target="_blank" rel="noopener noreferrer"><span data-ko="작품 원문 보기" data-en="Original source" data-zh="查看作品原始出处">작품 원문 보기</span><span>↗</span></a></div></div><div class="viewer-bottom"><span id="viewer-count"></span><div id="viewer-nav"><button id="viewer-prev" type="button" aria-label="이전 작품"><span data-ko="← PREV" data-en="← PREV" data-zh="← 上一件">← PREV</span></button> <button id="viewer-next" type="button" aria-label="다음 작품"><span data-ko="NEXT →" data-en="NEXT →" data-zh="下一件 →">NEXT →</span></button></div><button id="viewer-fullscreen" type="button" hidden>FULLSCREEN ⤢</button></div></dialog>
 <noscript><style>.research-item:not([open]) .research-detail{display:grid}.mix,.tools,.filters,.film-play,.film-caption button,.shape-switch,.density,.reel-watch,.reel-pause,.reel-choices{display:none}.work-image{pointer-events:none}</style></noscript>
 <script>
 (() => {
@@ -245,10 +250,47 @@ function updateFormLabel(){const s=$('[data-shape][aria-pressed="true"]')?.datas
 const motionListeners=[];
 const film=$('#lab-film'), viewer=$('#viewer'), mv=$('#viewer-video'), mi=$('#viewer-image'), menu=$('#mobile-menu');
 let filmVisible=false, filmWanted=true;
+const mediaPlays=new WeakMap();
+function preparePreview(video){video.defaultMuted=true;video.muted=true;video.playsInline=true;video.setAttribute('muted','');video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');}
+function previewAllowed(visible,wanted){return visible&&wanted&&!document.hidden&&!viewer.open&&menu.hidden;}
+function playPreview(video){
+ preparePreview(video);if(!video.paused||mediaPlays.has(video))return;
+ const source=video.currentSrc||video.src;
+ const play=video.play();if(!play)return;
+ mediaPlays.set(video,play);
+ play.then(()=>{delete video.dataset.autoplayBlocked;}).catch(error=>{if(error.name==='NotAllowedError')video.dataset.autoplayBlocked='true';}).finally(()=>{
+  if(mediaPlays.get(video)===play)mediaPlays.delete(video);
+  if(source!==(video.currentSrc||video.src))syncFilm();
+ });
+}
+const music=$('#lab-music'),musicButton=$('#music-toggle');
+let musicWanted=true,musicPending=null,musicBlocked=false;
+try{musicWanted=sessionStorage.getItem('pnu-fdl-music')!=='off';}catch{}
+music.volume=.35;music.loop=true;
+function musicLabels(){
+ const playing=!music.paused&&!music.error;
+ const label=music.error?reelText('음악 다시 시도','RETRY MUSIC','音乐 · 重试'):playing?reelText('음악 켜짐','MUSIC ON','音乐开'):!musicWanted?reelText('음악 꺼짐','MUSIC OFF','音乐关'):viewer.open&&activeWork?.video?reelText('영상 재생 중','FILM AUDIO','影片播放中'):reelText('음악 켜기','TAP FOR MUSIC','轻触开启音乐');
+ $('#music-label').textContent=label;musicButton.setAttribute('aria-pressed',String(playing));
+ musicButton.setAttribute('aria-label',playing?reelText('배경 음악 끄기','Turn background music off','关闭背景音乐'):reelText('배경 음악 켜기','Turn background music on','开启背景音乐'));
+ musicButton.dataset.state=music.error?'error':playing?'playing':!musicWanted?'off':musicBlocked?'blocked':'waiting';
+}
+function syncMusic(){
+ const allowed=musicWanted&&!document.hidden&&!(viewer.open&&activeWork?.video);
+ music.autoplay=allowed;
+ if(!allowed){music.pause();musicLabels();return;}
+ if(!music.paused||musicPending){musicLabels();return;}
+ const pending=music.play();if(!pending)return;
+ musicPending=pending;
+ pending.then(()=>{musicBlocked=false;}).catch(error=>{musicBlocked=error.name==='NotAllowedError';}).finally(()=>{musicPending=null;if(!musicWanted||document.hidden||(viewer.open&&activeWork?.video))music.pause();musicLabels();});
+ musicLabels();
+}
+musicButton.addEventListener('click',()=>{musicWanted=music.paused;if(music.error&&musicWanted)music.load();try{sessionStorage.setItem('pnu-fdl-music',musicWanted?'on':'off');}catch{}syncMusic();});
+['playing','pause','error'].forEach(event=>music.addEventListener(event,musicLabels));
+preparePreview(film);
 function syncFilm(){
- if(moving&&filmWanted&&filmVisible&&!document.hidden&&!viewer.open&&menu.hidden)film.play().catch(()=>{});
- else film.pause();
- syncReel();
+ film.autoplay=previewAllowed(filmVisible,filmWanted);
+ if(film.autoplay)playPreview(film);else film.pause();
+ syncReel();syncMusic();
 }
 function setMotion(v){
  moving=v;document.body.classList.toggle('motion-off',!v);
@@ -260,15 +302,17 @@ $('#motion').addEventListener('click',()=>setMotion(!moving));
 reduce.addEventListener('change',()=>setMotion(!reduce.matches));
 document.addEventListener('visibilitychange',()=>{syncFilm();motionListeners.forEach(fn=>fn());});
 window.addEventListener('pageshow',()=>{syncFilm();motionListeners.forEach(fn=>fn());});
-window.addEventListener('pagehide',()=>{film.pause();mv.pause();});
+window.addEventListener('pagehide',()=>{film.pause();mv.pause();music.pause();});
 if('IntersectionObserver'in window){
  const observer=new IntersectionObserver(entries=>entries.forEach(e=>e.target.classList.toggle('offscreen',!e.isIntersecting)),{rootMargin:'100px'});
  $$('.hero,.about,.research,.tech,.people,footer').forEach(el=>observer.observe(el));
- new IntersectionObserver(es=>{filmVisible=es[0].isIntersecting;syncFilm();},{threshold:.3}).observe(film);
+ new IntersectionObserver(es=>{filmVisible=es[0].isIntersecting;syncFilm();},{threshold:0}).observe(film);
 }else filmVisible=true;
 function updateFilmControl(){const playing=!film.paused;$('#film-pause').textContent=playing?'Ⅱ':'▶';$('#film-pause').setAttribute('aria-pressed',String(playing));$('#film-pause').setAttribute('aria-label',playing?t('영상 일시정지','Pause film'):t('영상 재생','Play film'));}
 film.addEventListener('play',updateFilmControl);film.addEventListener('pause',updateFilmControl);
-$('#film-pause').addEventListener('click',()=>{filmWanted=film.paused;if(filmWanted){film.play().catch(()=>{});}else film.pause();});
+$('#film-pause').addEventListener('click',()=>{filmWanted=film.paused;syncFilm();});
+film.addEventListener('playing',()=>{if(!previewAllowed(filmVisible,filmWanted))film.pause();});
+film.addEventListener('canplay',syncFilm);
 const letters=$$('.letter');
 
 const hero=$('.hero'), heroAnimations=new Set();
@@ -400,7 +444,7 @@ const reelFilms=[
  {id:'reel-silver',reel:true,title:'SILVER GREY DECONSTRUCTION',names:{ko:'SILVER GREY',en:'SILVER GREY',zh:'银灰解构'},video:'https://lidesheng.art/film-silver-transit-20261005.mp4',image:'https://lidesheng.art/film-silver-transit-20261005.jpg',start:0,excerpt:7,description:'실버 그레이 의복의 해체와 미래 패션을 담은 가로형 영상.',en:'A landscape fashion film exploring silver-grey deconstruction and futuristic clothing.',zh:'以银灰解构服装与未来时尚为主题的横屏短片。'}
 ].map(w=>({...w,credit:w.credit||'Fashion film · DESHENG LI',source:w.source||'https://lidesheng.art/#video'}));
 const reelVideo=$('#work-reel'),reelStage=$('#reel-stage'),reelChoices=$('#reel-choices');
-let reelIndex=0,reelVisible=false,reelWanted=true,reelManual=false,reelLoaded=false,reelFailed=false,reelSwitching=false;
+let reelIndex=0,reelVisible=false,reelWanted=true,reelManual=false,reelLoaded=true,reelFailed=false,reelSwitching=false;
 reelChoices.innerHTML=reelFilms.map((w,i)=>'<button type="button" class="reel-choice" data-reel="'+i+'" aria-pressed="'+(i===0)+'"><img src="'+w.image+'" alt="" loading="lazy"><span><b>0'+(i+1)+'</b><span class="reel-choice-name">'+w.names.ko+'</span></span><i aria-hidden="true"></i></button>').join('');
 function reelText(ko,en,zh){return lang==='zh'?zh:lang==='en'?en:ko;}
 function reelLabels(){
@@ -418,17 +462,18 @@ function reelLabels(){
 function selectReel(index){
  reelIndex=(index+reelFilms.length)%reelFilms.length;reelFailed=false;reelSwitching=false;reelLoaded=true;
  reelVideo.pause();reelStage.classList.add('is-loading');
- const w=reelFilms[reelIndex];reelVideo.poster=w.image;reelVideo.src=w.video;reelVideo.muted=true;reelVideo.load();
+ const w=reelFilms[reelIndex];reelVideo.poster=w.image;reelVideo.src=w.video;preparePreview(reelVideo);reelVideo.load();
  $$('.reel-choice').forEach(b=>b.style.setProperty('--reel-progress',0));reelLabels();
 }
 function syncReel(){
- if(!reelLoaded&&reelVisible&&(moving||reelManual))selectReel(reelIndex);
- const canPlay=(moving||reelManual)&&reelWanted&&reelVisible&&!document.hidden&&!viewer.open&&menu.hidden&&!reelFailed;
- if(canPlay&&reelLoaded)reelVideo.play().catch(()=>{reelLabels();});else reelVideo.pause();
+ if(!reelLoaded&&reelVisible)selectReel(reelIndex);
+ const canPlay=previewAllowed(reelVisible,reelWanted)&&!reelFailed;
+ reelVideo.autoplay=canPlay;
+ if(canPlay&&reelLoaded)playPreview(reelVideo);else reelVideo.pause();
  reelLabels();
 }
 reelVideo.addEventListener('loadedmetadata',()=>{const w=reelFilms[reelIndex];if(w.start&&reelVideo.duration>w.start)reelVideo.currentTime=w.start;syncReel();});
-reelVideo.addEventListener('playing',()=>{reelStage.classList.remove('is-loading');reelStage.classList.add('is-playing');reelLabels();});
+reelVideo.addEventListener('playing',()=>{if(!previewAllowed(reelVisible,reelWanted)){reelVideo.pause();return;}reelStage.classList.remove('is-loading');reelStage.classList.add('is-playing');reelLabels();});
 reelVideo.addEventListener('pause',()=>{reelStage.classList.remove('is-playing');reelLabels();});
 reelVideo.addEventListener('error',()=>{reelFailed=true;reelStage.classList.remove('is-loading','is-playing');reelLabels();});
 function advanceReel(){if(reelSwitching||!reelWanted||!reelVisible||document.hidden||viewer.open||!menu.hidden)return;reelSwitching=true;selectReel(reelIndex+1);syncReel();}
@@ -442,9 +487,10 @@ reelVideo.addEventListener('ended',advanceReel);
 $('#reel-pause').addEventListener('click',()=>{reelWanted=reelVideo.paused;reelManual=reelWanted;syncReel();});
 $$('[data-reel]').forEach(b=>b.addEventListener('click',()=>{reelWanted=true;reelManual=true;selectReel(Number(b.dataset.reel));syncReel();}));
 $('#reel-watch').addEventListener('click',e=>openWork(reelFilms[reelIndex],e.currentTarget));
-if('IntersectionObserver'in window)new IntersectionObserver(es=>{reelVisible=es[0].isIntersecting&&es[0].intersectionRatio>.1;syncReel();},{threshold:[0,.1]}).observe(reelStage);
+if('IntersectionObserver'in window)new IntersectionObserver(es=>{reelVisible=es[0].isIntersecting;syncReel();},{threshold:0}).observe(reelStage);
 else reelVisible=true;
-motionListeners.push(()=>{reelManual=false;syncReel();});
+reelVideo.addEventListener('canplay',syncReel);
+preparePreview(reelVideo);
 window.addEventListener('pagehide',()=>reelVideo.pause());
 reelLabels();
 
@@ -570,14 +616,22 @@ function renderWork(item){
  $('#viewer-title').textContent=item.title;$('#viewer-description').textContent=descriptionFor(item);
  $('#viewer-credit').textContent=item.credit;$('#viewer-source').href=item.source;$('#viewer-failure').hidden=true;
  mi.hidden=!!item.video;mv.hidden=!item.video;$('#viewer-fullscreen').hidden=!item.video;
- if(item.video){mv.poster=item.image;mv.src=item.video;mv.load();}else{mi.alt=lang==='zh'?(zhText[item.alt]||item.alt):item.alt;mi.src=item.image;}
+ if(item.video){mv.dataset.awaitingStart='true';mv.muted=false;mv.autoplay=true;mv.poster=item.image;mv.src=item.video;mv.load();}else{mi.alt=lang==='zh'?(zhText[item.alt]||item.alt):item.alt;mi.src=item.image;}
  const list=visibleWorks(),i=list.findIndex(w=>w.id===item.id);
  $('#viewer-count').textContent=i<0?'FASHION FILM':String(i+1).padStart(2,'0')+' / '+String(list.length).padStart(2,'0');
  $('#viewer-nav').hidden=i<0||list.length<2;
 }
-function openWork(item,trigger){lastFocus=trigger;renderWork(item);viewer.showModal();document.body.classList.add('modal-open');syncFilm();$('#viewer-close').focus();if(item.video)mv.play().catch(()=>{});}
+function openWork(item,trigger){lastFocus=trigger;renderWork(item);viewer.showModal();document.body.classList.add('modal-open');syncFilm();$('#viewer-close').focus();if(item.video)startViewer();}
 $$('[data-work]').forEach(b=>b.addEventListener('click',()=>openWork(works.find(w=>w.id===b.dataset.work),b)));
 $('#open-film').addEventListener('click',e=>openWork(opening,e.currentTarget));
+function startViewer(){
+ if(!viewer.open||!activeWork?.video||mv.dataset.awaitingStart!=='true')return;
+ const source=mv.src;
+ const attempt=mv.play();if(!attempt)return;
+ attempt.catch(error=>{if(error.name==='NotAllowedError'&&viewer.open&&mv.src===source&&mv.dataset.awaitingStart==='true'){mv.muted=true;mv.play().catch(()=>{});}});
+}
+mv.addEventListener('canplay',startViewer);
+mv.addEventListener('playing',()=>{mv.dataset.awaitingStart='false';syncMusic();});
 $('#viewer-close').addEventListener('click',()=>viewer.close());
 viewer.addEventListener('close',()=>{mv.pause();mv.removeAttribute('src');mv.load();mi.removeAttribute('src');activeWork=null;viewer.classList.remove('theater');$('#viewer-fullscreen').textContent=t('전체 화면 ⤢','FULLSCREEN ⤢');document.body.classList.remove('modal-open');lastFocus?.focus({preventScroll:true});syncFilm();});
 viewer.addEventListener('click',e=>{if(e.target===viewer){const r=viewer.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)viewer.close();}});
@@ -602,7 +656,7 @@ function setLanguage(value){
  $('#motion').setAttribute('aria-label',moving?t('동작 일시정지','Pause animations'):t('동작 재생','Play animations'));
  $('#viewer-fullscreen').textContent=viewer.classList.contains('theater')?t('작게 보기 ↙','EXIT FULL VIEW ↙'):t('전체 화면 ⤢','FULLSCREEN ⤢');
  $('#particle-field').setAttribute('aria-label',t('드래그와 형태 버튼으로 조작하는 3D 입자 시각화','Interactive particle form. Drag or use arrow keys to rotate.'));
- updateFilmControl();updateFormLabel();scheduleZipMeasure();reelLabels();
+ updateFilmControl();updateFormLabel();scheduleZipMeasure();reelLabels();musicLabels();
  document.title=value==='zh'?'釜山大学服装设计研究室 · PNU Fashion Design Lab':'PNU Fashion Design Lab — Curious Minds. Unexpected Fashion.';
  try{sessionStorage.setItem('pnu-fdl-language',value);}catch{}
 }
@@ -687,7 +741,24 @@ if(ctx){
  window.addEventListener('pagehide',()=>{cancelAnimationFrame(raf);raf=0;});
  size();
 }
-setMotion(moving);
+// Visibility checks also cover restored pages and missed observer callbacks.
+function refreshMedia(){
+ const visible=el=>{const r=el.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.top<innerHeight;};
+ filmVisible=visible(film);reelVisible=visible(reelStage);syncFilm();
+}
+let mediaFrame=0;
+window.addEventListener('scroll',()=>{if(!mediaFrame)mediaFrame=requestAnimationFrame(()=>{mediaFrame=0;refreshMedia();});},{passive:true});
+window.addEventListener('resize',refreshMedia);
+window.addEventListener('pageshow',refreshMedia);
+document.addEventListener('visibilitychange',refreshMedia);
+function wakeMedia(event){
+ if(event.target.closest?.('#music-toggle,#film-pause,#reel-pause'))return;
+ refreshMedia();startViewer();
+}
+['pointerup','touchend','keydown'].forEach(event=>document.addEventListener(event,wakeMedia,{passive:true}));
+setMotion(moving);refreshMedia();
+window.addEventListener('load',refreshMedia,{once:true});
+[300,1200,3000].forEach(delay=>setTimeout(refreshMedia,delay));
 requestAnimationFrame(()=>requestAnimationFrame(()=>assemble(true)));
 })();
 </script></body></html>
