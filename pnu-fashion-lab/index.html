@@ -1,544 +1,308 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#101719">
-<meta name="description" content="부산대학교 패션디자인랩. AI와 다중감각, 지속가능한 의복 문화, AX·메타버스·웨어러블·로봇 기술을 통해 패션의 미래를 탐구합니다.">
-<meta property="og:title" content="PNU Fashion Design Lab — Fashion Beyond Form">
-<meta property="og:description" content="Creativity. Culture. Technology. 부산대학교 패션디자인랩.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://lidesheng.art/homepage-poster.jpg">
-<title>PNU Fashion Design Lab — Fashion Beyond Form</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23101719'/%3E%3Ctext x='9' y='52' font-family='Arial' font-size='28' fill='%23edf2ee'%3EFDL.%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://lidesheng.art">
-<link rel="preconnect" href="https://fashiondesign.pusan.ac.kr">
-<style>
-:root{--paper:#efefeb;--ink:#111313;--muted:#5e6565;--line:#c9cdca;--night:#090d0f;--ice:#a6dcf2;--gutter:clamp(22px,4.5vw,88px);--ease:cubic-bezier(.22,.68,0,1.01)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased}::selection{background:var(--ice);color:#061015}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit;text-decoration:none}button{color:inherit}button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:2px solid #3983a4;outline-offset:6px}button:disabled{opacity:.45;cursor:not-allowed}img{max-width:100%;display:block}p,h1,h2,h3{margin:0}h1,h2,h3{font-weight:400}button{border:0}button,a{touch-action:manipulation}[hidden]{display:none!important}.skip{position:fixed;left:16px;top:-70px;z-index:500;padding:15px;background:white;color:#000}.skip:focus{top:12px}.micro{font-size:11px;letter-spacing:.12em;line-height:1.6;text-transform:uppercase}.shell{padding-inline:var(--gutter)}.rule{border-top:1px solid var(--line)}.section-label{display:flex;gap:18px;align-items:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase}.section-label:before{content:"+";font-size:19px;line-height:1}.arrow-link{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;border-bottom:1px solid currentColor;padding:13px 0;font-size:13px;min-height:44px}.arrow-link span:last-child{font-size:22px;transition:transform .3s}.arrow-link:hover span:last-child{transform:translate(3px,-3px)}.soft{color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.site-header{position:absolute;inset:0 0 auto;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:26px var(--gutter);color:#fff;border-bottom:1px solid #ffffff42;background:linear-gradient(#06101880,transparent)}.logo{display:flex;align-items:center;gap:20px}.logo-mark{font-size:32px;font-weight:600;letter-spacing:-.09em;line-height:1}.logo-copy{font-size:10px;line-height:1.5;letter-spacing:.055em;border-left:1px solid #ffffff60;padding-left:18px}.desktop-nav{display:flex;gap:28px;font-size:11px;letter-spacing:.06em}.desktop-nav a{padding:12px 0;position:relative}.desktop-nav a:after{content:"";position:absolute;bottom:4px;left:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s}.desktop-nav a:hover:after{transform:scaleX(1)}.header-tools{display:flex;gap:19px;align-items:center}.language{background:none;color:inherit;padding:12px 3px;font-size:11px;letter-spacing:.06em}.menu-toggle{width:38px;height:38px;background:none;display:none;align-items:center;justify-content:center;flex-direction:column;gap:6px}.menu-toggle i{width:22px;height:1px;background:currentColor}.mobile-nav{position:fixed;inset:0;z-index:100;background:#111717;color:#fff;padding:100px var(--gutter) 40px}.mobile-nav>button{position:absolute;right:var(--gutter);top:24px;background:none;font-size:28px;color:#fff;padding:10px}.mobile-nav ul{list-style:none;margin:0;padding:0}.mobile-nav a{font-size:clamp(32px,7vw,64px);display:block;padding:20px 0;border-bottom:1px solid #ffffff30;letter-spacing:-.04em}.mobile-nav .micro{margin-top:36px;color:#a6b5b8}.progress{position:fixed;left:0;top:0;height:2px;width:100%;transform:scaleX(0);transform-origin:left;background:var(--ice);z-index:120;pointer-events:none}
-.hero{height:100svh;min-height:660px;max-height:1200px;position:relative;isolation:isolate;color:#fff;background:#1e262a;overflow:hidden}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-3}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#030a1026 15%,transparent 30%,#06101418 48%,#03090ea6 100%);z-index:-2}.hero-frame{position:absolute;inset:118px var(--gutter) 100px;pointer-events:none;border-left:1px solid #ffffff15;border-right:1px solid #ffffff15}.hero-meta{position:absolute;top:125px;left:var(--gutter);right:var(--gutter);display:flex;justify-content:space-between;gap:20px;text-shadow:0 2px 14px #000}.hero-meta .micro{font-size:10px}.hero-indicator{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--ice);margin-right:8px;box-shadow:0 0 10px #a6dcf299}.hero-title{position:absolute;left:var(--gutter);right:var(--gutter);bottom:126px}.hero-kicker{font-size:13px;margin-bottom:22px;letter-spacing:.08em}.hero h1{font-size:clamp(60px,10.8vw,170px);line-height:.89;letter-spacing:-.075em;font-weight:500}.hero h1 span{display:block}.hero h1 .second-line{margin-left:17.3%}.hero-bottom{position:absolute;bottom:0;left:var(--gutter);right:var(--gutter);height:86px;border-top:1px solid #ffffff66;display:flex;align-items:center;justify-content:space-between;gap:20px}.hero-bottom a{font-size:11px;letter-spacing:.07em;display:flex;gap:32px;align-items:center;padding:14px 0}.hero-bottom a span{font-size:23px}.media-controls{display:flex;gap:9px}.round-button{width:42px;height:42px;border:1px solid #ffffff66;border-radius:50%;background:#08101433;display:grid;place-items:center;color:white;font-size:14px;backdrop-filter:blur(12px)}.round-button:hover{background:#ffffff22}.hero-credit{font-size:10px;color:#e0e6e7;letter-spacing:.04em}.media-message{position:absolute;top:180px;left:var(--gutter);background:#101819d9;padding:12px 16px;font-size:13px;max-width:300px}
-.intro{padding-block:112px 118px;display:grid;grid-template-columns:1fr 2.3fr;gap:36px}.intro .section-label{align-self:start;padding-top:13px}.intro h2{font-size:clamp(38px,5.2vw,78px);line-height:1.12;letter-spacing:-.05em;word-break:keep-all}.intro h2 em{font-style:normal;color:#6e7d7e}.intro-copy{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;margin-top:46px;align-items:end}.intro-copy p{font-size:16px;line-height:1.95;word-break:keep-all}.intro-copy .english-note{font-size:12px;line-height:1.8;color:#63706f}.intro-foot{display:flex;justify-content:space-between;margin-top:38px;border-top:1px solid var(--line);padding-top:18px;font-size:10px;letter-spacing:.12em;color:#667371}
-.research{padding-block:80px 100px;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:50px}.section-head h2{font-size:clamp(44px,6vw,88px);letter-spacing:-.065em;line-height:1;margin-top:28px}.section-note{font-size:13px;color:#5b6462;line-height:1.8;max-width:280px}.research-tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.research-tab{background:transparent;text-align:left;padding:26px 25px 27px 0;display:flex;gap:20px;align-items:start;border-bottom:2px solid transparent;transition:background .3s}.research-tab+.research-tab{padding-left:26px;border-left:1px solid var(--line)}.research-tab[aria-selected=true]{border-bottom-color:#152528;background:#dce4e044}.research-tab .tab-number{font-size:11px;color:#607773;padding-top:3px}.research-tab strong{font-weight:400;font-size:18px;display:block;word-break:keep-all}.research-tab small{display:block;font-size:10px;margin-top:8px;letter-spacing:.08em;color:#697572}.research-panel{display:grid;grid-template-columns:1fr 1fr;min-height:550px;margin-top:38px;background:#e3e8e5}.research-art{position:relative;min-height:520px;overflow:hidden;background:#dbe2e2}.research-art img{height:100%;width:100%;object-fit:cover;object-position:center 28%;position:absolute}.research-art .art-label{position:absolute;bottom:20px;left:24px;background:#eff2edee;font-size:9px;padding:8px 11px;letter-spacing:.08em;max-width:calc(100% - 48px)}.research-text{padding:clamp(28px,4vw,70px);display:flex;flex-direction:column;align-items:start;justify-content:center}.research-text h3{font-size:clamp(30px,3.3vw,48px);letter-spacing:-.04em;line-height:1.15;margin:27px 0 24px;word-break:keep-all}.research-text>p:not(.micro){font-size:16px;line-height:1.9;word-break:keep-all;color:#3f4a47}.keywords{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:26px 0 30px}.keywords li{border:1px solid #aab9b5;padding:7px 10px;font-size:10px;letter-spacing:.04em}.research-text .arrow-link{margin-top:auto}.culture-art{background:#b6c6bf;display:grid;place-items:center}.culture-art img{object-fit:contain;padding:32px 32px 65px}.future-art{background:#101c23;display:grid;place-items:center}.future-art svg{width:85%;height:85%;position:absolute;inset:7.5%;stroke:#9cc6d9;fill:none;stroke-width:.6}.future-art .orbit{transform-origin:250px 250px;animation:orbit 36s linear infinite}.future-art .art-label{background:#101c23;color:#c6dfeb;border:1px solid #3a525f}.future-art .center-label{position:relative;text-align:center;color:#d5e7ef;font-size:10px;letter-spacing:.15em;line-height:2.2}.future-art .center-label strong{display:block;font-size:56px;font-weight:400;letter-spacing:-.07em;margin-bottom:8px}@keyframes orbit{to{transform:rotate(360deg)}}.research-panel{animation:panelIn .55s var(--ease)}@keyframes panelIn{from{opacity:.3}to{opacity:1}}
-.works{background:#111718;color:#eaf0ed;padding-block:95px 110px}.works .section-note{color:#afbfbc}.works .section-head{margin-bottom:38px}.filters{display:flex;gap:9px;flex-wrap:wrap;border-top:1px solid #ffffff24;padding-top:25px;margin-bottom:60px}.filters button{min-height:42px;font-size:11px;padding:10px 18px;border:1px solid #5e706b;background:none;border-radius:30px;color:#d0dbd7}.filters button[aria-pressed=true]{background:#edf2ee;color:#121c19;border-color:#edf2ee}.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:70px 5vw;align-items:start}.work:nth-child(even){padding-top:110px}.work-image{display:block;width:100%;position:relative;overflow:hidden;padding:0;background:#23302f}.work-image img{width:100%;height:100%;object-fit:contain;transition:transform .85s var(--ease);aspect-ratio:4/5}.work.landscape .work-image img{aspect-ratio:4/3}.work-image:hover img{transform:scale(1.025)}.work-open{position:absolute;right:20px;bottom:20px;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#ecf0ed;color:#152421;font-size:20px;transition:transform .35s}.work-image:hover .work-open{transform:rotate(-7deg)}.work-caption{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:22px}.work-caption .micro{font-size:9px;color:#a5bbb5;margin-bottom:10px}.work-caption h3{font-size:clamp(22px,2.6vw,40px);line-height:1.07;letter-spacing:-.04em}.work-subtitle{font-size:12px;color:#a7bbb3;margin-top:10px}.work-mark{font-size:25px;color:#97b1a8}.credit{font-size:10px;color:#a9b9b5;margin-top:15px;line-height:1.6}.image-unavailable{position:absolute;inset:0;display:grid;place-items:center;color:#d7e8e0;font-size:15px}.works-end{display:flex;justify-content:space-between;align-items:end;border-top:1px solid #ffffff2b;margin-top:75px;padding-top:30px;gap:25px}.works-end p{font-size:12px;line-height:1.9;color:#a3b9b1;max-width:550px}
-.future{min-height:760px;position:relative;background:#d9e4e9;overflow:hidden;isolation:isolate;padding:78px var(--gutter);display:flex;flex-direction:column;justify-content:space-between}.future canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:.8}.future:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#e1e9ebcf,transparent 70%)}.future h2{font-size:clamp(55px,9vw,135px);line-height:.97;letter-spacing:-.065em;margin-top:110px}.future h2 span{display:block}.future h2 span:last-child{margin-left:12vw}.future-bottom{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:60px}.future-bottom p{font-size:16px;line-height:1.8;word-break:keep-all;max-width:460px}.future-bottom .micro{max-width:280px;font-size:10px;line-height:2}.future-caption{position:absolute;top:84px;right:var(--gutter);font-size:9px;letter-spacing:.12em;max-width:200px;text-align:right;color:#46616d}
-.people{padding-block:100px 110px;display:grid;grid-template-columns:1fr 1fr;gap:7vw}.people-portrait{position:relative;max-width:530px;padding:40px;background:#dce1dd;align-self:start}.people-portrait:before{content:"FDL / PEOPLE";font-size:10px;letter-spacing:.12em;display:block;margin-bottom:25px}.people-portrait img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;filter:grayscale(1)}.people-portrait figcaption{font-size:10px;line-height:1.8;margin-top:20px;color:#5d6b63}.people figure{margin:0}.people-copy{display:flex;flex-direction:column;justify-content:center}.people-copy h2{font-size:clamp(40px,4vw,64px);letter-spacing:-.05em;margin:38px 0 8px;line-height:1.05}.people-copy .prof-ko{font-size:20px;margin-bottom:28px}.people-copy>p{font-size:14px;color:#4f5e58;line-height:1.95;word-break:keep-all;max-width:500px}.people-links{display:flex;flex-direction:column;margin-top:30px}.people-links .arrow-link{border-color:#b7c2ba;padding-block:18px;font-size:12px}
-.archive{padding-block:75px 100px;border-top:1px solid var(--line)}.archive .section-head{margin-bottom:40px}.archive-rows{border-top:1px solid #9faea5}.archive-row{display:grid;grid-template-columns:50px 1.25fr 1fr 30px;gap:24px;align-items:center;min-height:112px;border-bottom:1px solid var(--line);transition:padding .3s,background .3s}.archive-row:hover{padding-inline:16px;background:#dce4de}.archive-row .num{font-size:11px;color:#60796b}.archive-row h3{font-size:clamp(26px,3vw,43px);letter-spacing:-.04em}.archive-row p{font-size:13px;color:#5e7066;line-height:1.8}.archive-row .arr{font-size:30px;text-align:right}
-.contact{background:#0b1113;color:#e7eeea;padding-block:80px 28px;position:relative;overflow:hidden}.contact .section-label{color:#b0c3bf}.contact h2{font-size:clamp(60px,11vw,168px);line-height:1;letter-spacing:-.07em;margin:55px 0 60px;font-weight:400}.contact h2 span{color:#94bac7}.contact-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:40px;border-top:1px solid #ffffff30;padding-top:38px}.contact-grid h3{font-size:10px;color:#9fb9b5;letter-spacing:.12em;margin-bottom:18px}.contact-grid p,.contact-grid a{font-size:13px;line-height:1.9}.contact-grid a{display:inline-block;text-decoration:underline;text-decoration-color:#657f79;text-underline-offset:5px}.contact-grid .contact-big{font-size:clamp(16px,1.8vw,26px);letter-spacing:-.03em;margin-bottom:13px}.contact-grid .micro{font-size:10px;margin-top:18px;color:#97aca7}.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #ffffff24;padding-top:24px;margin-top:70px;font-size:9px;letter-spacing:.07em;color:#a5b5b1}.footer-bottom a{padding:10px;color:#e9eeea}.footer-bottom .footer-credit{line-height:1.8}.top-link{white-space:nowrap}.contact-wordmark{font-size:clamp(80px,19vw,290px);font-weight:500;letter-spacing:-.08em;line-height:.85;color:#ffffff10;margin-top:75px;white-space:nowrap}
-.viewer{padding:0;border:1px solid #809a94;background:#0b1113;color:#eef4f1;width:min(1400px,95vw);max-width:95vw;max-height:94dvh;overflow:auto}.viewer::backdrop{background:#050b0ded;backdrop-filter:blur(10px)}.viewer-top{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:15px 24px;background:#0b1113f5;border-bottom:1px solid #ffffff30}.viewer-top .micro{font-size:10px;color:#adcebf}.viewer-close{background:none;color:#fff;min-width:42px;min-height:42px;font-size:25px}.viewer-body{display:grid;grid-template-columns:1.6fr 1fr;gap:35px;padding:30px}.viewer-media{min-width:0;background:#0b1113;display:grid;place-items:center;min-height:300px}.viewer-media img{max-height:68dvh;object-fit:contain;max-width:100%}.viewer-media video{width:100%;max-height:68dvh;display:block;background:black}.viewer-info{padding:20px 10px 20px 0;display:flex;flex-direction:column;align-items:start}.viewer-info h2{font-size:clamp(28px,3.7vw,50px);letter-spacing:-.04em;line-height:1.1;margin-bottom:25px;overflow-wrap:anywhere}.viewer-info p{font-size:14px;line-height:1.9;color:#bfd1c8}.viewer-info .credit{margin:24px 0;font-size:11px}.viewer-info .arrow-link{margin-top:15px}.viewer-bottom{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:0 30px 25px}.viewer-nav{display:flex;gap:10px}.viewer-nav button,.fullscreen{background:none;color:#d5e8df;border:1px solid #72897e;min-height:42px;padding:8px 17px;font-size:12px}.media-failure{font-size:14px;color:#d7e5de;line-height:1.8;text-align:center}.viewer-index{font-size:10px;color:#b0c4b9}.menu-open,.viewer-open{overflow:hidden}.reveal-ready{opacity:0;transition:opacity .9s var(--ease),clip-path 1.2s var(--ease);clip-path:inset(0 0 6% 0)}.reveal-ready.revealed{opacity:1;clip-path:inset(0)}.noscript-note{padding:20px;background:#e2e8e1;color:#25362a;font-size:14px}
-@media(min-width:1600px){.shell{max-width:1920px;margin:auto}.hero-title{max-width:1750px}.intro{grid-template-columns:1fr 2.1fr}.work-grid{gap:90px 100px}}
-@media(max-width:1080px){.desktop-nav{gap:18px}.logo-copy{display:none}.hero h1{font-size:12vw}.intro{grid-template-columns:1fr 2.3fr}.intro-copy{grid-template-columns:1fr;gap:22px}.intro-copy .english-note{max-width:390px}.research-tab strong{font-size:16px}.research-panel{min-height:470px}.research-art{min-height:470px}.research-text{padding:30px}.people{gap:5vw}.people-portrait{padding:25px}.contact-grid{grid-template-columns:1.2fr 1fr}.contact-grid>div:last-child{grid-column:1/-1}.viewer-body{grid-template-columns:1.3fr 1fr}}
-@media(max-width:760px){html{scroll-padding-top:30px}.site-header{padding-block:21px}.logo-mark{font-size:29px}.logo-copy{display:block;font-size:8px;padding-left:14px}.logo{gap:14px}.desktop-nav{display:none}.menu-toggle{display:flex}.header-tools{gap:12px}.hero{min-height:600px;max-height:1000px}.hero-meta{top:104px}.hero-meta .micro{font-size:9px}.hero-meta>p:last-child{max-width:130px;text-align:right}.hero-frame{inset:98px var(--gutter) 85px}.hero-title{bottom:140px}.hero h1{font-size:14.1vw;line-height:.94;letter-spacing:-.065em}.hero h1 .second-line{margin-left:0}.hero-kicker{font-size:12px;line-height:1.7;margin-bottom:20px}.hero-bottom{height:100px;align-items:center}.hero-credit{display:none}.hero-bottom a{font-size:9px;gap:18px;max-width:165px;line-height:1.8}.round-button{width:40px;height:40px}.hero-video{object-position:center}.intro{grid-template-columns:1fr;padding-block:65px 75px;gap:32px}.intro h2{font-size:39px}.intro-copy{margin-top:30px}.intro-copy p{font-size:15px}.intro-copy .english-note{font-size:12px}.intro-foot{font-size:9px;gap:20px;line-height:1.8}.research{padding-block:58px 65px}.section-head{display:block;margin-bottom:35px}.section-head h2{font-size:47px;margin-top:23px}.section-note{margin-top:22px;font-size:12px;max-width:340px}.research-tabs{grid-template-columns:1fr}.research-tab,.research-tab+.research-tab{padding:17px 0;gap:17px;border-left:0;border-bottom:1px solid #c3cdc5}.research-tab[aria-selected=true]{border-bottom:2px solid #152528}.research-tab strong{font-size:17px}.research-tab small{font-size:9px;margin-top:4px}.research-panel{grid-template-columns:1fr;margin-top:24px}.research-art{min-height:380px}.research-art img{object-position:center 20%}.culture-art img{object-position:center}.research-text{padding:30px 25px;min-height:390px}.research-text h3{font-size:34px;margin:22px 0}.research-text>p:not(.micro){font-size:15px}.research-text .arrow-link{margin-top:5px}.works{padding-block:65px}.filters{margin-bottom:36px;gap:7px}.filters button{font-size:10px;padding:9px 13px}.work-grid{gap:42px 18px}.work:nth-child(even){padding-top:50px}.work-image img{aspect-ratio:3/4;object-fit:contain}.work.landscape .work-image img{aspect-ratio:3/4}.work-open{right:10px;bottom:10px;width:30px;height:30px;font-size:14px}.work-caption{padding-top:16px;gap:5px}.work-caption .micro{font-size:8px;letter-spacing:.04em;line-height:1.8;margin-bottom:7px}.work-caption h3{font-size:19px;line-height:1.08}.work-mark{display:none}.work-subtitle{font-size:10px;line-height:1.7}.credit{font-size:9px;line-height:1.9;margin-top:10px}.works-end{display:block;margin-top:45px;padding-top:25px}.works-end p{font-size:11px}.works-end .arrow-link{margin-top:20px}.future{min-height:650px;padding-block:50px}.future h2{font-size:15vw;margin-top:120px;line-height:1}.future h2 span:last-child{margin-left:0}.future-bottom{display:block;margin-top:44px}.future-bottom p{font-size:15px;max-width:340px}.future-bottom .micro{font-size:9px;margin-top:28px}.future-caption{top:90px;right:var(--gutter);font-size:8px;max-width:175px;text-align:left;left:var(--gutter)}.people{grid-template-columns:1fr;padding-block:65px;gap:44px}.people-portrait{max-width:100%;padding:25px}.people-portrait img{max-height:430px;object-fit:contain}.people-copy h2{font-size:43px;margin-top:28px}.people-copy .prof-ko{font-size:18px}.people-copy>p{font-size:14px}.people-links{margin-top:20px}.archive{padding-block:58px 65px}.archive-row{grid-template-columns:22px 1fr 25px;gap:14px;padding-block:23px}.archive-row h3{font-size:29px}.archive-row p{grid-column:2;grid-row:2;font-size:12px}.archive-row .arr{grid-column:3;grid-row:1/3;font-size:24px}.archive-row .num{font-size:9px}.archive-row:hover{padding-inline:0}.contact{padding-block:60px 22px}.contact h2{font-size:15vw;margin:42px 0}.contact-grid{grid-template-columns:1fr;gap:34px;padding-top:30px}.contact-grid>div:last-child{grid-column:auto}.contact-grid .contact-big{font-size:23px}.contact-grid p,.contact-grid a{font-size:12px}.contact-grid h3{margin-bottom:13px}.footer-bottom{margin-top:40px;font-size:8px;align-items:end;gap:15px}.contact-wordmark{font-size:20vw;margin-top:55px}.viewer{width:100vw;max-width:100vw;max-height:100dvh;height:100dvh;border:0}.viewer-top{padding:12px 20px}.viewer-body{grid-template-columns:1fr;gap:25px;padding:18px}.viewer-media{min-height:220px}.viewer-media img,.viewer-media video{max-height:52dvh}.viewer-info{padding:8px 4px}.viewer-info h2{font-size:32px;margin-bottom:18px}.viewer-info p{font-size:13px}.viewer-info .credit{margin:16px 0}.viewer-bottom{padding:0 22px 30px;flex-wrap:wrap}.viewer-index{font-size:9px}.viewer-nav button,.fullscreen{font-size:11px;padding:8px 12px}.image-unavailable{padding:15px;font-size:12px}}
-@media(max-width:380px){.logo-copy{display:none}.hero h1{font-size:13.8vw}.work-grid{grid-template-columns:1fr}.work:nth-child(even){padding-top:0}.work-image img,.work.landscape .work-image img{aspect-ratio:auto;max-height:75vh}.work-caption h3{font-size:26px}.work-caption .micro{font-size:9px}.hero-meta>p:last-child{max-width:115px}.intro h2{font-size:34px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal-ready{opacity:1;clip-path:none}.work-image:hover img{transform:none}}
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101010"><meta name="description" content="부산대학교 패션디자인랩 — AI, 다중감각, 지속가능한 의복 문화와 미래 패션을 탐구합니다."><title>PNU Fashion Design Lab — Curious Minds. Unexpected Fashion.</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23c8ff3b'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-family='Arial' font-weight='900' font-size='42'%3Efdl%3C/text%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900;1000&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><style>
+:root{--black:#0b0b0d;--white:#f3f2ee;--lime:#c5ff35;--pink:#f7a3e9;--purple:#a27aff;--blue:#8ad7ff;--orange:#ff7454;--g:clamp(24px,5vw,86px);--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;padding:10px;background:var(--white);color:var(--white);font:16px/1.6 Arial,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased}button,a,input{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button{border:0}a{color:inherit;text-decoration:none}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:5px}img{display:block;max-width:100%}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-weight:600}h2{font-size:clamp(48px,7vw,110px);line-height:.98;letter-spacing:-.07em}::selection{background:var(--purple);color:#0b0b0d}[hidden]{display:none!important}.site{border-radius:24px;background:var(--black);overflow:clip}.pad{padding-inline:var(--g)}.eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase}.dim{color:#aaa}.skip{position:fixed;top:-80px;left:30px;z-index:200;background:white;color:black;padding:15px}.skip:focus{top:20px}.sr-only{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden;white-space:nowrap}.pill{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:14px 22px;border:1px solid #ffffff66;border-radius:30px;background:transparent;font-size:13px;min-height:46px;transition:background .25s,transform .25s}.pill:hover{background:var(--white);color:#111;transform:translateY(-2px)}.arrow{font-size:24px;line-height:1}.section-top{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:40px}.section-top p{max-width:320px;font-size:14px;color:#b9b9bc;line-height:1.85;word-break:keep-all}.line-link{display:flex;align-items:center;justify-content:space-between;gap:30px;border-bottom:1px solid #ffffff40;padding:19px 0;min-height:50px;font-size:14px}.line-link:hover .arrow{transform:rotate(45deg)}.line-link .arrow{transition:transform .3s}
+header{height:88px;padding:20px var(--g);display:flex;align-items:center;justify-content:space-between;gap:25px;position:absolute;top:10px;left:10px;right:10px;z-index:30}.brand{display:flex;align-items:center;gap:12px;line-height:1}.brand svg{width:36px;height:36px}.brand strong{font-size:24px;letter-spacing:-.07em}.brand small{font-size:8px;letter-spacing:.07em;display:block;margin-top:6px}.nav{display:flex;gap:28px;font-size:14px;font-weight:600}.nav a{position:relative;padding:12px 0}.nav a:after{content:"";position:absolute;bottom:7px;height:2px;left:0;width:100%;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .3s}.nav a:hover:after{transform:scaleX(1)}.tools{display:flex;align-items:center;gap:12px}.tools button{background:none;font-size:11px;padding:10px 5px;min-height:40px}.tools #motion{border:1px solid #ffffff50;border-radius:50%;width:36px;min-height:36px;padding:0}.menu-toggle{display:none}.mobile-menu{position:fixed;inset:10px;background:var(--purple);color:#15121d;border-radius:20px;z-index:100;padding:100px var(--g) 40px}.mobile-menu .close{position:absolute;right:25px;top:20px;background:none;font-size:36px}.mobile-menu a{display:block;font-size:clamp(40px,10vw,70px);letter-spacing:-.05em;line-height:1.6}.mobile-menu .eyebrow{margin-top:40px}
+.hero{min-height:760px;height:calc(100svh - 20px);max-height:1150px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:140px var(--g) 150px;overflow:hidden}.hero-heading{position:relative;width:100%;text-align:center;margin-top:10px}.fashion-word{display:flex;justify-content:center;align-items:center;height:clamp(120px,14vw,210px);max-width:1000px;margin:0 auto -6px;position:relative;z-index:2}.letter{width:14.28%;height:100%;background:none;padding:0;flex:none;position:relative;touch-action:none;user-select:none;transform:translate(var(--dx,0px),var(--dy,0px)) rotate(var(--turn,0deg));transition:filter .3s,transform .8s cubic-bezier(.16,1.65,.4,1);cursor:grab;will-change:transform}.letter:nth-child(1){--turn:-9deg}.letter:nth-child(2){--turn:5deg}.letter:nth-child(3){--turn:-7deg}.letter:nth-child(4){--turn:5deg}.letter:nth-child(5){--turn:-5deg;width:10%;margin-inline:-1%}.letter:nth-child(6){--turn:8deg}.letter:nth-child(7){--turn:-6deg}.letter svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 9px 0 #0000002b)}.letter:hover,.letter:focus-visible{z-index:5;filter:brightness(1.12);--dy:-18px}.letter.dragging{cursor:grabbing;transition:none;z-index:6}.letter.pop{animation:pop .65s var(--ease)}@keyframes pop{30%{scale:1.15 .78}60%{scale:.92 1.12}100%{scale:1}}.hero-title{font-size:clamp(70px,13.2vw,195px);line-height:.87;letter-spacing:-.085em;font-weight:600;white-space:nowrap}.hero-sub{font-size:13px;margin-top:35px;letter-spacing:.03em;color:#b8b8bf;line-height:1.8}.hero-sub strong{display:block;color:#eee;font-weight:400}.play-note{position:absolute;right:0;top:-70px;transform:rotate(8deg);color:var(--lime);font-size:12px;text-align:left;line-height:1.4}.play-note span{font-size:38px;display:block;margin:5px 10px;transform:rotate(40deg)}.hero-bottom{position:absolute;bottom:103px;left:var(--g);right:var(--g);display:flex;justify-content:space-between;align-items:center}.mix{background:none;border-bottom:1px solid #888;padding:8px 0;font-size:12px}.scroll-down{display:flex;gap:14px;align-items:center;font-size:11px}.scroll-down i{font-style:normal;display:grid;place-items:center;width:38px;height:38px;border:1px solid #6e6e75;border-radius:50%;font-size:20px}.ticker{position:absolute;bottom:0;left:0;right:0;height:78px;border-top:1px solid #ffffff1c;display:flex;align-items:center;overflow:hidden}.ticker-track{display:flex;flex-shrink:0;white-space:nowrap;width:max-content;align-items:center;gap:55px;animation:marquee 24s linear infinite;font-size:24px;font-weight:600;letter-spacing:-.05em}.ticker .star{font-size:20px;color:var(--lime)}.ticker:hover .ticker-track{animation-play-state:paused}@keyframes marquee{to{transform:translateX(-50%)}}.spark{position:absolute;font-size:22px;left:50%;top:50%;pointer-events:none;animation:spark .7s ease-out forwards;color:var(--lime)}@keyframes spark{to{transform:translate(var(--sx),var(--sy)) rotate(120deg);opacity:0}}
+.about{padding-block:110px 120px}.about-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:55px}.about-top h2{font-size:clamp(62px,9vw,140px)}.orbit-sticker{width:110px;height:110px;border-radius:50%;background:var(--purple);display:grid;place-items:center;color:#191126;transform:rotate(13deg);font-size:12px;text-align:center;line-height:1.3;font-weight:600}.orbit-sticker span{font-size:34px;display:block}.about-copy{max-width:1040px;margin-left:14%;font-size:clamp(22px,2.65vw,39px);line-height:1.68;letter-spacing:-.035em;word-break:keep-all}.about-copy p+p{margin-top:36px}.about-copy .aside{font-size:18px;color:#b5b5bf;max-width:780px;line-height:1.8;letter-spacing:-.01em}.reaction{display:inline-flex;position:relative;vertical-align:middle;align-items:center;justify-content:center;width:1.5em;height:1.5em;padding:0;background:none;font-size:1em;margin:0 .14em .08em;cursor:pointer;transition:transform .3s}.reaction svg{width:100%;height:100%}.reaction .emoji{display:block;font-size:1.1em}.reaction:hover{transform:rotate(-12deg) scale(1.2)}.wave .emoji{animation:wave 2.2s ease-in-out infinite;transform-origin:70% 80%}.float .emoji{animation:bob 3s ease-in-out infinite}.twinkle .emoji{animation:twinkle 3s ease-in-out infinite}.eyes{transform-origin:center;animation:blink 5s infinite}.reaction.fired{animation:pop .6s ease}.reaction .bubble{position:absolute;bottom:110%;left:50%;transform:translateX(-50%);background:var(--lime);color:#111;padding:7px 12px;border-radius:15px;font-size:12px;white-space:nowrap;line-height:1.3;letter-spacing:0;z-index:4;pointer-events:none}@keyframes wave{0%,50%,100%{transform:rotate(0)}10%,30%{transform:rotate(20deg)}20%,40%{transform:rotate(-12deg)}}@keyframes bob{50%{transform:translateY(-7px) rotate(6deg)}}@keyframes twinkle{50%{transform:scale(.75) rotate(15deg)}}@keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.08)}}.about-signoff{font-size:clamp(38px,5.5vw,80px);line-height:1.05;letter-spacing:-.06em;margin-top:75px}.about-signoff em{color:var(--pink);font-style:normal}
+.research{background:var(--white);color:#161518;border-radius:28px;padding-block:95px 100px}.research .section-top p{color:#605e65}.research .eyebrow{margin-bottom:24px}.research h2 em{font-style:normal;color:#8a5fcb}.research-list{margin-top:55px;border-top:1px solid #b2adb7}.research-item{border-bottom:1px solid #b2adb7;position:relative}.research-item summary{list-style:none;display:grid;grid-template-columns:55px 1fr auto;align-items:center;gap:20px;padding:26px 0;cursor:pointer}.research-item summary::-webkit-details-marker{display:none}.research-number{font-size:12px}.research-item summary strong{font-size:clamp(32px,4.5vw,65px);line-height:1.1;letter-spacing:-.06em;font-weight:500}.research-item summary small{display:block;font-size:13px;font-weight:400;letter-spacing:0;margin-top:9px}.research-plus{display:grid;place-items:center;width:52px;height:52px;border:1px solid #b2adb7;border-radius:50%;font-size:30px;transition:transform .4s,background .3s}.research-item[open] .research-plus{transform:rotate(45deg);background:var(--purple);border-color:var(--purple)}.research-item:nth-child(2)[open] .research-plus{background:var(--lime);border-color:var(--lime)}.research-item:nth-child(3)[open] .research-plus{background:var(--pink);border-color:var(--pink)}.research-detail{display:grid;grid-template-columns:1fr 1fr;gap:5vw;padding:0 0 40px 75px;align-items:center;animation:fade .5s ease}.research-detail p{font-size:18px;line-height:1.9;word-break:keep-all}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.tags span{border:1px solid #b2adb7;border-radius:30px;font-size:10px;padding:7px 12px}.research-image{height:300px;border-radius:18px;overflow:hidden;background:#e7e5e9;position:relative}.research-image img{width:100%;height:100%;object-fit:contain}.research-image small{position:absolute;bottom:9px;left:12px;background:#ffffffe8;padding:4px 8px;border-radius:5px;font-size:8px}.research-image.concept{background:#191129;display:grid;place-items:center}.research-image.concept .robot{font-size:100px;animation:bob 4s ease-in-out infinite}.research-image.concept .mini-tag{position:absolute;padding:6px 12px;border:1px solid #a482c7;color:#dcc7f4;border-radius:25px;font-size:10px}.mini-tag:nth-child(2){left:12%;top:19%;rotate:-10deg}.mini-tag:nth-child(3){right:8%;bottom:20%;rotate:9deg}.mini-tag:nth-child(4){right:10%;top:14%;rotate:9deg}@keyframes fade{from{opacity:.2;transform:translateY(10px)}to{opacity:1;transform:none}}
+.works{padding-block:105px 90px}.works .eyebrow{margin-bottom:25px}.works h2 span{color:var(--lime)}.gallery-tools{display:flex;justify-content:space-between;gap:20px;align-items:center;margin:40px 0 30px}.filters{display:flex;gap:7px;flex-wrap:wrap}.filters button{padding:10px 16px;border-radius:22px;background:none;border:1px solid #666;color:#d2d2d5;min-height:40px;font-size:11px}.filters button[aria-pressed=true]{color:#111;background:var(--lime);border-color:var(--lime)}.gallery-arrows{display:flex;gap:8px}.gallery-arrows button{background:transparent;border:1px solid #6c6c72;border-radius:50%;width:42px;height:42px;font-size:20px}.gallery-arrows button:hover{background:var(--purple);color:#111}.gallery-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:12px var(--g) 22px;scroll-padding-inline:var(--g);cursor:grab;user-select:none;touch-action:pan-x pan-y}.gallery-track::-webkit-scrollbar{display:none}.gallery-track.dragging{scroll-snap-type:none;cursor:grabbing}.work{flex:0 0 clamp(280px,36vw,540px);min-width:0;scroll-snap-align:start}.work-image{padding:0;width:100%;background:#e7e7e7;position:relative;display:block;border-radius:20px;overflow:hidden;aspect-ratio:4/5;cursor:inherit}.work-image img{width:100%;height:100%;object-fit:contain;pointer-events:none;transition:transform .8s var(--ease);user-select:none}.work-image:hover img{transform:scale(1.035)}.work-open{position:absolute;bottom:18px;right:18px;display:grid;place-items:center;border-radius:50%;width:45px;height:45px;background:var(--white);color:#111;font-size:22px;transition:rotate .3s}.work-image:hover .work-open{rotate:12deg}.work-caption{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-top:19px}.work-caption h3{font-size:clamp(20px,2.3vw,33px);font-weight:500;line-height:1.2;letter-spacing:-.04em}.work-caption span{font-size:10px;color:#b6b6c0}.work p{font-size:11px;color:#bbb;line-height:1.8;margin-top:8px}.image-unavailable{position:absolute;inset:0;display:grid;place-items:center;background:#24222b;color:#ddd;font-size:14px}.gallery-footer{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:24px}.gallery-footer p{font-size:11px;color:#a5a5b1}.gallery-meter{width:140px;height:3px;background:#45434a;position:relative;overflow:hidden}.gallery-meter span{position:absolute;left:0;top:0;height:100%;width:30%;background:var(--lime);transition:transform .2s}
+.film-section{padding-block:40px 100px}.film-heading{display:flex;align-items:baseline;justify-content:space-between;gap:30px;margin-bottom:28px}.film-heading h2{font-size:clamp(45px,6vw,84px)}.film-heading p{font-size:11px;color:#b4b4bd}.film-stage{position:relative;border-radius:22px;overflow:hidden;background:#15151c;aspect-ratio:2/1}.film-stage video{width:100%;height:100%;object-fit:cover}.film-stage:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,#000b);pointer-events:none}.film-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:100px;height:100px;border-radius:50%;background:var(--lime);color:#141613;font-size:13px;font-weight:600;rotate:-10deg;transition:rotate .35s,scale .35s}.film-play:hover{rotate:0deg;scale:1.1}.film-caption{position:absolute;bottom:25px;left:30px;right:30px;display:flex;align-items:end;justify-content:space-between;gap:25px;z-index:2}.film-caption h3{font-size:27px;letter-spacing:-.04em;line-height:1.2}.film-caption small{font-size:9px;letter-spacing:.09em}.film-caption button{background:#1119;border:1px solid #ddd6;width:38px;height:38px;border-radius:50%;color:white}
+.tech{padding-block:55px 95px}.tech-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.tech-top h2{font-size:clamp(48px,6.5vw,95px)}.tech-top h2 em{color:#64baff;font-style:normal}.tech-top p{max-width:330px;font-size:14px;color:#aaaebc;line-height:1.8}.tech-grid{display:grid;grid-template-columns:1fr 4.5fr 1fr;gap:8px;height:520px;background:#050713;border-radius:22px;overflow:hidden}.tech-side{position:relative;overflow:hidden;background:radial-gradient(ellipse at 20% 10%,#5737a680,transparent 55%),linear-gradient(130deg,#0d1e38,#050713);border:1px solid #17263c}.tech-side:before{content:"";position:absolute;inset:-100% -150%;background:repeating-linear-gradient(30deg,transparent 0 45px,#548fff28 46px 47px,transparent 48px 85px);animation:gridPan 28s linear infinite}.tech-side:last-child{background:radial-gradient(ellipse at 75% 95%,#553aa680,transparent 65%),#071221}.tech-side p{position:absolute;left:18px;bottom:20px;font-size:8px;letter-spacing:.12em;writing-mode:vertical-rl;rotate:180deg;color:#8097bc}@keyframes gridPan{to{transform:translate(70px,150px)}}.particle-stage{position:relative;background:radial-gradient(ellipse at 50% 50%,#082349,#020817 65%);overflow:hidden;touch-action:pan-y;cursor:grab}.particle-stage canvas{width:100%;height:100%;display:block}.tech-hud{position:absolute;top:20px;left:20px;right:20px;display:flex;justify-content:space-between;font-size:8px;letter-spacing:.12em;color:#8caecb;pointer-events:none}.tech-hud b{color:#54c4ff;font-weight:400}.tech-stage-title{position:absolute;inset:auto 15px 22px;text-align:center;font-size:10px;letter-spacing:.2em;color:#b0d9ff;pointer-events:none}.tech-controls{display:flex;justify-content:space-between;gap:25px;align-items:center;margin-top:25px;padding:0 10px}.shape-switch{display:flex;gap:8px}.shape-switch button{border:1px solid #4c6082;border-radius:22px;padding:10px 17px;background:none;color:#aac9f3;min-height:42px;font-size:11px}.shape-switch button[aria-pressed=true]{background:#85cbff;border-color:#85cbff;color:#092040}.density{display:flex;align-items:center;gap:14px;font-size:10px;color:#9daac5}.density input{accent-color:#75bdff;width:110px}.tech-note{font-size:10px;color:#8597b3;margin-top:20px;line-height:1.7}
+.people{background:var(--purple);color:#181122;border-radius:26px;padding-block:90px;display:grid;grid-template-columns:1fr 1.1fr;gap:7vw;align-items:center}.people-photo{position:relative;padding:16px;background:#fff;border-radius:18px;transform:rotate(-3deg);box-shadow:12px 12px 0 #23153023;margin:12px}.people-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;filter:none!important;border-radius:9px}.people-photo figcaption{padding:18px 10px 7px;font-size:12px;color:#42364d}.people-sticker{position:absolute;right:-22px;top:-22px;width:95px;height:95px;border-radius:50%;background:var(--lime);display:grid;place-items:center;rotate:15deg;font-size:40px}.people-copy .eyebrow{margin-bottom:28px}.people-copy h2{font-size:clamp(45px,5.5vw,80px)}.people-copy h3{font-size:23px;font-weight:400;margin-top:22px;letter-spacing:-.03em}.people-copy p{font-size:15px;line-height:1.95;word-break:keep-all;margin-top:20px}.people-copy .line-link{border-color:#40304955;font-size:12px}.people-copy .links{margin-top:20px}
+.archive{padding-block:90px}.archive h2{font-size:clamp(43px,6vw,85px);margin-bottom:35px}.archive-row{display:grid;grid-template-columns:50px 1fr 1fr 32px;gap:20px;align-items:center;padding:25px 0;border-top:1px solid #ffffff36;transition:padding .25s}.archive-row:last-child{border-bottom:1px solid #ffffff36}.archive-row:hover{padding-inline:18px;color:var(--lime)}.archive-row b{font-size:clamp(25px,3vw,45px);font-weight:400;letter-spacing:-.05em}.archive-row small{font-size:12px;color:#aaa}.archive-row .num{font-size:11px;color:#999}
+footer{padding-block:85px 25px;background:var(--lime);color:#10150a;border-radius:26px}.footer-top{display:flex;justify-content:space-between;align-items:center;gap:35px}.footer-top h2{font-size:clamp(60px,10.3vw,155px);line-height:.9;letter-spacing:-.075em}.footer-face{width:150px;height:150px;flex:none;rotate:8deg;background:none;padding:0}.footer-face svg{width:100%;height:100%}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:45px;margin-top:70px;padding-top:35px;border-top:1px solid #3441255e}.footer-grid h3{font-size:10px;letter-spacing:.07em;font-weight:400;margin-bottom:18px}.footer-grid p,.footer-grid a{font-size:12px;line-height:1.9}.footer-grid .email{font-size:clamp(16px,1.9vw,28px);letter-spacing:-.04em;text-decoration:underline;text-underline-offset:7px}.footer-bottom{display:flex;justify-content:space-between;gap:25px;border-top:1px solid #3441255e;margin-top:65px;padding-top:23px;font-size:9px;line-height:1.8}.footer-bottom a{white-space:nowrap}
+dialog{background:#0d0d10;color:#f3f3f3;width:min(1250px,96vw);max-width:96vw;max-height:94dvh;border:1px solid #555;border-radius:22px;padding:0;overflow:auto}dialog::backdrop{background:#000d;backdrop-filter:blur(12px)}.viewer-top{position:sticky;top:0;z-index:4;background:#101014ef;display:flex;align-items:center;justify-content:space-between;padding:15px 24px;border-bottom:1px solid #ffffff25;font-size:10px;letter-spacing:.07em}.viewer-top button{background:none;width:40px;height:40px;font-size:26px}.viewer-body{padding:25px;display:grid;grid-template-columns:1.6fr 1fr;gap:30px;align-items:center}.viewer-media{min-width:0;min-height:260px;display:grid;place-items:center}.viewer-media img{max-height:65dvh;width:100%;object-fit:contain}.viewer-media video{width:100%;max-height:65dvh;background:black}.viewer-info h2{font-size:clamp(28px,3vw,44px);letter-spacing:-.05em;line-height:1.1;margin-bottom:22px}.viewer-info p{font-size:13px;color:#bbb;line-height:1.9}.viewer-info .credit{margin:20px 0;font-size:11px}.viewer-info a{font-size:12px;display:inline-flex;margin-top:10px}.viewer-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:0 25px 25px}.viewer-bottom button{background:none;border:1px solid #777;border-radius:22px;padding:8px 14px;font-size:11px;min-height:40px}.viewer-bottom span{font-size:10px;color:#aaa}.modal-open{overflow:hidden}.media-failure{font-size:13px;color:#bbb}.cursor-progress{position:fixed;bottom:24px;right:26px;z-index:25;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#16151bd9;border:1px solid #ffffff77;color:white;font-size:15px;backdrop-filter:blur(10px)}
+.motion-off *, .motion-off *:before,.motion-off *:after{animation-play-state:paused!important}.motion-off .letter{transition:none}.offscreen *{animation-play-state:paused!important}
+@media(max-width:1000px){.nav{gap:20px;font-size:12px}.brand small{display:none}.about-copy{margin-left:6%}.hero{min-height:700px}.hero-title{font-size:14vw}.fashion-word{height:16vw}.tech-grid{grid-template-columns:.65fr 5fr .65fr;height:480px}.people{gap:5vw}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:last-child{grid-column:1/-1}}
+@media(max-width:760px){body{padding:7px}.site{border-radius:19px}header{top:7px;left:7px;right:7px;height:78px;padding:18px 23px}.brand strong{font-size:21px}.brand svg{width:29px;height:29px}.brand{gap:8px}.nav{display:none}.menu-toggle{display:block;font-size:16px!important}.tools{gap:10px}.tools #language{font-size:10px}.tools #motion{width:32px;min-height:32px}.hero{height:calc(100svh - 14px);min-height:610px;max-height:900px;padding:140px 18px 155px}.fashion-word{height:20vw;margin-bottom:0}.hero-title{font-size:16vw;line-height:.95;letter-spacing:-.085em}.hero-sub{font-size:11px;margin-top:26px}.play-note{top:-76px;right:10px;font-size:10px;rotate:0deg}.play-note span{font-size:25px;display:inline;margin-left:12px}.hero-bottom{left:23px;right:23px;bottom:91px}.mix,.scroll-down{font-size:10px}.scroll-down i{width:32px;height:32px;font-size:17px}.ticker{height:66px}.ticker-track{gap:35px;font-size:20px}.about{padding-block:65px 75px}.about-top{margin-bottom:38px}.about-top h2{font-size:18vw}.orbit-sticker{width:74px;height:74px;font-size:9px;flex:none}.orbit-sticker span{font-size:24px}.about-copy{margin-left:0;font-size:23px;line-height:1.85;letter-spacing:-.04em}.about-copy p+p{margin-top:28px}.about-copy .aside{font-size:16px;line-height:1.9}.reaction{width:1.45em;height:1.45em;margin-inline:.1em}.about-signoff{font-size:11.5vw;margin-top:50px;line-height:1.07}.research{padding-block:60px;border-radius:22px}.section-top{display:block;margin-bottom:28px}.section-top h2{font-size:13vw}.section-top p{font-size:12px;margin-top:24px}.research .eyebrow{margin-bottom:20px;font-size:9px}.research-list{margin-top:32px}.research-item summary{grid-template-columns:22px 1fr 36px;gap:12px;padding:24px 0}.research-number{font-size:9px}.research-item summary strong{font-size:33px;letter-spacing:-.05em}.research-item summary small{font-size:11px;line-height:1.6;margin-top:7px}.research-plus{width:36px;height:36px;font-size:24px}.research-detail{grid-template-columns:1fr;padding:0 0 30px;gap:26px}.research-detail p{font-size:15px;line-height:1.9}.research-image{height:260px}.tags{gap:6px;margin-top:19px}.tags span{font-size:9px;padding:5px 9px}.works{padding-block:65px}.works .eyebrow{font-size:9px;margin-bottom:20px}.works h2{font-size:13vw}.gallery-tools{margin:28px 0 23px;display:block}.gallery-arrows{display:none}.filters button{font-size:9px;padding:9px 12px}.gallery-track{gap:16px}.work{flex-basis:78vw}.work-image{border-radius:16px}.work-caption h3{font-size:24px}.work-caption span{font-size:8px}.work p{font-size:10px}.gallery-footer p{font-size:9px;max-width:175px}.gallery-meter{width:85px}.film-section{padding-block:15px 65px}.film-heading{display:block;margin-bottom:24px}.film-heading h2{font-size:13vw}.film-heading p{margin-top:14px;font-size:9px}.film-stage{aspect-ratio:4/3;border-radius:17px}.film-play{width:75px;height:75px;font-size:11px}.film-caption{left:18px;right:18px;bottom:20px}.film-caption h3{font-size:21px}.film-caption small{font-size:8px}.tech{padding-block:15px 65px}.tech-top{display:block;margin-bottom:30px}.tech-top h2{font-size:13vw}.tech-top p{font-size:12px;max-width:320px;margin-top:24px}.tech-grid{grid-template-columns:1fr;height:420px;border-radius:17px}.tech-side{display:none}.tech-hud{font-size:7px;left:15px;right:15px}.tech-stage-title{font-size:8px;letter-spacing:.14em}.tech-controls{display:block;padding:0;margin-top:22px}.shape-switch{gap:7px}.shape-switch button{padding:8px 12px;font-size:10px;flex:1}.density{justify-content:space-between;margin-top:24px}.density input{width:62%}.tech-note{font-size:9px}.people{grid-template-columns:1fr;padding-block:65px;gap:50px;border-radius:22px}.people-photo{max-width:420px;margin:0 8px;padding:12px}.people-photo figcaption{font-size:10px;padding:14px 6px 5px}.people-sticker{width:70px;height:70px;right:-12px;top:-18px;font-size:32px}.people-copy .eyebrow{font-size:9px;margin-bottom:22px}.people-copy h2{font-size:13vw}.people-copy h3{font-size:21px;margin-top:20px}.people-copy p{font-size:14px}.archive{padding-block:65px}.archive h2{font-size:13vw;margin-bottom:27px}.archive-row{grid-template-columns:25px 1fr 24px;gap:12px;padding-block:20px}.archive-row b{font-size:30px}.archive-row small{grid-column:2;grid-row:2;font-size:11px}.archive-row .arrow{grid-column:3;grid-row:1/3;font-size:23px}.archive-row:hover{padding-inline:0}footer{padding-block:60px 25px;border-radius:22px}.footer-top h2{font-size:14.5vw}.footer-face{width:73px;height:73px}.footer-top{gap:10px;align-items:end}.footer-grid{grid-template-columns:1fr;gap:28px;margin-top:42px;padding-top:28px}.footer-grid>div:last-child{grid-column:auto}.footer-grid h3{font-size:9px;margin-bottom:10px}.footer-grid .email{font-size:24px}.footer-grid p,.footer-grid a{font-size:11px}.footer-bottom{font-size:8px;margin-top:42px}.cursor-progress{right:19px;bottom:18px;width:35px;height:35px;font-size:13px}dialog{width:calc(100vw - 14px);max-width:calc(100vw - 14px);max-height:96dvh;border-radius:16px}.viewer-body{grid-template-columns:1fr;padding:18px;gap:22px}.viewer-media{min-height:220px}.viewer-media img,.viewer-media video{max-height:52dvh}.viewer-info h2{font-size:30px;margin-bottom:16px}.viewer-info p{font-size:12px}.viewer-top{padding:10px 17px;font-size:9px}.viewer-bottom{padding:0 18px 22px;flex-wrap:wrap}.viewer-bottom button{font-size:10px}.viewer-info .credit{margin:15px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 
-.language-muted,.language .soft{color:#bcc6c8}
-.field-toggle{position:absolute;right:var(--gutter);bottom:30px;background:none;border:1px solid #637c89;padding:8px 12px;font-size:9px;letter-spacing:.07em;min-height:38px;color:#253f4e}
-.field-toggle[aria-pressed=false]{opacity:.7}
-.future-bottom{padding-bottom:28px}
-@media(max-width:760px){.field-toggle{bottom:20px}.future-bottom{padding-bottom:44px}}
-
-/* Keep the long opening title within the content grid on tablets and phones. */
-@media (min-width:761px) and (max-width:1080px){.hero h1{font-size:10.8vw}}
-@media (max-width:760px){.hero h1{font-size:12vw;line-height:.98}}
-</style>
-</head>
-<body>
-
-<a href="#main" class="skip">본문으로 이동 / Skip to content</a>
-<div class="progress" aria-hidden="true"></div>
-<header class="site-header">
- <a class="logo" href="#top" aria-label="PNU Fashion Design Lab 홈"><span class="logo-mark">FDL.</span><span class="logo-copy">FASHION DESIGN LAB<br>PUSAN NATIONAL UNIVERSITY</span></a>
- <nav class="desktop-nav" aria-label="주요 메뉴"><a href="#about">ABOUT</a><a href="#research">RESEARCH</a><a href="#works">WORKS</a><a href="#people">PEOPLE</a><a href="#contact">CONTACT ↗</a></nav>
- <div class="header-tools"><button type="button" class="language" id="language" aria-label="Switch to English">KR / <span class="soft">EN</span></button><button class="menu-toggle" id="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav"><i></i><i></i></button></div>
+dialog.theater{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border:0;border-radius:0;margin:0;background:#000;display:flex;flex-direction:column}dialog.theater .viewer-top{flex:none;height:60px}dialog.theater .viewer-body{display:block;padding:0;flex:1;min-height:0}dialog.theater .viewer-media{height:100%;min-height:0;display:flex;align-items:center;justify-content:center}dialog.theater .viewer-media video{width:100%;height:100%;max-height:100%;object-fit:contain}dialog.theater .viewer-info{display:none}dialog.theater .viewer-bottom{flex:none;height:60px;padding:10px 24px}dialog.theater .viewer-media p{display:none}
+</style></head><body>
+<a class="skip" href="#about">본문으로 이동 / Skip to content</a>
+<div class="site" id="top">
+<header>
+ <a class="brand" href="#top" aria-label="PNU Fashion Design Lab"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 3 37 18 53 12 46 29 58 39 40 42 39 59 27 46 12 55 15 37 1 29 19 24 15 7Z" fill="currentColor"/><circle cx="29" cy="30" r="7" fill="#0b0b0d"/></svg><span><strong>fdl.</strong><small>PUSAN NATIONAL UNIVERSITY</small></span></a>
+ <nav class="nav" aria-label="주요 메뉴"><a href="#works">work</a><a href="#about">about</a><a href="#research">research</a><a href="#people">people</a><a href="#contact">contact ↗</a></nav>
+ <div class="tools"><button id="motion" type="button" aria-label="동작 일시정지" aria-pressed="true">Ⅱ</button><button id="language" type="button" aria-label="Switch to English">KR / EN</button><button class="menu-toggle" id="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">☰</button></div>
 </header>
-<nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" hidden>
- <button type="button" id="menu-close" aria-label="메뉴 닫기">×</button>
- <ul><li><a href="#about">About the lab</a></li><li><a href="#research">Research</a></li><li><a href="#works">Selected works</a></li><li><a href="#people">People & archive</a></li><li><a href="#contact">Contact ↗</a></li></ul>
- <p class="micro">PUSAN NATIONAL UNIVERSITY<br>부산대학교 패션디자인랩</p>
-</nav>
-<main id="main">
-<section class="hero" id="top" aria-labelledby="hero-title">
- <video class="hero-video" id="hero-video" muted loop playsinline webkit-playsinline preload="metadata" poster="https://lidesheng.art/homepage-poster.jpg" aria-label="DESHENG LI 패션 포트폴리오 오프닝 영상">
-  <source src="https://lidesheng.art/homepage-loop.mp4" type="video/mp4">
- </video>
- <div class="hero-frame" aria-hidden="true"></div>
- <div class="hero-meta"><p class="micro"><span class="hero-indicator"></span>CREATIVITY / CULTURE / TECHNOLOGY</p><p class="micro">PUSAN, REPUBLIC OF KOREA<br>FASHION DESIGN LAB — EST. 2022</p></div>
- <div class="hero-title"><p class="hero-kicker" data-ko="부산대학교 패션디자인랩" data-en="Pusan National University · Fashion Design Lab">부산대학교 패션디자인랩</p><h1 id="hero-title"><span>FASHION</span><span class="second-line">BEYOND FORM.</span></h1></div>
- <p class="media-message" id="hero-message" hidden role="status"></p>
- <div class="hero-bottom">
-  <a href="#about"><b class="micro" data-ko="패션의 다음 가능성을 탐색하다" data-en="EXPLORE THE NEXT POSSIBILITY">패션의 다음 가능성을 탐색하다</b><span aria-hidden="true">↓</span></a>
-  <span class="hero-credit">OPENING FILM / DESHENG LI</span>
-  <div class="media-controls"><button type="button" class="round-button" id="hero-play" aria-label="영상 재생" aria-pressed="false"><span aria-hidden="true">▶</span></button><button type="button" class="round-button" id="hero-full" aria-label="영상 크게 보기"><span aria-hidden="true">⤢</span></button></div>
+<nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden><button class="close" id="menu-close" type="button" aria-label="메뉴 닫기">×</button><a href="#works">work.</a><a href="#about">about.</a><a href="#research">research.</a><a href="#people">people.</a><a href="#contact">say hello ↗</a><p class="eyebrow">PNU FASHION DESIGN LAB</p></nav>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+ <div class="hero-heading">
+  <p class="play-note"><b data-ko="글자를 움직여 보세요!" data-en="go on. play with the letters!">글자를 움직여 보세요!</b><span aria-hidden="true">↙</span></p>
+  <div class="fashion-word" aria-label="FASHION"><button type="button" class="letter" data-letter="0" aria-label="F — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><defs><linearGradient id="gf" x2=".5" y2="1"><stop stop-color="#ff9a79"/><stop offset="1" stop-color="#ff4d4f"/></linearGradient></defs><path d="M35 154V35H113M35 91H94" fill="none" stroke="url(#gf)" stroke-width="39" stroke-linejoin="round" stroke-linecap="round"/><path d="M25 146V39Q25 23 41 23H102M48 79H83" fill="none" stroke="#ffd3bd" stroke-width="5" stroke-linecap="round"/></svg></button><button type="button" class="letter" data-letter="1" aria-label="A — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><path d="M4 170 54 14 98 14 139 170H99L92 142H44L36 170ZM56 105H83L70 53Z" fill="#a2e8ff" fill-rule="evenodd"/><path d="M98 14 139 170H111L76 14Z" fill="#5db9e7"/><path d="M54 14 21 147" stroke="#def8ff" stroke-width="4"/></svg></button><button type="button" class="letter" data-letter="2" aria-label="S — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><path d="M106 40C79 5 10 23 27 66C41 98 106 77 111 116C117 156 43 185 18 145" fill="none" stroke="#c5ff35" stroke-width="37" stroke-linecap="round"/><path d="M102 28C73 10 25 25 27 49M107 111C117 150 58 177 30 157" fill="none" stroke="#efffb9" stroke-width="4" stroke-linecap="round"/></svg></button><button type="button" class="letter" data-letter="3" aria-label="H — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><path d="M14 18H51V76H93V18H129V171H93V111H51V171H14Z" fill="#a27aff"/><path d="M25 28V160M118 28V160M29 93H113" fill="none" stroke="#d7c4ff" stroke-width="2" stroke-dasharray="5 5"/><path d="M51 18 58 25V76H51M129 18 136 25V178H100L93 171H129Z" fill="#6944af"/></svg></button><button type="button" class="letter" data-letter="4" aria-label="I — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><path d="M67 13C82 13 89 25 85 43L74 161 67 180 59 161 48 43C45 25 52 13 67 13Z" fill="#f9f7e8"/><ellipse cx="67" cy="38" rx="6" ry="13" fill="#0b0b0d"/><path d="M68 39C111-10 129 44 106 70S15 109 37 151" fill="none" stroke="#ffd33e" stroke-width="5" stroke-linecap="round"/></svg></button><button type="button" class="letter" data-letter="5" aria-label="O — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><defs><radialGradient id="go" cx=".3" cy=".25" r=".8"><stop stop-color="#ffd2f7"/><stop offset=".55" stop-color="#f7a3e9"/><stop offset="1" stop-color="#ce5bc4"/></radialGradient></defs><ellipse cx="70" cy="94" rx="68" ry="82" fill="url(#go)"/><ellipse cx="70" cy="94" rx="53" ry="66" fill="none" stroke="#ec85dc" stroke-width="3"/><g fill="#321b3b"><circle cx="52" cy="77" r="9"/><circle cx="87" cy="77" r="9"/><circle cx="52" cy="112" r="9"/><circle cx="87" cy="112" r="9"/></g><path d="M52 77 87 112M87 77 52 112" stroke="#fff5bd" stroke-width="4" stroke-linecap="round"/><path d="M28 43Q44 22 65 23" stroke="white" opacity=".8" stroke-width="5" fill="none" stroke-linecap="round"/></svg></button><button type="button" class="letter" data-letter="6" aria-label="N — drag or click"><svg viewBox="0 0 140 190" aria-hidden="true"><path d="M20 164V27L119 164V27" fill="none" stroke="#ffb84d" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 152V31M35 44 104 140M113 32V120" fill="none" stroke="#ffe5b5" stroke-width="4" stroke-linecap="round"/></svg></button></div>
+  <h1 class="hero-title" id="hero-title"><span class="sr-only">Fashion </span>design lab.</h1>
+  <p class="hero-sub"><strong data-ko="부산대학교 패션디자인랩" data-en="Pusan National University · Fashion Design Lab">부산대학교 패션디자인랩</strong>curious minds. unexpected fashion.</p>
+ </div>
+ <div class="hero-bottom"><button class="mix" id="mix" type="button">mix it up ↗</button><a class="scroll-down" href="#about"><span data-ko="연구실 만나보기" data-en="meet the lab">연구실 만나보기</span><i aria-hidden="true">↓</i></a></div>
+ <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>busan, korea</span><span class="star">✦</span><span>fashion + curiosity</span><span class="star">✦</span><span>pnu fdl.</span><span class="star">✦</span><span>busan, korea</span><span class="star">✦</span><span>fashion + curiosity</span><span class="star">✦</span><span>pnu fdl.</span><span class="star">✦</span><span>busan, korea</span><span class="star">✦</span><span>fashion + curiosity</span><span class="star">✦</span><span>pnu fdl.</span><span class="star">✦</span><span>busan, korea</span><span class="star">✦</span><span>fashion + curiosity</span><span class="star">✦</span><span>pnu fdl.</span><span class="star">✦</span></div></div>
+</section>
+<section class="about pad" id="about" aria-labelledby="about-title">
+ <div class="about-top"><h2 id="about-title">hi, we're fdl.</h2><div class="orbit-sticker" aria-hidden="true"><div><span>✳</span>KEEP<br>WONDERING</div></div></div>
+ <div class="about-copy">
+  <p><button type="button" class="reaction wave" data-reaction="안녕!" data-reaction-en="hello!" aria-label="안녕!"><span class="emoji" aria-hidden="true">👋</span></button><span data-ko="부산대학교 패션디자인랩은 " data-en="At PNU Fashion Design Lab, ">부산대학교 패션디자인랩은 </span><button type="button" class="reaction " data-reaction="함께 상상해요!" data-reaction-en="stay curious!" aria-label="함께 상상해요!"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" fill="#f7a3e9"/><g class="eyes"><ellipse cx="35" cy="40" rx="10" ry="15" fill="#fff"/><ellipse cx="66" cy="40" rx="10" ry="15" fill="#fff"/><circle cx="38" cy="43" r="5" fill="#17111b"/><circle cx="69" cy="43" r="5" fill="#17111b"/></g><path d="M27 65Q50 91 75 62" fill="none" stroke="#17111b" stroke-width="6" stroke-linecap="round"/></svg></button><span data-ko="AI와 다중감각을 활용한 디자인 창의성, " data-en="we explore design creativity through AI and multisensory approaches, ">AI와 다중감각을 활용한 디자인 창의성, </span><button type="button" class="reaction float" data-reaction="새로운 아이디어!" data-reaction-en="new ideas!" aria-label="새로운 아이디어!"><span class="emoji" aria-hidden="true">🧠</span></button><span data-ko="지속가능한 의복 문화와 세대별 옷 입기 실천, " data-en="sustainable clothing cultures and dressing practices across generations, ">지속가능한 의복 문화와 세대별 옷 입기 실천, </span><button type="button" class="reaction float" data-reaction="함께 자라요!" data-reaction-en="let's grow!" aria-label="함께 자라요!"><span class="emoji" aria-hidden="true">🌱</span></button><span data-ko="그리고 AX·메타버스·웨어러블·로봇 기술을 통한 미래의복과 패션의 확장을 연구합니다." data-en="and the expansion of future clothing and fashion through AX, metaverse, wearable and robotic technologies.">그리고 AX·메타버스·웨어러블·로봇 기술을 통한 미래의복과 패션의 확장을 연구합니다.</span><button type="button" class="reaction float" data-reaction="미래를 입어볼까요?" data-reaction-en="wear the future?" aria-label="미래를 입어볼까요?"><span class="emoji" aria-hidden="true">🤖</span></button></p>
+  <p class="aside"><button type="button" class="reaction float" data-reaction="한 땀의 아이디어" data-reaction-en="one stitch at a time" aria-label="한 땀의 아이디어"><span class="emoji" aria-hidden="true">🪡</span></button><span data-ko="생각을 디자인으로, 디자인을 경험으로. 우리에게 패션은 계속 질문하고, 만들고, 새롭게 만나는 즐거운 실험입니다." data-en="From ideas to design, and from design to experience. For us, fashion is an ongoing experiment in asking, making and discovering.">생각을 디자인으로, 디자인을 경험으로. 우리에게 패션은 계속 질문하고, 만들고, 새롭게 만나는 즐거운 실험입니다.</span><button type="button" class="reaction twinkle" data-reaction="반짝이는 가능성" data-reaction-en="so many possibilities" aria-label="반짝이는 가능성"><span class="emoji" aria-hidden="true">✨</span></button></p>
+ </div>
+ <p class="about-signoff">we ask. we make.<br><em>we imagine what's next.</em> <button type="button" class="reaction wave" data-reaction="같이 해요!" data-reaction-en="let's do it!" aria-label="같이 해요!"><span class="emoji" aria-hidden="true">✌️</span></button></p>
+</section>
+<section class="research pad" id="research" aria-labelledby="research-title">
+ <p class="eyebrow">01 / THREE WAYS TO EXPLORE</p>
+ <div class="section-top"><h2 id="research-title">big questions.<br><em>open minds.</em></h2><p data-ko="세 가지 연구 방향에서 패션의 새로운 가능성을 탐색합니다. 각 주제를 눌러 살펴보세요." data-en="Three directions, countless possibilities. Open a topic to explore our research.">세 가지 연구 방향에서 패션의 새로운 가능성을 탐색합니다. 각 주제를 눌러 살펴보세요.</p></div>
+ <div class="research-list">
+  <details class="research-item" open><summary><span class="research-number">01</span><span><strong>imagination.</strong><small data-ko="디자인 창의성" data-en="Design Creativity">디자인 창의성</small></span><span class="research-plus" aria-hidden="true">+</span></summary><div class="research-detail"><div><p data-ko="AI를 활용한 패션디자인 해석과 재구성, 다중감각 패션으로의 전환을 연구합니다." data-en="We study the interpretation and reconstruction of fashion design using AI, and the transition toward multisensory fashion.">AI를 활용한 패션디자인 해석과 재구성, 다중감각 패션으로의 전환을 연구합니다.</p><div class="tags"><span>AI + CREATIVITY</span><span>MULTISENSORY FASHION</span><span>RECONSTRUCTION</span></div></div><div class="research-image"><img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-03-metallic-space.jpg" alt="DESHENG LI의 구조 재구성 디자인" loading="lazy"><small>DESIGN VISUAL / DESHENG LI</small></div></div></details>
+  <details class="research-item"><summary><span class="research-number">02</span><span><strong>everyday life.</strong><small data-ko="패션문화와 사회" data-en="Fashion Culture & Society">패션문화와 사회</small></span><span class="research-plus" aria-hidden="true">+</span></summary><div class="research-detail"><div><p data-ko="지속가능한 의복 문화와 세대에 따른 의복 실천을 연구합니다." data-en="We investigate sustainable clothing cultures and clothing practices across generations.">지속가능한 의복 문화와 세대에 따른 의복 실천을 연구합니다.</p><div class="tags"><span>SUSTAINABILITY</span><span>GENERATIONS</span><span>CLOTHING PRACTICES</span></div></div><div class="research-image"><img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp" alt="RESILIENCE 업사이클링 디자인 작품" loading="lazy"><small>RESILIENCE / LAB ARCHIVE</small></div></div></details>
+  <details class="research-item"><summary><span class="research-number">03</span><span><strong>tomorrow.</strong><small data-ko="미래의복과 기술" data-en="Future Clothing & Technology">미래의복과 기술</small></span><span class="research-plus" aria-hidden="true">+</span></summary><div class="research-detail"><div><p data-ko="AX, 메타버스, 몸과 웨어러블 기술의 관계, 일상형 웨어러블 로봇, 휴머노이드를 활용한 패션의 확장을 연구합니다." data-en="We explore AX, the metaverse, the relationship between the body and wearable technologies, everyday wearable robots, and the expansion of fashion through humanoids.">AX, 메타버스, 몸과 웨어러블 기술의 관계, 일상형 웨어러블 로봇, 휴머노이드를 활용한 패션의 확장을 연구합니다.</p><div class="tags"><span>AX</span><span>METAVERSE</span><span>WEARABLES</span><span>ROBOTICS</span></div></div><div class="research-image concept"><span class="robot" aria-hidden="true">🤖</span><span class="mini-tag">HUMAN + TECH</span><span class="mini-tag">FASHION, EXPANDED</span><span class="mini-tag">WHAT IF?</span></div></div></details>
  </div>
 </section>
-<section class="intro shell" id="about" aria-labelledby="about-title">
- <p class="section-label">01 / ABOUT THE LAB</p>
- <div data-reveal>
-  <h2 id="about-title"><span data-ko="창의성에서 일상으로," data-en="From imagination to everyday life.">창의성에서 일상으로,</span><br><em data-ko="의복에서 미래로." data-en="From clothing to possibility.">의복에서 미래로.</em></h2>
-  <div class="intro-copy">
-   <p data-ko="부산대학교 패션디자인랩은 AI와 다중감각을 활용한 디자인 창의성, 지속가능한 의복 문화와 세대별 옷 입기 실천, 그리고 AX·메타버스·웨어러블·로봇 기술을 통한 미래의복과 패션의 확장을 연구합니다." data-en="PNU Fashion Design Lab explores design creativity through AI and multisensory approaches, sustainable clothing cultures and dressing practices across generations, and the expansion of future clothing and fashion through AX, metaverse, wearable and robotic technologies.">부산대학교 패션디자인랩은 AI와 다중감각을 활용한 디자인 창의성, 지속가능한 의복 문화와 세대별 옷 입기 실천, 그리고 AX·메타버스·웨어러블·로봇 기술을 통한 미래의복과 패션의 확장을 연구합니다.</p>
-   <p class="english-note">A space for creative fashion practice and academic inquiry.<br><br>We explore how fashion is imagined, experienced and lived — across physical and digital worlds.</p>
-  </div>
-  <div class="intro-foot"><span>THREE RESEARCH DIRECTIONS.<br>ONE EXPANDING FIELD.</span><span>FASHION DESIGN LAB<br>PUSAN NATIONAL UNIVERSITY</span></div>
- </div>
+<section class="works" id="works" aria-labelledby="works-title">
+ <div class="pad"><p class="eyebrow">02 / SELECTED WORKS</p><div class="section-top"><h2 id="works-title">ideas out<br><span>in the wild.</span></h2><p data-ko="연구실의 공동 작업부터 디자이너의 시각 실험까지. 옆으로 넘기고, 작품을 눌러 더 가까이 만나보세요." data-en="From collaborative lab projects to visual experiments. Swipe through, then open a work to look closer.">연구실의 공동 작업부터 디자이너의 시각 실험까지. 옆으로 넘기고, 작품을 눌러 더 가까이 만나보세요.</p></div><div class="gallery-tools"><div class="filters" role="group" aria-label="작품 필터"><button type="button" data-filter="all" aria-pressed="true" data-ko="전체 / ALL" data-en="ALL WORKS">전체 / ALL</button><button type="button" data-filter="lab" aria-pressed="false" data-ko="연구실 작업" data-en="LAB WORKS">연구실 작업</button><button type="button" data-filter="design" aria-pressed="false" data-ko="디자인 실험" data-en="DESIGN STUDIES">디자인 실험</button><button type="button" data-filter="film" aria-pressed="false" data-ko="필름" data-en="FILMS">필름</button></div><div class="gallery-arrows"><button id="gallery-prev" type="button" aria-label="이전 작품으로 이동">←</button><button id="gallery-next" type="button" aria-label="다음 작품으로 이동">→</button></div></div></div>
+ <div class="gallery-track" id="gallery-track" role="region" aria-label="선택 작품 전시장" tabindex="0"><article class="work" data-category="design"><button type="button" class="work-image" data-work="metallic" aria-label="METALLIC SPACE 자세히 보기"><img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-03-metallic-space.jpg" alt="금속 조형물 앞에 선 모델의 회색 체크 해체주의 패션 디자인" loading="lazy" draggable="false"><span class="work-open" aria-hidden="true">↗</span><span class="image-unavailable" hidden>이미지 원문 보기 ↗</span></button><div class="work-caption"><h3>METALLIC SPACE</h3><span>01 / DESIGN</span></div><p>Design &amp; visual · DESHENG LI</p></article>
+<article class="work" data-category="lab"><button type="button" class="work-image" data-work="resilience" aria-label="RESILIENCE 자세히 보기"><img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp" alt="RESILIENCE 업사이클링 리폼 컨테스트 출품작" loading="lazy" draggable="false"><span class="work-open" aria-hidden="true">↗</span><span class="image-unavailable" hidden>이미지 원문 보기 ↗</span></button><div class="work-caption"><h3>RESILIENCE</h3><span>02 / LAB</span></div><p>류채희 · 안세정 · 이주연 · 장주연 · 최윤서</p></article>
+<article class="work" data-category="design"><button type="button" class="work-image" data-work="glacial" aria-label="GLACIAL MONOLITH 자세히 보기"><img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-10-ice-monolith.jpg" alt="빙하와 검은 조형물을 배경으로 한 비대칭 해체주의 의상" loading="lazy" draggable="false"><span class="work-open" aria-hidden="true">↗</span><span class="image-unavailable" hidden>이미지 원문 보기 ↗</span></button><div class="work-caption"><h3>GLACIAL MONOLITH</h3><span>03 / DESIGN</span></div><p>Design &amp; visual · DESHENG LI</p></article>
+<article class="work" data-category="lab"><button type="button" class="work-image" data-work="lofficiel" aria-label="L’OFFICIEL × DESIGN 자세히 보기"><img src="https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120550606_50318.jpg" alt="L’OFFICIEL Fashion Magazine와 China Textile City 패션디자인 공모전 작품" loading="lazy" draggable="false"><span class="work-open" aria-hidden="true">↗</span><span class="image-unavailable" hidden>이미지 원문 보기 ↗</span></button><div class="work-caption"><h3>L’OFFICIEL × DESIGN</h3><span>04 / LAB</span></div><p>Designer · LIDESHENG</p></article>
+<article class="work" data-category="design"><button type="button" class="work-image" data-work="neon" aria-label="NEON INSTALLATION 자세히 보기"><img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-09-neon-installation.jpg?v=20261025-hands" alt="네온 설치 공간과 네이비 해체주의 패션 디자인" loading="lazy" draggable="false"><span class="work-open" aria-hidden="true">↗</span><span class="image-unavailable" hidden>이미지 원문 보기 ↗</span></button><div class="work-caption"><h3>NEON INSTALLATION</h3><span>05 / DESIGN</span></div><p>Design &amp; visual · DESHENG LI</p></article>
+<article class="work" data-category="film"><button type="button" class="work-image" data-work="offbalance" aria-label="OFF BALANCE 자세히 보기"><img src="https://lidesheng.art/film-off-balance-20261014.jpg" alt="Off Balance 패션 영상의 한 장면" loading="lazy" draggable="false"><span class="work-open" aria-hidden="true">▶</span><span class="image-unavailable" hidden>이미지 원문 보기 ↗</span></button><div class="work-caption"><h3>OFF BALANCE</h3><span>06 / FILM</span></div><p>Fashion film · DESHENG LI</p></article></div>
+ <div class="gallery-footer pad"><p><span id="gallery-count" role="status">01 / 06</span> — <span data-ko="옆으로 드래그해 보세요" data-en="drag to explore">옆으로 드래그해 보세요</span></p><div class="gallery-meter" aria-hidden="true"><span id="gallery-meter"></span></div><a href="https://fashiondesign.pusan.ac.kr/fashiondesign/71514/subview.do" target="_blank" rel="noopener noreferrer" class="eyebrow">lab archive ↗</a></div>
 </section>
-<section class="research shell" id="research" aria-labelledby="research-title">
- <div class="section-head"><div><p class="section-label">02 / RESEARCH DIRECTIONS</p><h2 id="research-title">Fields of inquiry.</h2></div><p class="section-note" data-ko="창의성, 문화, 기술의 연결에서 패션의 새로운 질문을 발견합니다." data-en="New questions emerge where creativity, culture and technology meet.">창의성, 문화, 기술의 연결에서 패션의 새로운 질문을 발견합니다.</p></div>
- <div class="research-tabs" role="tablist" aria-label="연구 방향">
-  <button class="research-tab" id="tab-creativity" type="button" role="tab" aria-selected="true" aria-controls="panel-creativity" tabindex="0"><span class="tab-number">01</span><span><strong data-ko="디자인 창의성" data-en="Design Creativity">디자인 창의성</strong><small>DESIGN CREATIVITY</small></span></button>
-  <button class="research-tab" id="tab-culture" type="button" role="tab" aria-selected="false" aria-controls="panel-culture" tabindex="-1"><span class="tab-number">02</span><span><strong data-ko="패션문화와 사회" data-en="Fashion Culture & Society">패션문화와 사회</strong><small>FASHION CULTURE & SOCIETY</small></span></button>
-  <button class="research-tab" id="tab-future" type="button" role="tab" aria-selected="false" aria-controls="panel-future" tabindex="-1"><span class="tab-number">03</span><span><strong data-ko="미래의복과 기술" data-en="Future Clothing & Technology">미래의복과 기술</strong><small>FUTURE CLOTHING & TECHNOLOGY</small></span></button>
- </div>
- <div class="research-panel" id="panel-creativity" role="tabpanel" aria-labelledby="tab-creativity" tabindex="0">
-  <div class="research-art"><img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-03-metallic-space.jpg" alt="DESHENG LI의 회색 체크 구조 재구성 디자인" loading="lazy"><span class="art-label">DESIGN VISUAL / DESHENG LI</span></div>
-  <div class="research-text"><p class="micro">01 / REINTERPRET. RECONSTRUCT. SENSE.</p><h3 data-ko="패션을 해석하고, 감각을 확장하다." data-en="Reinterpret fashion. Expand perception.">패션을 해석하고, 감각을 확장하다.</h3><p data-ko="AI를 활용한 패션디자인 해석과 재구성, 다중감각 패션으로의 전환을 연구합니다." data-en="We study the interpretation and reconstruction of fashion design using AI, and the transition toward multisensory fashion.">AI를 활용한 패션디자인 해석과 재구성, 다중감각 패션으로의 전환을 연구합니다.</p><ul class="keywords"><li>AI & CREATIVITY</li><li>RECONSTRUCTION</li><li>MULTISENSORY FASHION</li></ul><a class="arrow-link" href="#works" data-filter-link="design"><span data-ko="디자인 탐색 보기" data-en="Explore design studies">디자인 탐색 보기</span><span aria-hidden="true">↗</span></a></div>
- </div>
- <div class="research-panel" id="panel-culture" role="tabpanel" aria-labelledby="tab-culture" tabindex="0" hidden>
-  <div class="research-art culture-art"><img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp" alt="RESILIENCE 연구실 업사이클링 디자인 작품" loading="lazy"><span class="art-label">RESILIENCE / LAB DESIGN ARCHIVE</span></div>
-  <div class="research-text"><p class="micro">02 / CLOTHING AS A LIVED PRACTICE</p><h3 data-ko="옷을 입는 방식, 함께 살아가는 문화." data-en="How we dress. How we live together.">옷을 입는 방식, 함께 살아가는 문화.</h3><p data-ko="지속가능한 의복 문화와 세대에 따른 의복 실천을 연구합니다." data-en="We investigate sustainable clothing cultures and clothing practices across generations.">지속가능한 의복 문화와 세대에 따른 의복 실천을 연구합니다.</p><ul class="keywords"><li>SUSTAINABILITY</li><li>GENERATIONS</li><li>CLOTHING PRACTICES</li></ul><a class="arrow-link" href="#works" data-filter-link="lab"><span data-ko="연구실 디자인 아카이브" data-en="Explore the lab archive">연구실 디자인 아카이브</span><span aria-hidden="true">↗</span></a></div>
- </div>
- <div class="research-panel" id="panel-future" role="tabpanel" aria-labelledby="tab-future" tabindex="0" hidden>
-  <div class="research-art future-art"><svg viewBox="0 0 500 500" aria-hidden="true"><g class="orbit"><circle cx="250" cy="250" r="195"/><ellipse cx="250" cy="250" rx="115" ry="195" transform="rotate(45 250 250)"/><ellipse cx="250" cy="250" rx="115" ry="195" transform="rotate(-45 250 250)"/><ellipse cx="250" cy="250" rx="195" ry="75"/><circle cx="250" cy="55" r="4" fill="#c2e7fa"/><circle cx="445" cy="250" r="3" fill="#c2e7fa"/></g><path d="M250 25V475M25 250H475" stroke-dasharray="2 9"/></svg><p class="center-label"><strong>BODY +</strong>PHYSICAL ↔ DIGITAL<br>HUMAN ↔ TECHNOLOGY</p><span class="art-label" data-ko="연구 방향을 표현한 추상 시각화" data-en="ABSTRACT VISUALIZATION OF A RESEARCH DIRECTION">연구 방향을 표현한 추상 시각화</span></div>
-  <div class="research-text"><p class="micro">03 / BEYOND THE PHYSICAL</p><h3 data-ko="몸과 기술, 패션의 다음 경계." data-en="Body and technology. Fashion’s next boundary.">몸과 기술, 패션의 다음 경계.</h3><p data-ko="AX, 메타버스, 몸과 웨어러블 기술의 관계, 일상형 웨어러블 로봇, 휴머노이드를 활용한 패션의 확장을 연구합니다." data-en="We explore AX, the metaverse, the relationship between the body and wearable technologies, everyday wearable robots, and the expansion of fashion through humanoids.">AX, 메타버스, 몸과 웨어러블 기술의 관계, 일상형 웨어러블 로봇, 휴머노이드를 활용한 패션의 확장을 연구합니다.</p><ul class="keywords"><li>AX</li><li>METAVERSE</li><li>WEARABLES</li><li>ROBOTICS</li><li>HUMANOIDS</li></ul><a class="arrow-link" href="#future"><span data-ko="미래의복의 가능성" data-en="Future possibilities">미래의복의 가능성</span><span aria-hidden="true">↓</span></a></div>
- </div>
+<section class="film-section pad" id="film" aria-labelledby="film-title">
+ <div class="film-heading"><h2 id="film-title">fashion, in motion.</h2><p>FASHION FILM / DESHENG LI</p></div>
+ <div class="film-stage"><video id="lab-film" muted loop playsinline preload="metadata" poster="https://lidesheng.art/homepage-poster.jpg" aria-label="DESHENG LI의 패션 포트폴리오 영상"><source src="https://lidesheng.art/homepage-loop.mp4" type="video/mp4"></video><button type="button" class="film-play" id="open-film">PLAY<br>THE FILM ↗</button><div class="film-caption"><div><small>MOVING IMAGE / 01</small><h3>Beyond form.</h3></div><button id="film-pause" type="button" aria-label="영상 재생" aria-pressed="false">▶</button></div></div>
 </section>
-<section class="works shell" id="works" aria-labelledby="works-title">
- <div class="section-head"><div><p class="section-label">03 / SELECTED WORKS</p><h2 id="works-title">Ideas, made visible.</h2></div><p class="section-note" data-ko="디자인, 실천, 움직이는 이미지. 연구실과 디자이너의 작업을 함께 살펴봅니다." data-en="Design, practice and moving images. Explore work from the lab and the designer’s portfolio.">디자인, 실천, 움직이는 이미지. 연구실과 디자이너의 작업을 함께 살펴봅니다.</p></div>
- <div class="filters" role="group" aria-label="작품 필터"><button type="button" data-filter="all" aria-pressed="true" data-ko="전체 / ALL" data-en="ALL WORKS">전체 / ALL</button><button type="button" data-filter="lab" aria-pressed="false" data-ko="연구실 아카이브" data-en="LAB ARCHIVE">연구실 아카이브</button><button type="button" data-filter="design" aria-pressed="false" data-ko="디자인 탐색" data-en="DESIGN EXPLORATION">디자인 탐색</button><button type="button" data-filter="film" aria-pressed="false" data-ko="패션 필름" data-en="FASHION FILM">패션 필름</button></div>
- <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
- <div class="work-grid">
-<article class="work portrait" data-category="design">
-  <button class="work-image" type="button" data-work="metallic" aria-label="METALLIC SPACE 자세히 보기">
-    <img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-03-metallic-space.jpg" alt="금속 조형물 앞에 선 모델의 회색 체크 해체주의 패션 디자인" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">01 / DESIGN EXPLORATION</p><h3>METALLIC SPACE</h3><p class="work-subtitle" data-ko="구조의 재구성" data-en="METALLIC SPACE">구조의 재구성</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">Design &amp; visual · DESHENG LI</p>
-</article>
-
-<article class="work landscape" data-category="lab">
-  <button class="work-image" type="button" data-work="resilience" aria-label="RESILIENCE 자세히 보기">
-    <img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp" alt="RESILIENCE 업사이클링 리폼 컨테스트 출품작" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">02 / LAB ARCHIVE</p><h3>RESILIENCE</h3><p class="work-subtitle" data-ko="지속가능성을 입다" data-en="RESILIENCE">지속가능성을 입다</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">류채희 · 안세정 · 이주연 · 장주연 · 최윤서</p>
-</article>
-
-<article class="work landscape" data-category="lab">
-  <button class="work-image" type="button" data-work="ocean" aria-label="OCEAN’S BREATH 자세히 보기">
-    <img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905922961100.tmp" alt="Ocean’s Breath-PUS 부산국제디자인어워드 출품작" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">03 / LAB ARCHIVE</p><h3>OCEAN’S BREATH</h3><p class="work-subtitle" data-ko="Ocean’s Breath-PUS" data-en="OCEAN’S BREATH">Ocean’s Breath-PUS</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">리더셩 · 위샤오첸 · 양샤오치엔 · 류채희</p>
-</article>
-
-<article class="work portrait" data-category="design">
-  <button class="work-image" type="button" data-work="glacial" aria-label="GLACIAL MONOLITH 자세히 보기">
-    <img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-10-ice-monolith.jpg" alt="빙하와 검은 조형물을 배경으로 한 비대칭 해체주의 의상" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">04 / DESIGN EXPLORATION</p><h3>GLACIAL MONOLITH</h3><p class="work-subtitle" data-ko="형태와 환경의 경계" data-en="GLACIAL MONOLITH">형태와 환경의 경계</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">Design &amp; visual · DESHENG LI</p>
-</article>
-
-<article class="work portrait" data-category="lab">
-  <button class="work-image" type="button" data-work="lofficiel" aria-label="L’OFFICIEL × DESIGN 자세히 보기">
-    <img src="https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120550606_50318.jpg" alt="L’OFFICIEL Fashion Magazine와 China Textile City 패션디자인 공모전 작품" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">05 / LAB ARCHIVE</p><h3>L’OFFICIEL × DESIGN</h3><p class="work-subtitle" data-ko="패션디자인 마스터스 공모전" data-en="L’OFFICIEL × DESIGN">패션디자인 마스터스 공모전</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">Designer · LIDESHENG</p>
-</article>
-
-<article class="work portrait" data-category="design">
-  <button class="work-image" type="button" data-work="neon" aria-label="NEON INSTALLATION 자세히 보기">
-    <img src="https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-09-neon-installation.jpg?v=20261025-hands" alt="네온 설치 공간과 네이비 해체주의 패션 디자인" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">06 / DESIGN EXPLORATION</p><h3>NEON INSTALLATION</h3><p class="work-subtitle" data-ko="의복과 디지털 공간" data-en="NEON INSTALLATION">의복과 디지털 공간</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">Design &amp; visual · DESHENG LI</p>
-</article>
-
-<article class="work landscape" data-category="film">
-  <button class="work-image" type="button" data-work="offbalance" aria-label="OFF BALANCE 자세히 보기">
-    <img src="https://lidesheng.art/film-off-balance-20261014.jpg" alt="Off Balance 패션 영상의 한 장면" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">▶</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">07 / MOVING IMAGE</p><h3>OFF BALANCE</h3><p class="work-subtitle" data-ko="패션을 움직이는 이미지로" data-en="OFF BALANCE">패션을 움직이는 이미지로</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">Fashion film · DESHENG LI</p>
-</article>
-
-<article class="work landscape" data-category="lab">
-  <button class="work-image" type="button" data-work="ocean-detail" aria-label="OCEAN / DETAIL 자세히 보기">
-    <img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905924932100.tmp" alt="Ocean’s Breath-PUS 작품의 두 번째 전시 이미지" loading="lazy" decoding="async">
-    <span class="work-open" aria-hidden="true">↗</span>
-    <span class="image-unavailable" hidden>이미지 원문 보기 ↗</span>
-  </button>
-  <div class="work-caption"><div><p class="micro">08 / LAB ARCHIVE</p><h3>OCEAN / DETAIL</h3><p class="work-subtitle" data-ko="Ocean’s Breath-PUS · 디테일" data-en="OCEAN / DETAIL">Ocean’s Breath-PUS · 디테일</p></div><span class="work-mark" aria-hidden="true">+</span></div>
-  <p class="credit">리더셩 · 위샤오첸 · 양샤오치엔 · 류채희</p>
-</article></div>
- <div class="works-end"><p data-ko="각 작품의 원본과 디자이너 정보를 유지했습니다. 이미지를 선택하면 작품 설명과 공식 출처를 확인할 수 있습니다." data-en="Original works and designer credits are preserved. Select an image to explore its context and original source.">각 작품의 원본과 디자이너 정보를 유지했습니다. 이미지를 선택하면 작품 설명과 공식 출처를 확인할 수 있습니다.</p><a class="arrow-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71514/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="전체 연구실 작품 보기" data-en="View the full lab archive">전체 연구실 작품 보기</span><span aria-hidden="true">↗</span></a></div>
+<section class="tech pad" id="future" aria-labelledby="future-title">
+ <div class="tech-top"><h2 id="future-title">the future<br><em>is fluid.</em></h2><p data-ko="디지털 공간, 몸, 그리고 의복. 화면을 드래그해 회전하고, 형태를 바꾸며 새로운 가능성을 상상해 보세요." data-en="Digital space, the body, and clothing. Drag to rotate, change the form, and imagine new possibilities.">디지털 공간, 몸, 그리고 의복. 화면을 드래그해 회전하고, 형태를 바꾸며 새로운 가능성을 상상해 보세요.</p></div>
+ <div class="tech-grid"><div class="tech-side" aria-hidden="true"><p>AX / METAVERSE / HUMAN + TECH</p></div><div class="particle-stage" id="particle-stage"><canvas id="particle-field" aria-label="드래그와 형태 버튼으로 조작하는 3D 입자 시각화"></canvas><div class="tech-hud"><span>FDL / DIGITAL EXPERIMENT</span><b id="form-label">01 — SPHERE</b></div><p class="tech-stage-title">INTO THE POSSIBLE.</p></div><div class="tech-side" aria-hidden="true"><p>WEARABLES / ROBOTICS / NEXT FORMS</p></div></div>
+ <div class="tech-controls"><div class="shape-switch" role="group" aria-label="입자 형태 선택"><button type="button" data-shape="sphere" aria-pressed="true" data-ko="구체" data-en="SPHERE">구체</button><button type="button" data-shape="fabric" aria-pressed="false" data-ko="패브릭" data-en="FABRIC">패브릭</button><button type="button" data-shape="dress" aria-pressed="false" data-ko="실루엣" data-en="SILHOUETTE">실루엣</button></div><label class="density"><span data-ko="움직임의 속도" data-en="MOTION SPEED">움직임의 속도</span><input type="range" id="field-speed" min="0" max="100" value="35" aria-label="입자 움직임 속도"></label></div><p class="tech-note" data-ko="연구 방향에서 영감을 받은 인터랙티브 시각 실험입니다." data-en="An interactive visual experiment inspired by the lab’s research directions.">연구 방향에서 영감을 받은 인터랙티브 시각 실험입니다.</p>
 </section>
-<section class="future" id="future" aria-labelledby="future-title">
- <canvas id="fabric-field" aria-hidden="true"></canvas><button class="field-toggle" id="field-toggle" type="button" aria-pressed="true" aria-label="배경 움직임 일시정지">MOTION ON / OFF</button>
- <p class="section-label">04 / FUTURE CLOTHING</p><p class="future-caption" data-ko="의복의 확장을 상상하는 디지털 조형" data-en="A DIGITAL FORM IMAGINING THE EXPANSION OF CLOTHING">의복의 확장을 상상하는 디지털 조형</p>
- <h2 id="future-title"><span>BEYOND</span><span>THE HUMAN</span><span>SILHOUETTE.</span></h2>
- <div class="future-bottom"><p data-ko="몸의 감각과 기술의 가능성이 만나는 곳. 의복의 경험은 물리적 형태 너머로 확장됩니다." data-en="Where embodied senses meet technological possibilities. The experience of clothing extends beyond physical form.">몸의 감각과 기술의 가능성이 만나는 곳. 의복의 경험은 물리적 형태 너머로 확장됩니다.</p><p class="micro">AX / METAVERSE / WEARABLES<br>EVERYDAY WEARABLE ROBOTS / HUMANOIDS</p></div>
+<section class="people pad" id="people" aria-labelledby="people-title">
+ <figure class="people-photo"><img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/images/prof.jpg" alt="이윤경 교수의 컬러 프로필 사진" loading="lazy"><figcaption>PROF. LEE, YOON KYUNG / PNU</figcaption><span class="people-sticker" aria-hidden="true">✳</span></figure>
+ <div class="people-copy"><p class="eyebrow">03 / THE PEOPLE BEHIND THE IDEAS</p><h2 id="people-title">meet<br>the lab.</h2><h3 data-ko="이윤경 교수 / Yoon Kyung Lee" data-en="Professor Yoon Kyung Lee">이윤경 교수 / Yoon Kyung Lee</h3><p data-ko="패션디자인의 창의성과 지속가능성을 중심으로 감정, AI 기술, 신경과학과의 관계를 탐구합니다. 디자인 실천과 학술 연구를 연결하며 패션의 새로운 가능성을 모색합니다." data-en="Her research connects creativity and sustainability in fashion design with emotion, AI technology and neuroscience, bringing creative practice into dialogue with academic inquiry.">패션디자인의 창의성과 지속가능성을 중심으로 감정, AI 기술, 신경과학과의 관계를 탐구합니다. 디자인 실천과 학술 연구를 연결하며 패션의 새로운 가능성을 모색합니다.</p><div class="links"><a class="line-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71508/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="교수 소개" data-en="Professor profile">교수 소개</span><span class="arrow">↗</span></a><a class="line-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71516/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="연구실 구성원" data-en="Lab members">연구실 구성원</span><span class="arrow">↗</span></a><a class="line-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/72664/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="졸업생" data-en="Alumni">졸업생</span><span class="arrow">↗</span></a></div></div>
 </section>
-<section class="people shell" id="people" aria-labelledby="people-title">
- <figure class="people-portrait" data-reveal><img src="https://fashiondesign.pusan.ac.kr/sites/fashiondesign/images/prof.jpg" alt="부산대학교 이윤경 교수" loading="lazy" decoding="async"><figcaption>PROFESSOR LEE, YOON KYUNG<br>DEPARTMENT OF CLOTHING AND TEXTILES · PNU</figcaption></figure>
- <div class="people-copy"><p class="section-label">05 / PEOPLE</p><h2 id="people-title">LEE,<br>YOON KYUNG.</h2><p class="prof-ko" data-ko="이윤경 교수" data-en="Professor · Pollina Lee">이윤경 교수</p><p data-ko="패션디자인의 창의성과 지속가능성을 중심으로 감정, AI 기술, 신경과학과의 관계를 탐구합니다. 디자인 실천과 학술 연구를 연결하며 패션의 새로운 가능성을 모색합니다." data-en="Her research connects creativity and sustainability in fashion design with emotion, AI technology and neuroscience, bringing creative practice into dialogue with academic inquiry.">패션디자인의 창의성과 지속가능성을 중심으로 감정, AI 기술, 신경과학과의 관계를 탐구합니다. 디자인 실천과 학술 연구를 연결하며 패션의 새로운 가능성을 모색합니다.</p>
- <div class="people-links"><a class="arrow-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71508/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="교수 소개 / PROFESSOR" data-en="PROFESSOR PROFILE">교수 소개 / PROFESSOR</span><span aria-hidden="true">↗</span></a><a class="arrow-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71516/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="연구실 구성원 / MEMBERS" data-en="LAB MEMBERS">연구실 구성원 / MEMBERS</span><span aria-hidden="true">↗</span></a><a class="arrow-link" href="https://fashiondesign.pusan.ac.kr/fashiondesign/72664/subview.do" target="_blank" rel="noopener noreferrer"><span data-ko="졸업생 / ALUMNI" data-en="ALUMNI">졸업생 / ALUMNI</span><span aria-hidden="true">↗</span></a></div>
- </div>
-</section>
-<section class="archive shell" id="archive" aria-labelledby="archive-title">
- <div class="section-head"><div><p class="section-label">06 / ACADEMIC ARCHIVE</p><h2 id="archive-title">Knowledge in motion.</h2></div><p class="section-note" data-ko="연구 성과와 활동의 자세한 기록은 연구실 공식 아카이브에서 확인할 수 있습니다." data-en="Explore detailed records of research and activities in the official lab archive.">연구 성과와 활동의 자세한 기록은 연구실 공식 아카이브에서 확인할 수 있습니다.</p></div>
- <div class="archive-rows">
-  <a class="archive-row" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71512/subview.do" target="_blank" rel="noopener noreferrer"><span class="num">01</span><h3>Publications</h3><p data-ko="학술 논문과 연구의 기록" data-en="Academic papers and research records">학술 논문과 연구의 기록</p><span class="arr" aria-hidden="true">↗</span></a>
-  <a class="archive-row" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71520/subview.do" target="_blank" rel="noopener noreferrer"><span class="num">02</span><h3>Conferences</h3><p data-ko="학술대회 발표와 지식의 교류" data-en="Conference presentations and exchange">학술대회 발표와 지식의 교류</p><span class="arr" aria-hidden="true">↗</span></a>
-  <a class="archive-row" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do" target="_blank" rel="noopener noreferrer"><span class="num">03</span><h3>Awards</h3><p data-ko="디자인과 연구 활동의 수상 기록" data-en="Recognition of design and research">디자인과 연구 활동의 수상 기록</p><span class="arr" aria-hidden="true">↗</span></a>
- </div>
-</section>
+<section class="archive pad" id="archive" aria-labelledby="archive-title"><h2 id="archive-title">a little more<br>to discover.</h2><a class="archive-row" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71512/subview.do" target="_blank" rel="noopener noreferrer"><span class="num">01</span><b>publications.</b><small data-ko="학술 논문과 연구의 기록" data-en="Papers and research records">학술 논문과 연구의 기록</small><span class="arrow">↗</span></a><a class="archive-row" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71520/subview.do" target="_blank" rel="noopener noreferrer"><span class="num">02</span><b>conferences.</b><small data-ko="학술대회 발표와 교류" data-en="Presentations and exchange">학술대회 발표와 교류</small><span class="arrow">↗</span></a><a class="archive-row" href="https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do" target="_blank" rel="noopener noreferrer"><span class="num">03</span><b>awards.</b><small data-ko="디자인과 연구의 성과" data-en="Design and research recognition">디자인과 연구의 성과</small><span class="arrow">↗</span></a></section>
 </main>
-<footer class="contact shell" id="contact">
- <p class="section-label">07 / CONTACT & COLLABORATION</p><h2>LET’S THINK<br><span>FORWARD.</span></h2>
- <div class="contact-grid">
-  <div><h3 data-ko="연구 및 협업 문의" data-en="RESEARCH & COLLABORATION">연구 및 협업 문의</h3><a class="contact-big" href="mailto:pollinalee@pusan.ac.kr">pollinalee@pusan.ac.kr ↗</a><p>Prof. Lee, Yoon Kyung</p></div>
-  <div><h3>VISIT THE LAB</h3><p data-ko="부산대학교 생활과학관 602동 221호" data-en="Room 221, Building 602, College of Human Ecology, Pusan National University">부산대학교 생활과학관 602동 221호</p><p data-ko="부산광역시 금정구 부산대학로63번길 2 (46241)" data-en="2, Busandaehak-ro 63beon-gil, Geumjeong-gu, Busan 46241, Republic of Korea">부산광역시 금정구 부산대학로63번길 2 (46241)</p><a href="tel:+82515102763">+82 (0)51 510 2763</a></div>
-  <div><h3>CONTINUE EXPLORING</h3><p><a href="https://fashiondesign.pusan.ac.kr/fashiondesign/index.do" target="_blank" rel="noopener noreferrer" data-ko="연구실 공식 아카이브 ↗" data-en="Official lab archive ↗">연구실 공식 아카이브 ↗</a></p><p><a href="https://lidesheng.art/" target="_blank" rel="noopener noreferrer">DESHENG LI / PORTFOLIO ↗</a></p><p class="micro">CREATIVITY · CULTURE · TECHNOLOGY</p></div>
- </div>
- <div class="contact-wordmark" aria-hidden="true">FASHION LAB.</div>
- <div class="footer-bottom"><p class="footer-credit">PUSAN NATIONAL UNIVERSITY / FASHION DESIGN LAB<br><span data-ko="작품 저작권은 각 디자이너에게 있습니다." data-en="All artworks remain the property of their respective creators.">작품 저작권은 각 디자이너에게 있습니다.</span></p><a class="top-link" href="#top">BACK TO TOP ↑</a></div>
-</footer>
-<dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
- <div class="viewer-top"><span class="micro">FDL / SELECTED WORK</span><button class="viewer-close" type="button" id="viewer-close" aria-label="작품 닫기">×</button></div>
- <div class="viewer-body"><div class="viewer-media"><img id="viewer-image" alt="" hidden><video id="viewer-video" controls playsinline preload="none" hidden></video><p id="viewer-failure" class="media-failure" role="status" hidden></p></div><div class="viewer-info"><h2 id="viewer-title"></h2><p id="viewer-description"></p><p class="credit" id="viewer-credit"></p><a class="arrow-link" id="viewer-source" href="https://fashiondesign.pusan.ac.kr/fashiondesign/index.do" target="_blank" rel="noopener noreferrer"><span data-ko="작품 원문 보기" data-en="View original source">작품 원문 보기</span><span aria-hidden="true">↗</span></a></div></div>
- <div class="viewer-bottom"><span class="viewer-index" id="viewer-index"></span><div class="viewer-nav" id="viewer-nav"><button type="button" id="viewer-prev" aria-label="이전 작품">← PREV</button><button type="button" id="viewer-next" aria-label="다음 작품">NEXT →</button></div><button type="button" class="fullscreen" id="video-fullscreen" data-ko="영상 전체 화면 ⤢" data-en="VIDEO FULLSCREEN ⤢" hidden>영상 전체 화면 ⤢</button></div>
-</dialog>
-<noscript><style>.research-panel[hidden]{display:grid!important}.research-tabs,.filters,.media-controls,.menu-toggle,.language{display:none}.work-image{pointer-events:none}</style><p class="noscript-note">작품 상세 보기와 영상 재생에는 JavaScript가 필요합니다. 공식 아카이브 링크에서 원본을 볼 수 있습니다.</p></noscript>
-
+<footer class="pad" id="contact"><div class="footer-top"><h2>let's make<br>what's next.</h2><button type="button" class="footer-face reaction" data-reaction="함께 만들어요!" data-reaction-en="let's make it happen!" aria-label="함께 만들어요!"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" fill="#f7a3e9"/><g class="eyes"><ellipse cx="35" cy="40" rx="10" ry="15" fill="#fff"/><ellipse cx="66" cy="40" rx="10" ry="15" fill="#fff"/><circle cx="38" cy="43" r="5" fill="#17111b"/><circle cx="69" cy="43" r="5" fill="#17111b"/></g><path d="M27 65Q50 91 75 62" fill="none" stroke="#17111b" stroke-width="6" stroke-linecap="round"/></svg></button></div><div class="footer-grid"><div><h3 data-ko="연구 & 협업 문의" data-en="RESEARCH & COLLABORATION">연구 & 협업 문의</h3><a href="mailto:pollinalee@pusan.ac.kr" class="email">pollinalee@pusan.ac.kr ↗</a><p>Prof. Lee, Yoon Kyung</p></div><div><h3>COME SAY HELLO</h3><p data-ko="부산대학교 생활과학관 602동 221호" data-en="Room 221, Building 602, College of Human Ecology, PNU">부산대학교 생활과학관 602동 221호</p><p data-ko="부산광역시 금정구 부산대학로63번길 2 (46241)" data-en="2, Busandaehak-ro 63beon-gil, Geumjeong-gu, Busan 46241">부산광역시 금정구 부산대학로63번길 2 (46241)</p><a href="tel:+82515102763">+82 (0)51 510 2763</a></div><div><h3>KEEP EXPLORING</h3><p><a href="https://fashiondesign.pusan.ac.kr/fashiondesign/index.do" target="_blank" rel="noopener noreferrer" data-ko="연구실 공식 아카이브 ↗" data-en="Official lab archive ↗">연구실 공식 아카이브 ↗</a></p><p><a href="https://lidesheng.art/" target="_blank" rel="noopener noreferrer">DESHENG LI / PORTFOLIO ↗</a></p></div></div><div class="footer-bottom"><p>PUSAN NATIONAL UNIVERSITY / FASHION DESIGN LAB<br><span data-ko="작품 저작권은 각 디자이너에게 있습니다." data-en="Artworks belong to their respective creators.">작품 저작권은 각 디자이너에게 있습니다.</span></p><a href="#top">back to the top ↑</a></div></footer>
+</div>
+<a class="cursor-progress" href="#top" aria-label="맨 위로 이동">↑</a>
+<dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-top"><span>FDL / A CLOSER LOOK</span><button id="viewer-close" type="button" aria-label="작품 닫기">×</button></div><div class="viewer-body"><div class="viewer-media"><img id="viewer-image" alt="" hidden><video id="viewer-video" controls playsinline preload="none" hidden></video><p class="media-failure" id="viewer-failure" role="status" hidden></p></div><div class="viewer-info"><h2 id="viewer-title"></h2><p id="viewer-description"></p><p class="credit" id="viewer-credit"></p><a class="pill" id="viewer-source" href="https://lidesheng.art/" target="_blank" rel="noopener noreferrer"><span data-ko="작품 원문 보기" data-en="Original source">작품 원문 보기</span><span>↗</span></a></div></div><div class="viewer-bottom"><span id="viewer-count"></span><div id="viewer-nav"><button id="viewer-prev" type="button" aria-label="이전 작품">← PREV</button> <button id="viewer-next" type="button" aria-label="다음 작품">NEXT →</button></div><button id="viewer-fullscreen" type="button" hidden>FULLSCREEN ⤢</button></div></dialog>
+<noscript><style>.research-item:not([open]) .research-detail{display:grid}.mix,.tools,.filters,.film-play,.film-caption button,.shape-switch,.density{display:none}.work-image{pointer-events:none}</style></noscript>
 <script>
 (() => {
-  'use strict';
-  const works = [{"id":"metallic","category":"design","title":"METALLIC SPACE","ko":"구조의 재구성","image":"https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-03-metallic-space.jpg","alt":"금속 조형물 앞에 선 모델의 회색 체크 해체주의 패션 디자인","credit":"Design & visual · DESHENG LI","source":"https://lidesheng.art/","description":"회색 체크와 비대칭 테일러링을 통해 형태와 공간의 관계를 탐색한 디자인 비주얼.","en":"A design visual exploring form and space through grey checks and asymmetric tailoring.","ratio":"portrait"},{"id":"resilience","category":"lab","title":"RESILIENCE","ko":"지속가능성을 입다","image":"https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp","alt":"RESILIENCE 업사이클링 리폼 컨테스트 출품작","credit":"류채희 · 안세정 · 이주연 · 장주연 · 최윤서","source":"https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534163/artclView.do","description":"2024 업사이클링 리폼 컨테스트 출품작. 연구실의 공동 디자인 실천을 소개합니다.","en":"An entry for the 2024 Upcycling Reform Contest, presenting a collaborative design practice from the lab.","ratio":"landscape"},{"id":"ocean","category":"lab","title":"OCEAN’S BREATH","ko":"Ocean’s Breath-PUS","image":"https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905922961100.tmp","alt":"Ocean’s Breath-PUS 부산국제디자인어워드 출품작","credit":"리더셩 · 위샤오첸 · 양샤오치엔 · 류채희","source":"https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534159/artclView.do","description":"2024 부산국제디자인어워드 출품작 · 아이디어상 수상.","en":"An entry for the 2024 Busan International Design Award, recipient of the Idea Award.","ratio":"landscape"},{"id":"glacial","category":"design","title":"GLACIAL MONOLITH","ko":"형태와 환경의 경계","image":"https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-10-ice-monolith.jpg","alt":"빙하와 검은 조형물을 배경으로 한 비대칭 해체주의 의상","credit":"Design & visual · DESHENG LI","source":"https://lidesheng.art/","description":"빙하, 조형물, 해체적 의복을 결합한 패션 비주얼. 디지털 이미지에서 의복의 새로운 맥락을 탐색합니다.","en":"A fashion visual bringing glacial scenery, sculpture and deconstructed clothing into a digital context.","ratio":"portrait"},{"id":"lofficiel","category":"lab","title":"L’OFFICIEL × DESIGN","ko":"패션디자인 마스터스 공모전","image":"https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120550606_50318.jpg","alt":"L’OFFICIEL Fashion Magazine와 China Textile City 패션디자인 공모전 작품","credit":"Designer · LIDESHENG","source":"https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1728385/artclView.do","description":"L’OFFICIEL Fashion Magazine & China Textile City — Outstanding Works from the Fashion Design Masters Competition. 연구실 공식 디자인 아카이브 수록작.","en":"L’OFFICIEL Fashion Magazine & China Textile City — Outstanding Works from the Fashion Design Masters Competition. Featured in the lab’s official design archive.","ratio":"portrait"},{"id":"neon","category":"design","title":"NEON INSTALLATION","ko":"의복과 디지털 공간","image":"https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-09-neon-installation.jpg?v=20261025-hands","alt":"네온 설치 공간과 네이비 해체주의 패션 디자인","credit":"Design & visual · DESHENG LI","source":"https://lidesheng.art/","description":"네이비 컬러의 재구성된 실루엣과 네온 공간을 결합한 패션 디자인 비주얼.","en":"A fashion design visual combining a reconstructed navy silhouette with a neon installation.","ratio":"portrait"},{"id":"offbalance","category":"film","title":"OFF BALANCE","ko":"패션을 움직이는 이미지로","image":"https://lidesheng.art/film-off-balance-20261014.jpg","video":"https://lidesheng.art/film-off-balance-20261014.mp4","alt":"Off Balance 패션 영상의 한 장면","credit":"Fashion film · DESHENG LI","source":"https://lidesheng.art/#video","description":"개인 포트폴리오에서 선별한 15초 패션 영상. 움직이는 이미지로 확장되는 패션 표현을 소개합니다.","en":"A 15-second fashion film selected from the designer’s portfolio, exploring fashion through moving images.","ratio":"landscape"},{"id":"ocean-detail","category":"lab","title":"OCEAN / DETAIL","ko":"Ocean’s Breath-PUS · 디테일","image":"https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905924932100.tmp","alt":"Ocean’s Breath-PUS 작품의 두 번째 전시 이미지","credit":"리더셩 · 위샤오첸 · 양샤오치엔 · 류채희","source":"https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534159/artclView.do","description":"Ocean’s Breath-PUS의 두 번째 작품 이미지. 공식 아카이브 원본을 그대로 소개합니다.","en":"The second original presentation image of Ocean’s Breath-PUS from the official lab archive.","ratio":"landscape"}];
-  const $ = (s, root=document) => root.querySelector(s);
-  const $$ = (s, root=document) => [...root.querySelectorAll(s)];
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const hero = $('#hero-video'), play = $('#hero-play'), viewer = $('#viewer');
-  const modalVideo = $('#viewer-video'), modalImage = $('#viewer-image');
-  const mobileNav = $('#mobile-nav'), menuToggle = $('#menu-toggle');
-  let language = 'ko', currentFilter = 'all', currentWork = null, lastFocus = null;
-  let heroVisible = true, heroWanted = !reduced.matches, mediaFailed = false;
-  const t = (ko,en) => language === 'ko' ? ko : en;
-  const visibleWorks = () => works.filter(w => currentFilter === 'all' || w.category === currentFilter);
-  function syncHeroButton() {
-    const playing = !hero.paused;
-    play.setAttribute('aria-pressed', String(playing));
-    play.setAttribute('aria-label', playing ? t('영상 일시정지','Pause opening film') : t('영상 재생','Play opening film'));
-    play.firstElementChild.textContent = playing ? 'Ⅱ' : '▶';
+'use strict';
+const works=[{"id":"metallic","category":"design","title":"METALLIC SPACE","ko":"구조의 재구성","image":"https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-03-metallic-space.jpg","alt":"금속 조형물 앞에 선 모델의 회색 체크 해체주의 패션 디자인","credit":"Design & visual · DESHENG LI","source":"https://lidesheng.art/","description":"회색 체크와 비대칭 테일러링을 통해 형태와 공간의 관계를 탐색한 디자인 비주얼.","en":"A design visual exploring form and space through grey checks and asymmetric tailoring.","ratio":"portrait"},{"id":"resilience","category":"lab","title":"RESILIENCE","ko":"지속가능성을 입다","image":"https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp","alt":"RESILIENCE 업사이클링 리폼 컨테스트 출품작","credit":"류채희 · 안세정 · 이주연 · 장주연 · 최윤서","source":"https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534163/artclView.do","description":"2024 업사이클링 리폼 컨테스트 출품작. 연구실의 공동 디자인 실천을 소개합니다.","en":"An entry for the 2024 Upcycling Reform Contest, presenting a collaborative design practice from the lab.","ratio":"landscape"},{"id":"glacial","category":"design","title":"GLACIAL MONOLITH","ko":"형태와 환경의 경계","image":"https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-10-ice-monolith.jpg","alt":"빙하와 검은 조형물을 배경으로 한 비대칭 해체주의 의상","credit":"Design & visual · DESHENG LI","source":"https://lidesheng.art/","description":"빙하, 조형물, 해체적 의복을 결합한 패션 비주얼. 디지털 이미지에서 의복의 새로운 맥락을 탐색합니다.","en":"A fashion visual bringing glacial scenery, sculpture and deconstructed clothing into a digital context.","ratio":"portrait"},{"id":"lofficiel","category":"lab","title":"L’OFFICIEL × DESIGN","ko":"패션디자인 마스터스 공모전","image":"https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120550606_50318.jpg","alt":"L’OFFICIEL Fashion Magazine와 China Textile City 패션디자인 공모전 작품","credit":"Designer · LIDESHENG","source":"https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1728385/artclView.do","description":"L’OFFICIEL Fashion Magazine & China Textile City — Outstanding Works from the Fashion Design Masters Competition. 연구실 공식 디자인 아카이브 수록작.","en":"L’OFFICIEL Fashion Magazine & China Textile City — Outstanding Works from the Fashion Design Masters Competition. Featured in the lab’s official design archive.","ratio":"portrait"},{"id":"neon","category":"design","title":"NEON INSTALLATION","ko":"의복과 디지털 공간","image":"https://lidesheng.art/assets/unfixed-form-2026/unfixed-form-09-neon-installation.jpg?v=20261025-hands","alt":"네온 설치 공간과 네이비 해체주의 패션 디자인","credit":"Design & visual · DESHENG LI","source":"https://lidesheng.art/","description":"네이비 컬러의 재구성된 실루엣과 네온 공간을 결합한 패션 디자인 비주얼.","en":"A fashion design visual combining a reconstructed navy silhouette with a neon installation.","ratio":"portrait"},{"id":"offbalance","category":"film","title":"OFF BALANCE","ko":"패션을 움직이는 이미지로","image":"https://lidesheng.art/film-off-balance-20261014.jpg","video":"https://lidesheng.art/film-off-balance-20261014.mp4","alt":"Off Balance 패션 영상의 한 장면","credit":"Fashion film · DESHENG LI","source":"https://lidesheng.art/#video","description":"개인 포트폴리오에서 선별한 15초 패션 영상. 움직이는 이미지로 확장되는 패션 표현을 소개합니다.","en":"A 15-second fashion film selected from the designer’s portfolio, exploring fashion through moving images.","ratio":"landscape"}];
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+let lang='ko', moving=!reduce.matches, filter='all', activeWork=null, lastFocus=null;
+const t=(ko,en)=>lang==='ko'?ko:en;
+const motionListeners=[];
+const film=$('#lab-film'), viewer=$('#viewer'), mv=$('#viewer-video'), mi=$('#viewer-image'), menu=$('#mobile-menu');
+let filmVisible=false, filmWanted=true;
+function syncFilm(){
+ if(moving&&filmWanted&&filmVisible&&!document.hidden&&!viewer.open&&menu.hidden)film.play().catch(()=>{});
+ else film.pause();
+}
+function setMotion(v){
+ moving=v;document.body.classList.toggle('motion-off',!v);
+ $('#motion').setAttribute('aria-pressed',String(v));$('#motion').textContent=v?'Ⅱ':'▶';
+ $('#motion').setAttribute('aria-label',v?t('동작 일시정지','Pause animations'):t('동작 재생','Play animations'));
+ syncFilm();motionListeners.forEach(fn=>fn());
+}
+$('#motion').addEventListener('click',()=>setMotion(!moving));
+reduce.addEventListener('change',()=>setMotion(!reduce.matches));
+document.addEventListener('visibilitychange',()=>{syncFilm();motionListeners.forEach(fn=>fn());});
+window.addEventListener('pageshow',()=>{syncFilm();motionListeners.forEach(fn=>fn());});
+window.addEventListener('pagehide',()=>{film.pause();mv.pause();});
+if('IntersectionObserver'in window){
+ const observer=new IntersectionObserver(entries=>entries.forEach(e=>e.target.classList.toggle('offscreen',!e.isIntersecting)),{rootMargin:'100px'});
+ $$('.hero,.about,.research,.tech,.people,footer').forEach(el=>observer.observe(el));
+ new IntersectionObserver(es=>{filmVisible=es[0].isIntersecting;syncFilm();},{threshold:.3}).observe(film);
+}else filmVisible=true;
+function updateFilmControl(){const playing=!film.paused;$('#film-pause').textContent=playing?'Ⅱ':'▶';$('#film-pause').setAttribute('aria-pressed',String(playing));$('#film-pause').setAttribute('aria-label',playing?t('영상 일시정지','Pause film'):t('영상 재생','Play film'));}
+film.addEventListener('play',updateFilmControl);film.addEventListener('pause',updateFilmControl);
+$('#film-pause').addEventListener('click',()=>{filmWanted=film.paused;if(filmWanted){film.play().catch(()=>{});}else film.pause();});
+const letters=$$('.letter');
+function burst(el){
+ el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');
+ if(!moving)return;
+ for(let i=0;i<5;i++){const s=document.createElement('span');s.className='spark';s.setAttribute('aria-hidden','true');s.textContent=i%2?'✦':'·';s.style.setProperty('--sx',Math.round((Math.random()-.5)*200)+'px');s.style.setProperty('--sy',Math.round(-40-Math.random()*110)+'px');el.appendChild(s);setTimeout(()=>s.remove(),750);}
+}
+letters.forEach(el=>{
+ let down=false,dragged=false,x=0,y=0;
+ el.addEventListener('pointerdown',e=>{if(e.button!==0)return;down=true;dragged=false;x=e.clientX;y=e.clientY;el.classList.add('dragging');el.setPointerCapture(e.pointerId);});
+ el.addEventListener('pointermove',e=>{if(!down)return;const dx=Math.max(-70,Math.min(70,e.clientX-x)),dy=Math.max(-65,Math.min(65,e.clientY-y));if(Math.abs(dx)+Math.abs(dy)>5)dragged=true;el.style.setProperty('--dx',dx+'px');el.style.setProperty('--dy',dy+'px');el.style.setProperty('--turn',dx*.22+'deg');});
+ function release(){if(!down)return;down=false;el.classList.remove('dragging');el.style.removeProperty('--dx');el.style.removeProperty('--dy');el.style.removeProperty('--turn');if(dragged)burst(el);}
+ el.addEventListener('pointerup',release);el.addEventListener('pointercancel',release);
+ el.addEventListener('click',()=>{if(!dragged)burst(el);dragged=false;});
+});
+let mixCount=0;
+$('#mix').addEventListener('click',()=>{
+ mixCount++;$('.fashion-word').style.filter='hue-rotate('+(mixCount%4*45)+'deg)';
+ letters.forEach((el,i)=>setTimeout(()=>{el.style.setProperty('--turn',(Math.random()-.5)*35+'deg');burst(el);setTimeout(()=>el.style.removeProperty('--turn'),650);},moving?i*65:0));
+});
+$$('[data-reaction]').forEach(el=>el.addEventListener('click',()=>{
+ el.classList.remove('fired');void el.offsetWidth;el.classList.add('fired');
+ const old=$('.bubble',el);if(old)old.remove();
+ const bubble=document.createElement('span');bubble.className='bubble';bubble.setAttribute('role','status');bubble.textContent=lang==='ko'?el.dataset.reaction:el.dataset.reactionEn;el.appendChild(bubble);
+ setTimeout(()=>{bubble.remove();el.classList.remove('fired');},1500);
+}));
+$$('.research-item').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)$$('.research-item').forEach(other=>{if(other!==d)other.open=false;});}));
+function setMenu(open,restore=true){
+ menu.hidden=!open;$('#menu-toggle').setAttribute('aria-expanded',String(open));
+ $('main').inert=open;$('footer').inert=open;$('header').inert=open;
+ document.body.classList.toggle('modal-open',open);
+ if(open)$('#menu-close').focus();else if(restore)$('#menu-toggle').focus();syncFilm();
+}
+$('#menu-toggle').addEventListener('click',()=>setMenu(true));
+$('#menu-close').addEventListener('click',()=>setMenu(false));
+$$('a',menu).forEach(a=>a.addEventListener('click',()=>{setMenu(false,false);const target=$(a.getAttribute('href'));if(target){target.tabIndex=-1;target.focus({preventScroll:true});}}));
+menu.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){setMenu(false);return;}
+ if(e.key!=='Tab')return;const controls=$$('a,button',menu),first=controls[0],last=controls.at(-1);
+ if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+ if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+});
+const track=$('#gallery-track'),cards=$$('.work');
+const visibleWorks=()=>works.filter(w=>filter==='all'||w.category===filter);
+function updateGallery(){
+ const shown=cards.filter(c=>!c.hidden),r=track.getBoundingClientRect();
+ let index=0,best=Infinity;
+ shown.forEach((c,i)=>{const distance=Math.abs(c.getBoundingClientRect().left-r.left-parseFloat(getComputedStyle(track).paddingLeft));if(distance<best){best=distance;index=i;}});
+ $('#gallery-count').textContent=String(index+1).padStart(2,'0')+' / '+String(shown.length).padStart(2,'0');
+ const progress=track.scrollLeft/Math.max(1,track.scrollWidth-track.clientWidth);
+ $('#gallery-meter').style.transform='translateX('+Math.min(233,Math.max(0,progress*233))+'%)';
+ $('#gallery-prev').disabled=track.scrollLeft<2;
+ $('#gallery-next').disabled=track.scrollLeft>=track.scrollWidth-track.clientWidth-2;
+}
+function setFilter(next){
+ filter=next;$$('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===next)));
+ cards.forEach(c=>c.hidden=next!=='all'&&c.dataset.category!==next);
+ track.scrollTo({left:0,behavior:'auto'});requestAnimationFrame(updateGallery);
+}
+$$('[data-filter]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
+function slide(dir){const c=cards.find(c=>!c.hidden);if(c)track.scrollBy({left:dir*(c.getBoundingClientRect().width+24),behavior:moving?'smooth':'auto'});}
+$('#gallery-prev').addEventListener('click',()=>slide(-1));$('#gallery-next').addEventListener('click',()=>slide(1));
+track.addEventListener('scroll',updateGallery,{passive:true});
+track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowRight'){e.preventDefault();slide(1);}if(e.key==='ArrowLeft'){e.preventDefault();slide(-1);}});
+let gDown=false,gMoved=false,gX=0,gStart=0,gId=null;
+track.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;gDown=true;gMoved=false;gX=e.clientX;gStart=track.scrollLeft;gId=e.pointerId;});
+track.addEventListener('pointermove',e=>{if(!gDown)return;const dx=e.clientX-gX;if(Math.abs(dx)>6){if(!gMoved){track.setPointerCapture(gId);track.classList.add('dragging');}gMoved=true;}if(gMoved){e.preventDefault();track.scrollLeft=gStart-dx;}});
+function endDrag(){gDown=false;track.classList.remove('dragging');setTimeout(()=>{gMoved=false;},0);}
+track.addEventListener('pointerup',endDrag);track.addEventListener('pointercancel',endDrag);track.addEventListener('lostpointercapture',()=>{gDown=false;track.classList.remove('dragging');});
+track.addEventListener('click',e=>{if(gMoved){e.preventDefault();e.stopImmediatePropagation();}},{capture:true});
+const opening={id:'opening',title:'FASHION, IN MOTION',image:'https://lidesheng.art/homepage-poster.jpg',video:'https://lidesheng.art/homepage-loop.mp4',credit:'Fashion film · DESHENG LI',description:'DESHENG LI 개인 포트폴리오의 원본 오프닝 영상. 움직이는 이미지로 확장되는 패션 표현을 소개합니다.',en:'The original opening film from DESHENG LI’s personal portfolio, exploring fashion through moving images.',source:'https://lidesheng.art/',alt:'DESHENG LI 패션 영상'};
+function renderWork(item){
+ activeWork=item;mv.pause();mv.removeAttribute('src');mv.load();
+ $('#viewer-title').textContent=item.title;$('#viewer-description').textContent=lang==='ko'?item.description:item.en;
+ $('#viewer-credit').textContent=item.credit;$('#viewer-source').href=item.source;$('#viewer-failure').hidden=true;
+ mi.hidden=!!item.video;mv.hidden=!item.video;$('#viewer-fullscreen').hidden=!item.video;
+ if(item.video){mv.poster=item.image;mv.src=item.video;mv.load();}else{mi.alt=item.alt;mi.src=item.image;}
+ const list=visibleWorks(),i=list.findIndex(w=>w.id===item.id);
+ $('#viewer-count').textContent=i<0?'FASHION FILM':String(i+1).padStart(2,'0')+' / '+String(list.length).padStart(2,'0');
+ $('#viewer-nav').hidden=i<0||list.length<2;
+}
+function openWork(item,trigger){lastFocus=trigger;renderWork(item);viewer.showModal();document.body.classList.add('modal-open');syncFilm();$('#viewer-close').focus();if(item.video)mv.play().catch(()=>{});}
+$$('[data-work]').forEach(b=>b.addEventListener('click',()=>openWork(works.find(w=>w.id===b.dataset.work),b)));
+$('#open-film').addEventListener('click',e=>openWork(opening,e.currentTarget));
+$('#viewer-close').addEventListener('click',()=>viewer.close());
+viewer.addEventListener('close',()=>{mv.pause();mv.removeAttribute('src');mv.load();mi.removeAttribute('src');activeWork=null;viewer.classList.remove('theater');$('#viewer-fullscreen').textContent='FULLSCREEN ⤢';document.body.classList.remove('modal-open');lastFocus?.focus({preventScroll:true});syncFilm();});
+viewer.addEventListener('click',e=>{if(e.target===viewer){const r=viewer.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)viewer.close();}});
+function shiftWork(dir){if(!activeWork||activeWork.id==='opening')return;const list=visibleWorks(),i=list.findIndex(w=>w.id===activeWork.id);renderWork(list[(i+dir+list.length)%list.length]);}
+$('#viewer-prev').addEventListener('click',()=>shiftWork(-1));$('#viewer-next').addEventListener('click',()=>shiftWork(1));
+viewer.addEventListener('keydown',e=>{if(e.target.tagName==='VIDEO')return;if(e.key==='ArrowLeft'){e.preventDefault();shiftWork(-1);}if(e.key==='ArrowRight'){e.preventDefault();shiftWork(1);}});
+function mediaError(){if(!viewer.open)return;$('#viewer-failure').hidden=false;$('#viewer-failure').textContent=t('미디어를 불러오지 못했습니다. 작품 원문에서 확인해 주세요.','This media is unavailable. Please view the original source.');mi.hidden=true;mv.hidden=true;$('#viewer-fullscreen').hidden=true;}
+mi.addEventListener('error',()=>{if(activeWork&&!activeWork.video)mediaError();});mv.addEventListener('error',()=>{if(mv.hasAttribute('src'))mediaError();});
+$('#viewer-fullscreen').addEventListener('click',async()=>{if(viewer.classList.contains('theater')){viewer.classList.remove('theater');$('#viewer-fullscreen').textContent='FULLSCREEN ⤢';return;}try{if(mv.requestFullscreen)await mv.requestFullscreen();else if(mv.webkitEnterFullscreen)mv.webkitEnterFullscreen();else throw Error();}catch{viewer.classList.add('theater');$('#viewer-fullscreen').textContent=t('작게 보기 ↙','EXIT FULL VIEW ↙');}});
+$$('.work-image img').forEach(img=>{function fallback(){img.style.visibility='hidden';$('.image-unavailable',img.parentElement).hidden=false;}img.addEventListener('error',fallback);if(img.complete&&!img.naturalWidth)fallback();});
+function setLanguage(value){
+ lang=value;document.documentElement.lang=value;
+ $$('[data-ko][data-en]').forEach(el=>el.textContent=el.dataset[value]);
+ $('#language').textContent=value==='ko'?'KR / EN':'EN / KR';
+ $('#language').setAttribute('aria-label',value==='ko'?'Switch to English':'한국어로 전환');
+ $$('[data-reaction]').forEach(b=>b.setAttribute('aria-label',value==='ko'?b.dataset.reaction:b.dataset.reactionEn));
+ if(activeWork)$('#viewer-description').textContent=lang==='ko'?activeWork.description:activeWork.en;
+ updateFilmControl();
+ try{sessionStorage.setItem('pnu-fdl-language',value);}catch{}
+}
+$('#language').addEventListener('click',()=>setLanguage(lang==='ko'?'en':'ko'));
+try{if(sessionStorage.getItem('pnu-fdl-language')==='en')setLanguage('en');}catch{}
+window.addEventListener('resize',()=>{updateGallery();if(innerWidth>760&&!menu.hidden)setMenu(false,false);});
+updateGallery();
+const canvas=$('#particle-field'),stage=$('#particle-stage'),ctx=canvas.getContext('2d');
+if(ctx){
+ const rows=26,cols=42,count=rows*cols;
+ let shape='sphere',speed=.35,width=1,height=1,visible=false,raf=0,phase=0,last=0,yaw=.1,pitch=-.1,drag=false,px=0,py=0;
+ const points=Array.from({length:count},()=>({x:0,y:0,z:0}));
+ let initialized=false;
+ canvas.tabIndex=0;
+ canvas.setAttribute('aria-label','Interactive particle form. Drag or use arrow keys to rotate.');
+ function target(index){
+  const row=Math.floor(index/cols),col=index%cols,u=col/(cols-1),v=row/(rows-1),lon=u*Math.PI*2,lat=v*Math.PI;
+  if(shape==='fabric')return{x:(u-.5)*2.5,y:(v-.5)*2.2,z:Math.sin(u*9+v*5+phase)*.26+Math.cos(v*12+phase)*.12};
+  if(shape==='dress'){
+   const r=v<.2?.3+Math.sin(v/.2*Math.PI)*.22:v<.48?.42-(v-.2)*.6:.25+(v-.48)*1.25;
+   return{x:Math.cos(lon)*r,y:(v-.46)*2.4,z:Math.sin(lon)*r*.58+Math.sin(lon*7+phase)*.022*v};
   }
-  function heroState() {
-    if (heroWanted && heroVisible && !document.hidden && !viewer.open && mobileNav.hidden && !mediaFailed) {
-      const p = hero.play();
-      if (p && p.catch) p.catch(() => {syncHeroButton();});
-    } else hero.pause();
+  return{x:Math.sin(lat)*Math.cos(lon),y:Math.cos(lat),z:Math.sin(lat)*Math.sin(lon)};
+ }
+ function render(time=0){
+  const dt=last?Math.min(50,time-last):16;last=time;
+  const animate=moving&&visible&&!document.hidden;
+  if(animate){phase+=dt*.00055*speed;if(!drag)yaw+=dt*.00016*speed;}
+  ctx.clearRect(0,0,width,height);
+  const radius=Math.min(width*.37,height*.37),cx=width/2,cy=height*.5;
+  const halo=ctx.createRadialGradient(cx,cy,radius*.25,cx,cy,radius*1.5);
+  halo.addColorStop(0,'rgba(9,82,166,.17)');halo.addColorStop(.65,'rgba(5,66,145,.11)');halo.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=halo;ctx.fillRect(0,0,width,height);
+  const projected=[];
+  for(let i=0;i<count;i++){
+   const a=target(i),p=points[i],ease=!initialized||!moving?1:.075;
+   p.x+=(a.x-p.x)*ease;p.y+=(a.y-p.y)*ease;p.z+=(a.z-p.z)*ease;
+   const xx=p.x*Math.cos(yaw)-p.z*Math.sin(yaw),zz=p.x*Math.sin(yaw)+p.z*Math.cos(yaw);
+   const yy=p.y*Math.cos(pitch)-zz*Math.sin(pitch),z=p.y*Math.sin(pitch)+zz*Math.cos(pitch);
+   const perspective=3.5/(3.5+z);
+   projected.push({x:cx+xx*radius*perspective,y:cy+yy*radius*perspective,z,alpha:Math.max(.12,Math.min(.9,.62-z*.36))});
   }
-  hero.addEventListener('play', syncHeroButton);
-  hero.addEventListener('pause', syncHeroButton);
-  hero.addEventListener('error', () => {
-    mediaFailed = true;
-    $('#hero-message').hidden = false;
-    $('#hero-message').textContent = t('영상을 불러오지 못했습니다. 정지 이미지로 감상하실 수 있습니다.','The film is unavailable. Its original poster is shown.');
-    syncHeroButton();
-  });
-  play.addEventListener('click', () => {heroWanted = hero.paused;heroState();});
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(entries => {heroVisible=entries[0].isIntersecting;heroState();},{threshold:.15}).observe($('#top'));
+  initialized=true;
+  ctx.lineWidth=.6;
+  for(let i=0;i<count;i++){
+   const p=projected[i],col=i%cols,row=Math.floor(i/cols);
+   if(col<cols-1){const q=projected[i+1];ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle='rgba(58,149,245,'+(p.alpha*.35)+')';ctx.stroke();}
+   if(row<rows-1&&col%2===0){const q=projected[i+cols];ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle='rgba(54,140,243,'+(p.alpha*.22)+')';ctx.stroke();}
   }
-  document.addEventListener('visibilitychange', heroState);
-  window.addEventListener('pageshow', heroState);
-  window.addEventListener('pagehide', () => {hero.pause();modalVideo.pause();});
-  reduced.addEventListener('change', () => {if(reduced.matches)heroWanted=false;heroState();});
-  function setFilter(value) {
-    currentFilter=value;
-    $$('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===value)));
-    const cards=$$('.work');
-    let shown=0;
-    cards.forEach(card=>{
-      const visible=value==='all'||card.dataset.category===value;
-      card.hidden=!visible;
-      if(visible){card.style.paddingTop=window.innerWidth>760 && shown%2 ? '110px' : window.innerWidth>380 && window.innerWidth<=760 && shown%2 ? '50px' : '0';shown++;}
-    });
-    $('#filter-status').textContent=t(shown+'개 작품 표시',shown+' works shown');
+  projected.sort((a,b)=>b.z-a.z).forEach((p,i)=>{
+   ctx.beginPath();ctx.arc(p.x,p.y,(i%31===0?2:1)*(1.1-p.z*.2),0,Math.PI*2);
+   ctx.fillStyle='rgba('+(i%31===0?'177,229,255,':'65,164,255,')+p.alpha+')';
+   ctx.shadowColor='#168eff';ctx.shadowBlur=i%31===0?10:0;ctx.fill();
+  });ctx.shadowBlur=0;
+  if(shape==='sphere'){
+   const glow=ctx.createRadialGradient(cx,cy,radius*.9,cx,cy,radius*1.13);
+   glow.addColorStop(0,'rgba(38,145,255,0)');glow.addColorStop(.55,'rgba(60,164,255,.12)');glow.addColorStop(1,'rgba(37,145,255,0)');
+   ctx.fillStyle=glow;ctx.beginPath();ctx.arc(cx,cy,radius*1.13,0,Math.PI*2);ctx.fill();
   }
-  $$('[data-filter]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
-  $$('[data-filter-link]').forEach(a=>a.addEventListener('click',()=>setFilter(a.dataset.filterLink)));
-  const tabs=$$('[role=tab]');
-  function selectTab(tab, focus=false) {
-    tabs.forEach(b=>{
-      const active=b===tab;
-      b.setAttribute('aria-selected',String(active));
-      b.tabIndex=active?0:-1;
-      $('#'+b.getAttribute('aria-controls')).hidden=!active;
-    });
-    if(focus)tab.focus();
-  }
-  tabs.forEach((tab,i)=>{
-    tab.addEventListener('click',()=>selectTab(tab));
-    tab.addEventListener('keydown',e=>{
-      let j=i;
-      if(e.key==='ArrowRight'||e.key==='ArrowDown')j=(i+1)%tabs.length;
-      else if(e.key==='ArrowLeft'||e.key==='ArrowUp')j=(i-1+tabs.length)%tabs.length;
-      else if(e.key==='Home')j=0;
-      else if(e.key==='End')j=tabs.length-1;
-      else return;
-      e.preventDefault();selectTab(tabs[j],true);
-    });
-  });
-  function setMenu(open, restore=true) {
-    mobileNav.hidden=!open;
-    menuToggle.setAttribute('aria-expanded',String(open));
-    document.body.classList.toggle('menu-open',open);
-    $('main').inert=open;
-    $('footer').inert=open;
-    $('.site-header').inert=open;
-    if(open)$('#menu-close').focus();
-    else if(restore)menuToggle.focus();
-    heroState();
-  }
-  menuToggle.addEventListener('click',()=>setMenu(true));
-  $('#menu-close').addEventListener('click',()=>setMenu(false));
-  $$('a',mobileNav).forEach(a=>a.addEventListener('click',()=>{
-    setMenu(false,false);
-    const target=$(a.getAttribute('href'));
-    if(target){target.tabIndex=-1;target.focus({preventScroll:true});}
-  }));
-  mobileNav.addEventListener('keydown',e=>{
-    if(e.key==='Escape'){setMenu(false);return;}
-    if(e.key!=='Tab')return;
-    const controls=$$('a,button',mobileNav);
-    const first=controls[0],last=controls[controls.length-1];
-    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
-    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
-  });
-  const opening = {
-    id:'opening',title:'FASHION BEYOND FORM',
-    image:'https://lidesheng.art/homepage-poster.jpg',
-    video:'https://lidesheng.art/homepage-loop.mp4',
-    credit:'Opening film · DESHENG LI',
-    description:'DESHENG LI 개인 포트폴리오의 오프닝 영상. 원본 영상을 연구실 소개의 첫 장면으로 사용했습니다.',
-    en:'The original opening film from DESHENG LI’s personal portfolio, presented as the opening scene of this lab introduction.',
-    source:'https://lidesheng.art/',alt:'DESHENG LI 오프닝 영상'
-  };
-  function renderWork(item) {
-    currentWork=item;
-    modalVideo.pause();
-    modalVideo.removeAttribute('src');
-    modalVideo.load();
-    modalVideo.hidden=!item.video;
-    modalImage.hidden=!!item.video;
-    $('#viewer-failure').hidden=true;
-    $('#viewer-title').textContent=item.title;
-    $('#viewer-description').textContent=language==='ko'?item.description:item.en;
-    $('#viewer-credit').textContent=item.credit;
-    $('#viewer-source').href=item.source;
-    $('#video-fullscreen').hidden=!item.video;
-    if(item.video){
-      modalVideo.poster=item.image;
-      modalVideo.src=item.video;
-      modalVideo.load();
-    }else{
-      modalImage.alt=item.alt;
-      modalImage.src=item.image;
-    }
-    const list=visibleWorks();
-    const index=list.findIndex(w=>w.id===item.id);
-    $('#viewer-index').textContent=index<0?'OPENING FILM':String(index+1).padStart(2,'0')+' / '+String(list.length).padStart(2,'0');
-    $('#viewer-nav').hidden=index<0||list.length<2;
-  }
-  function openWork(item,trigger) {
-    lastFocus=trigger||document.activeElement;
-    renderWork(item);
-    viewer.showModal();
-    document.body.classList.add('viewer-open');
-    heroState();
-    $('#viewer-close').focus();
-    if(item.video)modalVideo.play().catch(()=>{});
-  }
-  $$('[data-work]').forEach(b=>b.addEventListener('click',()=>openWork(works.find(w=>w.id===b.dataset.work),b)));
-  $('#hero-full').addEventListener('click',e=>openWork(opening,e.currentTarget));
-  $('#viewer-close').addEventListener('click',()=>viewer.close());
-  viewer.addEventListener('click',e=>{
-    if(e.target!==viewer)return;
-    const r=viewer.getBoundingClientRect();
-    if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)viewer.close();
-  });
-  viewer.addEventListener('close',()=>{
-    modalVideo.pause();
-    modalVideo.removeAttribute('src');
-    modalVideo.load();
-    modalImage.removeAttribute('src');
-    document.body.classList.remove('viewer-open');
-    if(lastFocus&&lastFocus.isConnected)lastFocus.focus({preventScroll:true});
-    currentWork=null;
-    heroState();
-  });
-  function nextWork(direction) {
-    if(!currentWork||currentWork.id==='opening')return;
-    const list=visibleWorks();
-    const index=list.findIndex(w=>w.id===currentWork.id);
-    renderWork(list[(index+direction+list.length)%list.length]);
-  }
-  $('#viewer-prev').addEventListener('click',()=>nextWork(-1));
-  $('#viewer-next').addEventListener('click',()=>nextWork(1));
-  viewer.addEventListener('keydown',e=>{
-    if(e.target.tagName==='VIDEO')return;
-    if(e.key==='ArrowLeft'){e.preventDefault();nextWork(-1);}
-    if(e.key==='ArrowRight'){e.preventDefault();nextWork(1);}
-  });
-  function mediaError() {
-    $('#viewer-failure').hidden=false;
-    $('#viewer-failure').textContent=t('미디어를 불러올 수 없습니다. 작품 원문에서 확인해 주세요.','This media could not load. Please view the original source.');
-    modalImage.hidden=true;
-    modalVideo.hidden=true;
-    $('#video-fullscreen').hidden=true;
-  }
-  modalImage.addEventListener('error',()=>{if(viewer.open&&currentWork&&!currentWork.video)mediaError();});
-  modalVideo.addEventListener('error',()=>{if(viewer.open&&currentWork?.video&&modalVideo.hasAttribute('src'))mediaError();});
-  $('#video-fullscreen').addEventListener('click',async()=>{
-    try{
-      if(modalVideo.requestFullscreen)await modalVideo.requestFullscreen();
-      else if(modalVideo.webkitEnterFullscreen)modalVideo.webkitEnterFullscreen();
-      else {
-        $('#viewer-failure').hidden=false;
-        $('#viewer-failure').textContent=t('이 브라우저에서는 플레이어의 전체 화면 버튼을 사용해 주세요.','Use the player’s fullscreen control in this browser.');
-      }
-    }catch{
-      $('#viewer-failure').hidden=false;
-      $('#viewer-failure').textContent=t('영상 플레이어의 전체 화면 버튼을 사용해 주세요.','Use the fullscreen control in the video player.');
-    }
-  });
-  $$('.work-image img').forEach(img=>{
-    const fallback=()=>{img.style.visibility='hidden';$('.image-unavailable',img.parentElement).hidden=false;};
-    img.addEventListener('error',fallback);
-    if(img.complete&&!img.naturalWidth)fallback();
-  });
-  function setLanguage(next) {
-    language=next;
-    document.documentElement.lang=next;
-    $$('[data-ko][data-en]').forEach(el=>el.textContent=el.dataset[next]);
-    $('#language').innerHTML=next==='ko'?'KR / <span class="language-muted">EN</span>':'<span class="language-muted">KR</span> / EN';
-    $('#language').setAttribute('aria-label',next==='ko'?'Switch to English':'한국어로 전환');
-    menuToggle.setAttribute('aria-label',t('메뉴 열기','Open navigation'));
-    $('#menu-close').setAttribute('aria-label',t('메뉴 닫기','Close navigation'));
-    $('#viewer-close').setAttribute('aria-label',t('작품 닫기','Close work'));
-    $('#hero-full').setAttribute('aria-label',t('영상 크게 보기','View opening film'));
-    syncHeroButton();
-    if(currentWork)$('#viewer-description').textContent=language==='ko'?currentWork.description:currentWork.en;
-    try{sessionStorage.setItem('pnu-fdl-language',next);}catch{}
-  }
-  $('#language').addEventListener('click',()=>setLanguage(language==='ko'?'en':'ko'));
-  try{if(sessionStorage.getItem('pnu-fdl-language')==='en')setLanguage('en');}catch{}
-  if('IntersectionObserver' in window&&!reduced.matches){
-    const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
-      if(entry.isIntersecting){entry.target.classList.add('revealed');revealObserver.unobserve(entry.target);}
-    }),{threshold:.08});
-    $$('[data-reveal]').forEach(el=>{el.classList.add('reveal-ready');revealObserver.observe(el);});
-  }
-  const progress=$('.progress');
-  let scrolling=false;
-  function updateProgress(){
-    const max=document.documentElement.scrollHeight-window.innerHeight;
-    progress.style.transform='scaleX('+(max>0?Math.min(1,window.scrollY/max):0)+')';
-    scrolling=false;
-  }
-  window.addEventListener('scroll',()=>{if(!scrolling){scrolling=true;requestAnimationFrame(updateProgress);}},{passive:true});
-  let resizeFrame=0;
-  window.addEventListener('resize',()=>{
-    cancelAnimationFrame(resizeFrame);
-    resizeFrame=requestAnimationFrame(()=>{updateProgress();setFilter(currentFilter);});
-    if(window.innerWidth>760&&!mobileNav.hidden)setMenu(false,false);
-  });
-  updateProgress();
-  const canvas=$('#fabric-field');
-  const context=canvas.getContext('2d');
-  let fieldWanted=!reduced.matches;
-  const fieldButton=$('#field-toggle');
-  fieldButton.setAttribute('aria-pressed',String(fieldWanted));
-  if(context) {
-    let width=1,height=1,raf=0,fieldVisible=false;
-    function draw(time=0){
-      const phase=reduced.matches?0:time*.00017;
-      context.clearRect(0,0,width,height);
-      const centerX=width*.69,centerY=height*.48;
-      const radius=Math.min(width*.32,height*.51);
-      context.lineWidth=.65;
-      for(let row=0;row<32;row++){
-        const v=(row/31-.5)*2;
-        context.beginPath();
-        for(let col=0;col<=72;col++){
-          const u=col/72*Math.PI*2;
-          const ripple=Math.sin(u*3+v*4+phase)*.13;
-          const r=radius*(.67+.28*Math.cos(v*2.6)+ripple);
-          const x=centerX+Math.cos(u+v*.5+phase*.23)*r;
-          const y=centerY+v*radius*.86+Math.sin(u*2+phase)*radius*.18+Math.sin(u)*radius*.22;
-          if(col===0)context.moveTo(x,y);else context.lineTo(x,y);
-        }
-        context.strokeStyle='rgba(57,105,127,'+(.12+.25*(1-Math.abs(v)))+')';
-        context.stroke();
-      }
-      for(let line=0;line<12;line++){
-        const a=line/12*Math.PI*2;
-        context.beginPath();
-        for(let k=0;k<=35;k++){
-          const v=(k/35-.5)*2;
-          const r=radius*(.67+.28*Math.cos(v*2.6)+Math.sin(a*3+v*4+phase)*.13);
-          const x=centerX+Math.cos(a+v*.5+phase*.23)*r;
-          const y=centerY+v*radius*.86+Math.sin(a*2+phase)*radius*.18+Math.sin(a)*radius*.22;
-          if(k===0)context.moveTo(x,y);else context.lineTo(x,y);
-        }
-        context.strokeStyle='rgba(57,105,127,.14)';context.stroke();
-      }
-      if(fieldWanted&&fieldVisible&&!document.hidden&&!reduced.matches)raf=requestAnimationFrame(draw);else raf=0;
-    }
-    function resizeCanvas(){
-      const rect=canvas.getBoundingClientRect();
-      width=rect.width;height=rect.height;
-      const dpr=Math.min(window.devicePixelRatio||1,1.5);
-      canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
-      context.setTransform(dpr,0,0,dpr,0,0);
-      if(!raf)draw(performance.now());
-    }
-    fieldButton.addEventListener('click',()=>{fieldWanted=!fieldWanted;fieldButton.setAttribute('aria-pressed',String(fieldWanted));fieldButton.setAttribute('aria-label',fieldWanted?t('배경 움직임 일시정지','Pause background motion'):t('배경 움직임 재생','Play background motion'));syncField();});
-    function syncField(){
-      cancelAnimationFrame(raf);raf=0;
-      if(fieldVisible&&!document.hidden)draw(performance.now());
-    }
-    if('ResizeObserver' in window)new ResizeObserver(resizeCanvas).observe(canvas);else window.addEventListener('resize',resizeCanvas);
-    if('IntersectionObserver' in window)new IntersectionObserver(entries=>{fieldVisible=entries[0].isIntersecting;syncField();},{threshold:0}).observe(canvas);
-    else {fieldVisible=true;syncField();}
-    document.addEventListener('visibilitychange',syncField);
-    window.addEventListener('pagehide',()=>{cancelAnimationFrame(raf);raf=0;});
-    window.addEventListener('pageshow',syncField);
-    reduced.addEventListener('change',syncField);
-    resizeCanvas();
-  }
-  const orbit=$('.orbit');
-  let orbitVisible=false;
-  function syncOrbit(){orbit.style.animationPlayState=orbitVisible&&!document.hidden?'running':'paused';}
-  if('IntersectionObserver' in window)new IntersectionObserver(entries=>{orbitVisible=entries[0].isIntersecting;syncOrbit();}).observe($('.future-art'));
-  document.addEventListener('visibilitychange',syncOrbit);
-  heroState();
+  if(animate)raf=requestAnimationFrame(render);else raf=0;
+ }
+ function refresh(){cancelAnimationFrame(raf);raf=0;last=0;if(visible)render(performance.now());}
+ function size(){
+  const r=canvas.getBoundingClientRect();width=r.width;height=r.height;
+  const d=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*d);canvas.height=Math.round(height*d);ctx.setTransform(d,0,0,d,0,0);
+  if(!raf)render(performance.now());
+ }
+ $$('[data-shape]').forEach(b=>b.addEventListener('click',()=>{
+  shape=b.dataset.shape;$$('[data-shape]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  $('#form-label').textContent=({sphere:'01 — SPHERE',fabric:'02 — FABRIC',dress:'03 — SILHOUETTE'})[shape];
+  if(!moving){initialized=false;}refresh();
+ }));
+ $('#field-speed').addEventListener('input',e=>{speed=Number(e.target.value)/100;});
+ canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag=true;px=e.clientX;py=e.clientY;canvas.setPointerCapture(e.pointerId);stage.style.cursor='grabbing';});
+ canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw+=(e.clientX-px)*.009;pitch=Math.max(-1,Math.min(1,pitch+(e.clientY-py)*.006));px=e.clientX;py=e.clientY;if(!moving)refresh();});
+ function release(){drag=false;stage.style.cursor='grab';}
+ canvas.addEventListener('pointerup',release);canvas.addEventListener('pointercancel',release);
+ canvas.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();if(e.key==='ArrowLeft')yaw-=.15;if(e.key==='ArrowRight')yaw+=.15;if(e.key==='ArrowUp')pitch-=.1;if(e.key==='ArrowDown')pitch+=.1;refresh();});
+ if('ResizeObserver'in window)new ResizeObserver(size).observe(stage);else window.addEventListener('resize',size);
+ if('IntersectionObserver'in window)new IntersectionObserver(es=>{visible=es[0].isIntersecting;refresh();},{threshold:0}).observe(stage);else visible=true;
+ motionListeners.push(refresh);
+ window.addEventListener('pagehide',()=>{cancelAnimationFrame(raf);raf=0;});
+ size();
+}
+setMotion(moving);
 })();
-</script>
-</body></html>
+</script></body></html>
