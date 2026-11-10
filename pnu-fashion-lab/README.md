@@ -7,6 +7,8 @@ Korean-first introduction website with Korean, English and Simplified Chinese sw
 - Original multicolour SVG FASHION letters: individually choreographed stretch, inflate, rotate and bounce entrance; delayed character-by-character title reveal; drag, elastic return, click ripple and replayable assembly. The motion follows the user's supplied entrance screen recording.
 - Fuller plush fashion-object silhouettes: padded hanger A, smiling S-shaped dress character, stitched fabric H, thread spool I, expressive four-hole button O and rounded measuring-tape N. The default HTML remains visible without JavaScript; entrance effects are progressive enhancement with a completion fallback.
 - Three research sections use scroll-driven zippers. Downward page movement opens the teeth and reveals content in proportion to scroll progress; upward movement reverses it at the same positions. Natural content height is reserved to prevent layout feedback or scroll jumps. Click/Enter/Space can scroll to an open or closed endpoint. All content stays visible with animation paused or reduced motion enabled.
+- FASHION letters also perform four small idle choreographies: a staggered hop, paired nudges, spool/button bounce and playful tilts. Gestures start after inactivity and yield to pointer/keyboard interaction, entrance/replay, pause, document visibility and hero visibility.
+- A compact hero leads directly into a five-film reel: OFF BALANCE, ARCHITECTURAL SPACE, RUNWAY, the PNU promotional film and PLAYFUL LAYERS, using existing portfolio media. Muted excerpts advance by actual playback time, with progress indicators, manual film selection, pause and full-film viewing. Only one preview video is loaded at a time; leaving the viewport or opening a menu/dialog pauses playback. Reduced-motion or global pause disables automatic preview; explicit playback remains available.
 - Oversized editorial typography, black stages, cream research accordion, purple people section and lime closing.
 - User-supplied Korean introduction with English and Chinese versions, clickable translated emoji reactions and original smiley illustrations. Navigation, headings, work descriptions and interactive controls switch together; the selected language survives refresh within the session.
 - Three research themes: creativity, culture and society, future clothing and technology.
@@ -34,6 +36,8 @@ Korean-first introduction website with Korean, English and Simplified Chinese sw
 - Professor image loaded from the original source with no grayscale filter.
 
 - Scroll zipper / fuller F update: desktop and 390 × 844 mobile review verified proportional opening, reverse scrolling to identical progress values, stable section heights, keyboard open/close endpoints, Chinese copy, pause-to-readable fallback and no horizontal overflow. Embedded JavaScript syntax and unique IDs passed. F uses a broader, uniform stem without the pinched middle.
+
+- Idle/reel update: observed multiple automatic letter cycles including in-motion transforms; global pause restored all glyphs to rest. All five original videos loaded and played. Desktop and 390 × 844 mobile checks covered autoplay transitions, manual selection, pause, full-video dialog, background pause, offscreen pause, translated controls and unchanged scroll zippers. No page-origin console errors or mobile horizontal overflow. About, research, existing works, film, people and footer markup stayed unchanged.
 
 ## Sources
 
