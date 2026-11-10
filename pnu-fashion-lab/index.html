@@ -162,6 +162,32 @@ html[lang="zh-CN"] :is(h2,h3,.line-link,.archive-row b){overflow-wrap:anywhere}
  .people,.research-detail{grid-template-columns:minmax(0,1fr)}
  .section-top p,.people-copy p{max-width:100%}
 }
+
+/* Continuous plush motion, independent of the SVG's larger dance poses.
+   Individual transform properties preserve the existing drag transform. */
+.fashion-word .letter{
+ animation:plushWiggle 2.8s ease-in-out infinite;
+ animation-delay:calc(var(--dance-index,0) * -0.29s);
+ transform-origin:50% 80%;
+}
+.fashion-word .letter:nth-child(2n){animation-name:plushHop;animation-duration:3.2s}
+.fashion-word .letter:nth-child(3n){animation-direction:reverse}
+.fashion-word .letter.dragging{animation-play-state:paused}
+@keyframes plushWiggle{
+ 0%,100%{translate:0 0;rotate:-4deg;scale:1 .98}
+ 18%{translate:0 -8%;rotate:7deg;scale:.97 1.04}
+ 38%{translate:0 -3%;rotate:-9deg;scale:1.04 .97}
+ 58%{translate:0 -11%;rotate:6deg;scale:.96 1.06}
+ 78%{translate:0 2%;rotate:2deg;scale:1.07 .92}
+}
+@keyframes plushHop{
+ 0%,100%{translate:0 0;rotate:3deg;scale:1}
+ 18%{translate:0 4%;rotate:-5deg;scale:1.1 .88}
+ 38%{translate:0 -15%;rotate:8deg;scale:.94 1.08}
+ 57%{translate:0 2%;rotate:-6deg;scale:1.08 .92}
+ 76%{translate:0 -7%;rotate:5deg;scale:.98 1.03}
+}
+@media(prefers-reduced-motion:reduce){.fashion-word .letter{animation:none}}
 </style></head><body>
 <audio id="lab-music" src="assets/lab-background.m4a" autoplay loop preload="auto" playsinline></audio>
 <button id="music-toggle" class="sound-control" type="button" aria-label="배경 음악 켜기" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="music-label">음악 켜기</span></button>
@@ -324,7 +350,8 @@ film.addEventListener('play',updateFilmControl);film.addEventListener('pause',up
 $('#film-pause').addEventListener('click',()=>{filmWanted=film.paused;syncFilm();});
 film.addEventListener('playing',()=>{if(!previewAllowed(filmVisible,filmWanted))film.pause();});
 film.addEventListener('canplay',syncFilm);
-const letters=$$('.letter');
+const letters=$('.letter');
+letters.forEach((el,i)=>el.style.setProperty('--dance-index',i));
 
 const hero=$('.hero'), heroAnimations=new Set();
 function elastic(el,frames,options){
@@ -381,7 +408,6 @@ function rippleLetter(index){
 }
 
 function burst(el){
- resetIdle();
  el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');
  if(!moving)return;
  for(let i=0;i<5;i++){const s=document.createElement('span');s.className='spark';s.setAttribute('aria-hidden','true');s.textContent=i%2?'✦':'·';s.style.setProperty('--sx',Math.round((Math.random()-.5)*200)+'px');s.style.setProperty('--sy',Math.round(-40-Math.random()*110)+'px');el.appendChild(s);setTimeout(()=>s.remove(),750);}
@@ -395,20 +421,21 @@ letters.forEach(el=>{
  el.addEventListener('click',()=>{if(!dragged){burst(el);rippleLetter(Number(el.dataset.letter));}dragged=false;});
  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();burst(el);rippleLetter(Number(el.dataset.letter));}});
 });
-// Enthusiastic idle choreography yields immediately to direct interaction.
-let idleTimer=0,idleVisible=false,idleStep=0,idleLastInput=0;
+// Continuous choreography: only a directly dragged letter yields control.
+let idleTimer=0,idleVisible=true,idleStep=0;
 const idleAnimations=new Set();
 function stopIdle(){clearTimeout(idleTimer);idleTimer=0;for(const a of idleAnimations)a.cancel();idleAnimations.clear();delete hero.dataset.idlePose;}
 function planIdle(delay=1700){clearTimeout(idleTimer);idleTimer=0;if(moving&&!document.hidden&&idleVisible)idleTimer=setTimeout(idleDance,delay);}
 function resetIdle(delay=1700){stopIdle();planIdle(delay);}
 function idleMove(i,frames,duration=1300,delay=0){
+ if(letters[i].classList.contains('dragging'))return;
+ if($('svg',letters[i]).getAnimations().some(a=>a.playState==='running'))return;
  const a=elastic($('svg',letters[i]),frames.map((transform,n)=>({transform,offset:n/(frames.length-1)})),{duration,delay,easing:'ease-in-out'});
  if(a){idleAnimations.add(a);const done=()=>idleAnimations.delete(a);a.addEventListener('finish',done,{once:true});a.addEventListener('cancel',done,{once:true});}
 }
 function idleDance(){
  idleTimer=0;
  if(!moving||document.hidden||!idleVisible)return;
- if(heroAnimations.size||$('.dragging',hero)){planIdle(250);return;}
  const pose=idleStep++%5;hero.dataset.idlePose=String(pose);hero.dataset.idleCycle=String(idleStep);
  if(pose===0){
   letters.forEach((_,i)=>idleMove(i,['none','translateY(7%) scale(1.16,.82)','translateY(-32%) rotate('+((i%2?1:-1)*17)+'deg) scale(.9,1.14)','translateY(5%) scale(1.12,.88)','translateY(-8%)','none'],1450,i*105));
@@ -423,13 +450,8 @@ function idleDance(){
  }
  planIdle(2450+Math.random()*350);
 }
-function idleInput(){const now=performance.now();if(now-idleLastInput<180)return;idleLastInput=now;resetIdle();}
-hero.addEventListener('pointermove',idleInput,{passive:true});
-hero.addEventListener('pointerdown',()=>resetIdle(),{passive:true});
-hero.addEventListener('keydown',()=>resetIdle());
-window.addEventListener('scroll',()=>{if(idleVisible)idleInput();},{passive:true});
-if('IntersectionObserver'in window)new IntersectionObserver(es=>{idleVisible=es[0].intersectionRatio>.25;resetIdle(2600);},{threshold:[0,.25]}).observe(hero);
-else{idleVisible=true;planIdle(2600);}
+// Scroll, pointer movement and page taps never reset the choreography.
+planIdle(2600);
 motionListeners.push(()=>{if(!moving||document.hidden)stopIdle();else planIdle();});
 window.addEventListener('pagehide',stopIdle);
 
