@@ -5,6 +5,8 @@ Korean-first introduction website with Korean, English and Simplified Chinese sw
 ## Current design — 2026-11-10
 
 - Original multicolour SVG FASHION letters: individually choreographed stretch, inflate, rotate and bounce entrance; delayed character-by-character title reveal; drag, elastic return, click ripple and replayable assembly. The motion follows the user's supplied entrance screen recording.
+- Fuller plush fashion-object silhouettes: padded hanger A, smiling S-shaped dress character, stitched fabric H, thread spool I, expressive four-hole button O and rounded measuring-tape N. The default HTML remains visible without JavaScript; entrance effects are progressive enhancement with a completion fallback.
+- Three research sections use animated zippers: click the native summary, press Enter/Space or drag the puller to reveal content. Reverse drag closes it; opening another section closes the previous one. Labels follow the selected language and pause/reduced-motion settings finish immediately.
 - Oversized editorial typography, black stages, cream research accordion, purple people section and lime closing.
 - User-supplied Korean introduction with English and Chinese versions, clickable translated emoji reactions and original smiley illustrations. Navigation, headings, work descriptions and interactive controls switch together; the selected language survives refresh within the session.
 - Three research themes: creativity, culture and society, future clothing and technology.
@@ -30,6 +32,8 @@ Korean-first introduction website with Korean, English and Simplified Chinese sw
 - Desktop and 390 × 844 Chinese layout review found no horizontal document overflow; mobile navigation and the footer were visually reviewed.
 - Entrance/replay animation was observed mid-assembly and settled; pausing during assembly leaves the complete title and letters visible.
 - Professor image loaded from the original source with no grayscale filter.
+
+- Plush/zipper update: desktop and 390 × 844 mobile review passed; drag-open, drag-close, exclusive expansion, keyboard interaction, English labels, animation pause and script-disabled hero visibility were verified. No horizontal document overflow.
 
 ## Sources
 
