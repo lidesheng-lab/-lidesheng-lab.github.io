@@ -152,6 +152,16 @@ html[lang=zh-CN] .about-signoff{font-size:clamp(28px,4.2vw,60px);line-height:1.4
 
 .sound-control{position:fixed;left:22px;bottom:20px;z-index:80;display:flex;align-items:center;gap:9px;min-height:42px;padding:9px 15px;border:1px solid #ffffff40;border-radius:25px;background:#151419ed;color:#f3f2ee;font-size:11px;box-shadow:0 3px 18px #0003;backdrop-filter:blur(12px)}
 .sound-control[aria-pressed="true"]{color:var(--lime);border-color:#c5ff3570}.sound-control:focus-visible{outline:2px solid var(--lime);outline-offset:4px}.sound-bars{display:flex;gap:3px;align-items:center;height:17px}.sound-bars i{display:block;width:3px;height:5px;background:currentColor;border-radius:2px}.sound-control[aria-pressed="true"] .sound-bars i{animation:musicBar .9s ease-in-out infinite alternate}.sound-bars i:nth-child(2){animation-delay:-.35s!important}.sound-bars i:nth-child(3){animation-delay:-.65s!important}.modal-open .sound-control{visibility:hidden}@keyframes musicBar{to{height:16px}}@media(max-width:760px){.sound-control{left:17px;bottom:17px;min-height:36px;padding:7px 12px;font-size:10px}}
+
+/* Keep Chinese copy inside its column; allow grid/flex children to shrink. */
+.section-top>*,.people>*,.research-detail>*,.research-item summary>*,.tech-top>*,.footer-grid>*{min-width:0}
+html[lang="zh-CN"] :is(.section-top p,.about-copy,.research-detail p,.people-copy p,.tech-top p,.viewer-info p){word-break:normal;overflow-wrap:anywhere;white-space:normal}
+html[lang="zh-CN"] :is(.people-copy,.research-detail,.section-top,.archive-row,.footer-grid){min-width:0;max-width:100%}
+html[lang="zh-CN"] :is(h2,h3,.line-link,.archive-row b){overflow-wrap:anywhere}
+@media(max-width:760px){
+ .people,.research-detail{grid-template-columns:minmax(0,1fr)}
+ .section-top p,.people-copy p{max-width:100%}
+}
 </style></head><body>
 <audio id="lab-music" src="assets/lab-background.m4a" autoplay loop preload="auto" playsinline></audio>
 <button id="music-toggle" class="sound-control" type="button" aria-label="배경 음악 켜기" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="music-label">음악 켜기</span></button>
@@ -264,28 +274,29 @@ function playPreview(video){
  });
 }
 const music=$('#lab-music'),musicButton=$('#music-toggle');
-let musicWanted=true,musicPending=null,musicBlocked=false;
+let musicWanted=true,musicPending=null,musicBlocked=false,musicPlaying=false;
 try{musicWanted=sessionStorage.getItem('pnu-fdl-music')!=='off';}catch{}
 music.volume=.35;music.loop=true;
 function musicLabels(){
- const playing=!music.paused&&!music.error;
- const label=music.error?reelText('음악 다시 시도','RETRY MUSIC','音乐 · 重试'):playing?reelText('음악 켜짐','MUSIC ON','音乐开'):!musicWanted?reelText('음악 꺼짐','MUSIC OFF','音乐关'):viewer.open&&activeWork?.video?reelText('영상 재생 중','FILM AUDIO','影片播放中'):reelText('음악 켜기','TAP FOR MUSIC','轻触开启音乐');
+ const playing=musicPlaying&&!music.paused&&!music.error;
+ const label=music.error?reelText('음악 다시 시도','RETRY MUSIC','音乐 · 重试'):playing?reelText('음악 일시정지','PAUSE MUSIC','暂停音乐'):!musicWanted?reelText('음악 재생','PLAY MUSIC','播放音乐'):viewer.open&&activeWork?.video?reelText('영상 재생 중','FILM AUDIO','影片播放中'):reelText('음악 켜기','TAP FOR MUSIC','轻触开启音乐');
  $('#music-label').textContent=label;musicButton.setAttribute('aria-pressed',String(playing));
  musicButton.setAttribute('aria-label',playing?reelText('배경 음악 끄기','Turn background music off','关闭背景音乐'):reelText('배경 음악 켜기','Turn background music on','开启背景音乐'));
  musicButton.dataset.state=music.error?'error':playing?'playing':!musicWanted?'off':musicBlocked?'blocked':'waiting';
 }
-function syncMusic(){
+function syncMusic(fromGesture=false){
  const allowed=musicWanted&&!document.hidden&&!(viewer.open&&activeWork?.video);
  music.autoplay=allowed;
  if(!allowed){music.pause();musicLabels();return;}
- if(!music.paused||musicPending){musicLabels();return;}
+ if((!music.paused&&!musicBlocked&&!fromGesture)||(musicPending&&!fromGesture)||(musicBlocked&&!fromGesture)){musicLabels();return;}
+ music.muted=false;
  const pending=music.play();if(!pending)return;
  musicPending=pending;
- pending.then(()=>{musicBlocked=false;}).catch(error=>{musicBlocked=error.name==='NotAllowedError';}).finally(()=>{musicPending=null;if(!musicWanted||document.hidden||(viewer.open&&activeWork?.video))music.pause();musicLabels();});
+ pending.then(()=>{musicBlocked=false;}).catch(error=>{musicBlocked=error.name==='NotAllowedError';}).finally(()=>{if(musicPending===pending)musicPending=null;if(!musicWanted||document.hidden||(viewer.open&&activeWork?.video))music.pause();musicLabels();});
  musicLabels();
 }
-musicButton.addEventListener('click',()=>{musicWanted=music.paused;if(music.error&&musicWanted)music.load();try{sessionStorage.setItem('pnu-fdl-music',musicWanted?'on':'off');}catch{}syncMusic();});
-['playing','pause','error'].forEach(event=>music.addEventListener(event,musicLabels));
+musicButton.addEventListener('click',()=>{musicWanted=!(musicPlaying&&!music.paused);if(music.error&&musicWanted)music.load();try{sessionStorage.setItem('pnu-fdl-music',musicWanted?'on':'off');}catch{}syncMusic(true);});
+['playing','pause','waiting','ended','error'].forEach(event=>music.addEventListener(event,()=>{musicPlaying=event==='playing';musicLabels();}));
 preparePreview(film);
 function syncFilm(){
  film.autoplay=previewAllowed(filmVisible,filmWanted);
@@ -337,7 +348,7 @@ const entrances=[
 ];
 let heroWatchdog=0;
 function assemble(initial=false){
- resetIdle(6000);finishHero();clearTimeout(heroWatchdog);if(!moving)return;
+ resetIdle(2600);finishHero();clearTimeout(heroWatchdog);if(!moving)return;
  heroWatchdog=setTimeout(finishHero,4200);
  hero.dataset.assembly=String((Number(hero.dataset.assembly)||0)+1);
  letters.forEach((el,i)=>{
@@ -384,12 +395,12 @@ letters.forEach(el=>{
  el.addEventListener('click',()=>{if(!dragged){burst(el);rippleLetter(Number(el.dataset.letter));}dragged=false;});
  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();burst(el);rippleLetter(Number(el.dataset.letter));}});
 });
-// Small, irregular idle gestures yield immediately to direct interaction.
+// Enthusiastic idle choreography yields immediately to direct interaction.
 let idleTimer=0,idleVisible=false,idleStep=0,idleLastInput=0;
 const idleAnimations=new Set();
 function stopIdle(){clearTimeout(idleTimer);idleTimer=0;for(const a of idleAnimations)a.cancel();idleAnimations.clear();delete hero.dataset.idlePose;}
-function planIdle(delay=4800){clearTimeout(idleTimer);idleTimer=0;if(moving&&!document.hidden&&idleVisible)idleTimer=setTimeout(idleDance,delay);}
-function resetIdle(delay=4800){stopIdle();planIdle(delay);}
+function planIdle(delay=1700){clearTimeout(idleTimer);idleTimer=0;if(moving&&!document.hidden&&idleVisible)idleTimer=setTimeout(idleDance,delay);}
+function resetIdle(delay=1700){stopIdle();planIdle(delay);}
 function idleMove(i,frames,duration=1300,delay=0){
  const a=elastic($('svg',letters[i]),frames.map((transform,n)=>({transform,offset:n/(frames.length-1)})),{duration,delay,easing:'ease-in-out'});
  if(a){idleAnimations.add(a);const done=()=>idleAnimations.delete(a);a.addEventListener('finish',done,{once:true});a.addEventListener('cancel',done,{once:true});}
@@ -397,29 +408,28 @@ function idleMove(i,frames,duration=1300,delay=0){
 function idleDance(){
  idleTimer=0;
  if(!moving||document.hidden||!idleVisible)return;
- if(heroAnimations.size||$('.dragging',hero)){planIdle(1200);return;}
- const pose=idleStep++%4;hero.dataset.idlePose=String(pose);hero.dataset.idleCycle=String(idleStep);
+ if(heroAnimations.size||$('.dragging',hero)){planIdle(250);return;}
+ const pose=idleStep++%5;hero.dataset.idlePose=String(pose);hero.dataset.idleCycle=String(idleStep);
  if(pose===0){
-  letters.forEach((_,i)=>idleMove(i,['none','translateY(3%) scale(1.06,.94)','translateY(-12%) rotate('+((i%2?1:-1)*6)+'deg) scale(.96,1.06)','translateY(2%) scale(1.04,.96)','none'],1050,i*115));
+  letters.forEach((_,i)=>idleMove(i,['none','translateY(7%) scale(1.16,.82)','translateY(-32%) rotate('+((i%2?1:-1)*17)+'deg) scale(.9,1.14)','translateY(5%) scale(1.12,.88)','translateY(-8%)','none'],1450,i*105));
  }else if(pose===1){
-  const i=idleStep%3;
-  idleMove(i,['none','translateX(5%) rotate(9deg)','translateX(-2%) rotate(-4deg)','rotate(3deg)','none'],1450);
-  idleMove(i+1,['none','none','translateX(5%) rotate(8deg) scale(.96,1.04)','rotate(-5deg)','none'],1500,110);
+  letters.forEach((_,i)=>idleMove(i,['none','translateX(7%) rotate(20deg) translateY(-10%)','translateX(-7%) rotate(-19deg) translateY(-6%)','rotate(10deg) scale(1.08,.94)','none'],1650,i*70));
  }else if(pose===2){
-  idleMove(4,['none','translateY(4%) scale(1.13,.86)','translateY(-16%) rotate(-12deg)','translateY(2%) rotate(5deg) scale(1.05,.95)','none'],1500);
-  idleMove(5,['none','rotate(9deg) scale(1.05,.96)','rotate(-11deg) scale(.97,1.05)','rotate(5deg)','none'],1700,170);
+  letters.forEach((_,i)=>idleMove(i,['none','translateY(5%) scale(1.14,.85)','translateY(-28%) rotate('+((i%2?1:-1)*24)+'deg)','translateY(-10%) rotate('+((i%2?-1:1)*12)+'deg)','translateY(4%) scale(1.1,.9)','none'],1550,(6-i)*85));
+ }else if(pose===3){
+  [0,6,1,5,2,4,3].forEach((i,j)=>idleMove(i,['none','rotate(-20deg) translateY(-18%) scale(1.12)','rotate(22deg) translateY(-9%)','rotate(-12deg) translateY(-15%)','none'],1500,j*80));
  }else{
-  [2,5,0,6].forEach((i,j)=>idleMove(i,['none','rotate(-9deg) translateY(-3%)','rotate(8deg) scale(1.04,.97)','rotate(-3deg)','none'],1250,j*140));
+  letters.forEach((_,i)=>idleMove(i,['none','translateY(6%) scale(1.16,.8)','translateY(-35%) rotate('+((i%2?1:-1)*16)+'deg) scale(.94,1.1)','translateY(4%) scale(1.12,.86)','translateY(-17%) rotate('+((i%2?-1:1)*10)+'deg)','none'],1800,i*45));
  }
- planIdle(4500+Math.random()*1600);
+ planIdle(2450+Math.random()*350);
 }
 function idleInput(){const now=performance.now();if(now-idleLastInput<180)return;idleLastInput=now;resetIdle();}
 hero.addEventListener('pointermove',idleInput,{passive:true});
 hero.addEventListener('pointerdown',()=>resetIdle(),{passive:true});
 hero.addEventListener('keydown',()=>resetIdle());
 window.addEventListener('scroll',()=>{if(idleVisible)idleInput();},{passive:true});
-if('IntersectionObserver'in window)new IntersectionObserver(es=>{idleVisible=es[0].intersectionRatio>.25;resetIdle(5200);},{threshold:[0,.25]}).observe(hero);
-else{idleVisible=true;planIdle(6000);}
+if('IntersectionObserver'in window)new IntersectionObserver(es=>{idleVisible=es[0].intersectionRatio>.25;resetIdle(2600);},{threshold:[0,.25]}).observe(hero);
+else{idleVisible=true;planIdle(2600);}
 motionListeners.push(()=>{if(!moving||document.hidden)stopIdle();else planIdle();});
 window.addEventListener('pagehide',stopIdle);
 
@@ -753,7 +763,8 @@ window.addEventListener('pageshow',refreshMedia);
 document.addEventListener('visibilitychange',refreshMedia);
 function wakeMedia(event){
  if(event.target.closest?.('#music-toggle,#film-pause,#reel-pause'))return;
- refreshMedia();startViewer();
+ // Retry directly inside the trusted gesture, even if an earlier autoplay promise is pending.
+ syncMusic(true);refreshMedia();startViewer();
 }
 ['pointerup','touchend','keydown'].forEach(event=>document.addEventListener(event,wakeMedia,{passive:true}));
 setMotion(moving);refreshMedia();
