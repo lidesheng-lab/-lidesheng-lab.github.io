@@ -214,7 +214,7 @@ html[lang="zh-CN"] :is(h2,h3,.line-link,.archive-row b){overflow-wrap:anywhere}
 <section class="reel-section" id="showreel" aria-labelledby="reel-heading">
  <div class="reel-heading"><h2 id="reel-heading" data-ko="ideas in motion." data-en="ideas in motion." data-zh="让作品动起来。">ideas in motion.</h2><p>SELECTED FILMS / DESHENG LI</p></div>
  <div class="reel-stage" id="reel-stage">
-  <video id="work-reel" src="https://lidesheng.art/film-off-balance-20261014.mp4" autoplay muted playsinline webkit-playsinline preload="metadata" poster="https://lidesheng.art/film-off-balance-20261014.jpg" aria-label="Selected fashion film previews"></video>
+  <video id="work-reel" src="https://lidesheng.art/film-off-balance-20261014.mp4" autoplay muted playsinline webkit-playsinline preload="auto" poster="https://lidesheng.art/film-off-balance-20261014.jpg" aria-label="Selected fashion film previews"></video>
   <div class="reel-shade" aria-hidden="true"></div>
   <div class="reel-topline" aria-hidden="true"><span class="reel-live"><i></i>PLAY / FDL</span><span id="reel-count">01 / 05</span></div>
   <button class="reel-watch" id="reel-watch" type="button"><span data-ko="play ↗" data-en="play ↗" data-zh="播放 ↗">play ↗</span></button>
@@ -290,13 +290,15 @@ let filmVisible=false, filmWanted=true;
 const mediaPlays=new WeakMap();
 function preparePreview(video){video.defaultMuted=true;video.muted=true;video.playsInline=true;video.setAttribute('muted','');video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');}
 function previewAllowed(visible,wanted){return visible&&wanted&&!document.hidden&&!viewer.open&&menu.hidden;}
-function playPreview(video){
- preparePreview(video);if(!video.paused||mediaPlays.has(video))return;
+function playPreview(video,fromGesture=false){
+ preparePreview(video);if(!video.paused)return;
+ const previous=mediaPlays.get(video);
+ if(previous&&!fromGesture&&Date.now()-previous.started<4000)return;
  const source=video.currentSrc||video.src;
  const play=video.play();if(!play)return;
- mediaPlays.set(video,play);
+ const request={promise:play,started:Date.now()};mediaPlays.set(video,request);
  play.then(()=>{delete video.dataset.autoplayBlocked;}).catch(error=>{if(error.name==='NotAllowedError')video.dataset.autoplayBlocked='true';}).finally(()=>{
-  if(mediaPlays.get(video)===play)mediaPlays.delete(video);
+  if(mediaPlays.get(video)===request)mediaPlays.delete(video);
   if(source!==(video.currentSrc||video.src))syncFilm();
  });
 }
@@ -326,8 +328,8 @@ musicButton.addEventListener('click',()=>{musicWanted=!(musicPlaying&&!music.pau
 ['playing','pause','waiting','ended','error'].forEach(event=>music.addEventListener(event,()=>{musicPlaying=event==='playing';musicLabels();}));
 preparePreview(film);
 function syncFilm(){
- film.autoplay=previewAllowed(filmVisible,filmWanted);
- if(film.autoplay)playPreview(film);else film.pause();
+ film.autoplay=filmWanted;
+ if(previewAllowed(filmVisible,filmWanted))playPreview(film);else film.pause();
  syncReel();syncMusic();
 }
 function setMotion(v){
@@ -501,7 +503,7 @@ function selectReel(index){
 function syncReel(){
  if(!reelLoaded&&reelVisible)selectReel(reelIndex);
  const canPlay=previewAllowed(reelVisible,reelWanted)&&!reelFailed;
- reelVideo.autoplay=canPlay;
+ reelVideo.autoplay=reelWanted;
  if(canPlay&&reelLoaded)playPreview(reelVideo);else reelVideo.pause();
  reelLabels();
 }
@@ -787,9 +789,24 @@ document.addEventListener('visibilitychange',refreshMedia);
 function wakeMedia(event){
  if(event.target.closest?.('#music-toggle,#film-pause,#reel-pause'))return;
  // Retry directly inside the trusted gesture, even if an earlier autoplay promise is pending.
- syncMusic(true);refreshMedia();startViewer();
+ refreshMedia();
+ if(previewAllowed(filmVisible,filmWanted))playPreview(film,true);
+ if(previewAllowed(reelVisible,reelWanted)&&!reelFailed)playPreview(reelVideo,true);
+ syncMusic(true);startViewer();
 }
-['pointerup','touchend','keydown'].forEach(event=>document.addEventListener(event,wakeMedia,{passive:true}));
+['pointerup','touchend','click','keydown'].forEach(event=>document.addEventListener(event,wakeMedia,{passive:true}));
+ // Recover browser-initiated pauses and pending play requests without overriding manual pause.
+ let mediaRecovery=0;
+ function scheduleMediaRecovery(){
+  clearTimeout(mediaRecovery);
+  if(!document.hidden)mediaRecovery=setTimeout(refreshMedia,250);
+ }
+ [film,reelVideo].forEach(video=>{
+  ['pause','loadeddata','canplaythrough','stalled'].forEach(event=>video.addEventListener(event,scheduleMediaRecovery));
+ });
+ window.addEventListener('focus',refreshMedia);
+ window.addEventListener('online',refreshMedia);
+ setInterval(()=>{if(!document.hidden&&(filmWanted||reelWanted))refreshMedia();},2500);
 setMotion(moving);refreshMedia();
 window.addEventListener('load',refreshMedia,{once:true});
 [300,1200,3000].forEach(delay=>setTimeout(refreshMedia,delay));
