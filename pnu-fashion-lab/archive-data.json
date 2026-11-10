@@ -1,0 +1,1723 @@
+{
+  "professor": {
+    "name": "이윤경 / Yoon Kyung Lee",
+    "image": "https://fashiondesign.pusan.ac.kr/sites/fashiondesign/images/prof.jpg",
+    "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71508/subview.do",
+    "sourceDigest": "bdf6a336ccab2917176ce0e3ef42743feeae2d597b9d88f03bd6d8acf8fe169d"
+  },
+  "members": [
+    {
+      "name": "리더셩",
+      "english": "Li, Desheng",
+      "role": "Ph.D. researcher",
+      "email": "pnu.pusan@gmail.com",
+      "research": "Sustainable Fashion Design, Digital Fashion Design, 3D, NFT",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2421/27212/artclView.do"
+    },
+    {
+      "name": "한주경",
+      "english": "Han, Jukyoung",
+      "role": "Master’s researcher",
+      "email": "wnrud8154@naver.com",
+      "research": "Fashion Design with Digital Couture",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2421/28222/artclView.do"
+    },
+    {
+      "name": "유현서",
+      "english": "Yoo, Hyeonseo",
+      "role": "Master’s researcher",
+      "email": "2026culture@gmail.com",
+      "research": "Fashion Aesthetics with Design",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2421/32059/artclView.do"
+    },
+    {
+      "name": "김여경",
+      "english": "Kim, Yeokyung",
+      "role": "Ph.D. researcher",
+      "email": "natalia.y.kim@gmail.com",
+      "research": "Fashion Technology & Future Fashion Ecosystems, AI & Digital Fashion",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2421/32060/artclView.do"
+    },
+    {
+      "name": "샤오란춘",
+      "english": "Shao, Lanchun",
+      "role": "Master’s researcher",
+      "email": "lanchunshao@gmail.com",
+      "research": "Humanoid Robots, Fashion Communication, HRI",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2421/32061/artclView.do"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "김문수",
+      "english": "Kim, Moon Soo",
+      "role": "Bachelor, (주)뱅뱅어패럴",
+      "email": "bread700@naver.com",
+      "research": "독립 디자이너의 여성복 온라인 쇼핑몰(Online shop for womenswear from independent designers)",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2478/27232/artclView.do"
+    },
+    {
+      "name": "이다감",
+      "english": "Lee, Dagam",
+      "role": "Bachelor, (주)HAGO house 하고하우스_브랜드:콤 스튜디오/큐리티",
+      "email": "dltmfrl1330@gmail.com",
+      "research": "",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2478/27233/artclView.do"
+    },
+    {
+      "name": "백수진",
+      "english": "Peak, Soojin",
+      "role": "Master, 부산국립 국악원 무대의상 감독( Director of Stage Costumes at Busan National Gugak Center)",
+      "email": "back70000@naver.com",
+      "research": "처용무복(Cheoyongmu clothing)",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2478/27234/artclView.do"
+    },
+    {
+      "name": "김유미",
+      "english": "Jin, Youmei",
+      "role": "Master, (주)오버랩",
+      "email": "syywrd@gmail.com",
+      "research": "Sustainable fashion design and industry within cultural diversity, 3D CLO",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2478/32062/artclView.do"
+    },
+    {
+      "name": "류채희",
+      "english": "Ryu, Chaehi",
+      "role": "Master, (주) FTN (Fashion Vendor) )",
+      "email": "todaysall@pusan.ac.kr",
+      "research": "Fashion Design with AI technology",
+      "source": "https://fashiondesign.pusan.ac.kr/pnuProfl/fashiondesign/2478/32690/artclView.do"
+    }
+  ],
+  "publications": [
+    {
+      "title": "A Qualitative Comparison of Upcycling and Conventional Design Development in a Fashion Design Studio Class",
+      "author": "Desheng Li & Yoon Kyung Lee",
+      "venue": "한국의류학회지",
+      "date": "2025.Oct",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10972/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Innovation and Diffusion of A-Jae Fashion - Reverse Generational Influence in South Korea -",
+      "author": "Lee, Y. K.",
+      "venue": "복식",
+      "date": "2025.Oct",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10973/view.do",
+      "attachments": [
+        {
+          "label": "52.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1930/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Artificial Intelligence-Based Distribution Status of Sustainable Fashion Systems by Country - Comparative Case Studies of Stella McCartney, Patagonia, RE;CODE, and MUJI -",
+      "author": "Lee, Y. K.",
+      "venue": "복식",
+      "date": "2025.Dec.",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10974/view.do",
+      "attachments": [
+        {
+          "label": "57.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1931/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Creative Design Discipline through Convergence of Fashion and Classical Music",
+      "author": "Lee, Y. K.",
+      "venue": "한국의류학회지",
+      "date": "2025. Oct.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10971/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Effective Human-AI Interaction as Observational Learning for Multisensory Creative Fashion Design: Sound(music)-Text-Image Processing",
+      "author": "Lee, Y. K.",
+      "venue": "International Journal of Costume and Fashio",
+      "date": "2025. Dec.",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10975/view.do",
+      "attachments": [
+        {
+          "label": "58.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1932/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "How the Field of Fashion can use ChatGPT to Predict Fashion Trends",
+      "author": "Chaehi Ryu and Yoon Kyung Lee*",
+      "venue": "Clothing and Textiles Research Journal",
+      "date": "2025. 09(Sep)",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10519/view.do",
+      "attachments": [
+        {
+          "label": "51.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1873/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "현대 처용무복 현황과 공연복으로서 처용무복 디자인 제안",
+      "author": "백수진, 이윤경",
+      "venue": "한국의류학회지",
+      "date": "2025. 04(Apr).01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10332/view.do",
+      "attachments": [
+        {
+          "label": "처용무.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1812/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Multi-persona expressed in avatars of Gen Z creators in the universal metaverse: focusing on Jan Baudrillard’s simulation",
+      "author": "Lee, Y. K.",
+      "venue": "International Journal of Fashion Design, Technology and Education",
+      "date": "2025. 03(Mar). 28",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10279/view.do",
+      "attachments": [
+        {
+          "label": "Multimultipersona.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1814/fileDown.do"
+        }
+      ],
+      "links": [
+        {
+          "label": "https://doi.org/10.1080/17543266.2025.2480785",
+          "url": "https://doi.org/10.1080/17543266.2025.2480785"
+        }
+      ]
+    },
+    {
+      "title": "Could Punk Style be the New Solution for Up-Cycling Fashion?",
+      "author": "Desheng Li & Yoon Kyung Lee",
+      "venue": "International Journal of Costume and Fashion",
+      "date": "2024. 12(Dec).01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10084/view.do",
+      "attachments": [
+        {
+          "label": "46_upcycling.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1787/fileDown.do"
+        }
+      ],
+      "links": [
+        {
+          "label": "https://doi.org/10.7233/ijcf.2024.24.2.013",
+          "url": "https://doi.org/10.7233/ijcf.2024.24.2.013"
+        }
+      ]
+    },
+    {
+      "title": "Design Preferences based on the Up-Cycling Stage of a Fashion Product",
+      "author": "Yu Na Seo, Hyeonkyeong Shin, Ji An Lee, Chorong Youn, Yoon Kyung Lee*†",
+      "venue": "International Journal of Costume and Fashion",
+      "date": "2024. 12(Dec).01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10085/view.do",
+      "attachments": [
+        {
+          "label": "47_Recode.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1788/fileDown.do"
+        }
+      ],
+      "links": [
+        {
+          "label": "https://doi.org/10.7233/ijcf.2024.24.2.064",
+          "url": "https://doi.org/10.7233/ijcf.2024.24.2.064"
+        }
+      ]
+    },
+    {
+      "title": "Gen Z’s Perception of Social Media Profile Pictures from a Baudrillardian Perspective and Fashion Magazine Cover Images of Digital Habitus",
+      "author": "Lee, Y. K.",
+      "venue": "International Journal of Costume and Fashion",
+      "date": "2024. 06(June). 01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/9240/view.do",
+      "attachments": [
+        {
+          "label": "45.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1753/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Sustainable Fashion Manufacturing System in the Korean Fashion Industry. In Sustainable Manufacturing Practices in the Textiles and Fashion Sector (pp. 281-299). Cham: Springer Nature Switzerland.",
+      "author": "Lee, Y. K.",
+      "venue": "Cham: Springer Nature Switzerland.",
+      "date": "2024. 02.14",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8972/view.do",
+      "attachments": [
+        {
+          "label": "43.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1699/fileDown.do"
+        }
+      ],
+      "links": [
+        {
+          "label": "https://link.springer.com/chapter/10.1007/978-3-031-51362-6_11",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-031-51362-6_11"
+        }
+      ]
+    },
+    {
+      "title": "메타패션 시장 확장을 위한 메타패션과 실제패션 특성 비교와 그 방향성 예측",
+      "author": "박유정, 이윤경",
+      "venue": "한국의류학회지",
+      "date": "2024. 01(Jan).01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/9031/view.do",
+      "attachments": [
+        {
+          "label": "44.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1722/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Examining Portraits in Digital Fashion Art Non-Fungible Tokens (NFTs) through Baudrillard's Simulation",
+      "author": "Lee, Y. K",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2023.10.01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8668/view.do",
+      "attachments": [
+        {
+          "label": "42.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1692/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "The effect of brand identity extension through inter-industry collaboration: The case of a fashion brand and a long-lived domestic brand",
+      "author": "Lee, Y. K., Choi, S. A., Choi, Y., Lee, M.",
+      "venue": "International Journal of Costume and Fashion",
+      "date": "2023.06.25",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8645/view.do",
+      "attachments": [
+        {
+          "label": "41.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1691/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "How complex systems get engaged in fashion design creation: Using artificial intelligence",
+      "author": "Lee, Y. K.",
+      "venue": "Thinking Skills and Creativity",
+      "date": "2022.12.",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8644/view.do",
+      "attachments": [
+        {
+          "label": "40.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1690/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Exploring the value of sustainable fashion products among young Korean consumers",
+      "author": "Lee, Y. K.",
+      "venue": "International Journal of Fashion Design",
+      "date": "2022.10.25",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8643/view.do",
+      "attachments": [
+        {
+          "label": "39.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1689/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Promoting sustainable clothing behavior in South Korea with focus on users of secondhand clothing",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "Fashion Practice",
+      "date": "2022.05.04",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8641/view.do",
+      "attachments": [
+        {
+          "label": "38.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1688/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Fashion CAD education during the COVID-19 pandemic in South Korea: comparison of online and offline learning achievements",
+      "author": "Lee, Y. K.",
+      "venue": "International Journal of Fashion Design",
+      "date": "2022.05.04",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8642/view.do",
+      "attachments": [
+        {
+          "label": "37.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1687/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "초연결사회에서 패션디자이너와 패션혁신자의 역할-인스타그램, 패션 인플루언서를 중심으로",
+      "author": "이윤경",
+      "venue": "한국디자인포럼",
+      "date": "2022.04.26",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8640/view.do",
+      "attachments": [
+        {
+          "label": "36.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1686/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "The Perspective of Charles Taylor's' Authenticity'on Fashion-Focusing on'Goganzi'Digital Content",
+      "author": "Lee, Y. K.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2021.04.06",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8638/view.do",
+      "attachments": [
+        {
+          "label": "35.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1685/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Types and Experiential Value of Fashion Mobile Play-Focusing on Play Theory",
+      "author": "Park, S. Y., Lee, Y. K., Lee, M. A.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2021.02.28",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8637/view.do",
+      "attachments": [
+        {
+          "label": "34.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1684/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Transformation of the innovative and sustainable supply chain with upcoming real-time fashion systems",
+      "author": "Lee, Y. K.",
+      "venue": "Sustainability",
+      "date": "2021.01.21",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8639/view.do",
+      "attachments": [
+        {
+          "label": "33.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1683/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Collaborative economy and shared clothing: Sustainable clothing use of retired Korean men",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "Fashion, Style & Popular Culture",
+      "date": "2020.10.01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8636/view.do",
+      "attachments": [
+        {
+          "label": "32.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1682/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "4 차 산업혁명시대 도래에 따른 패션산업의 VR 기술 활용과 그 특징",
+      "author": "이윤경",
+      "venue": "한국디자인문화학회지",
+      "date": "2019.12.12",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8635/view.do",
+      "attachments": [
+        {
+          "label": "31.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1681/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "A case study of the consignment clothing store-invigorating method for efficiency use of the sustainable clothing-focused on market in U",
+      "author": "Lee, Y. K.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2019.10.21",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8633/view.do",
+      "attachments": [
+        {
+          "label": "30.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1680/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "The Use of Mobile Apps for Health and Fashion Management in South Korea",
+      "author": "Lee, Y. K., Lee, M. S.",
+      "venue": "Journal of Textile Science & Fashion Technology",
+      "date": "2019.09.04",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8634/view.do",
+      "attachments": [
+        {
+          "label": "29.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1679/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "ICT 매체를 활용한 자기주도적 패션디자인교육 모형 개발",
+      "author": "이윤경",
+      "venue": "복식",
+      "date": "2018.12.13",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8631/view.do",
+      "attachments": [
+        {
+          "label": "28.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1678/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "패션 미디어 콘텐츠 변화에 따른 이모지 (Emoji) 커뮤니케이션에 나타난 기호학적 특성",
+      "author": "김미경, 이윤경, 임은혁",
+      "venue": "복식",
+      "date": "2018.11.23",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8630/view.do",
+      "attachments": [
+        {
+          "label": "27.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1677/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "아동의 창의력 향상을 위한 DIY 패션디자인 놀이학습 모형-평면적, 입체적 디자인 매체를 중심으로",
+      "author": "이윤경",
+      "venue": "한국디자인포럼",
+      "date": "2018.10.31",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8628/view.do",
+      "attachments": [
+        {
+          "label": "26.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1676/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Re-birthed fashion handbags as a collaborative design project",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "Fashion and Textiles",
+      "date": "2018.05.28",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8632/view.do",
+      "attachments": [
+        {
+          "label": "25.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1675/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Rebirth product development for sustainable apparel design practice in a design studio class",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "Fashion Practice",
+      "date": "2018.01.05",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8629/view.do",
+      "attachments": [
+        {
+          "label": "24.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1674/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Sustainable clothing from the older female user’s perspective",
+      "author": "DeLong, M., Min, S., Casto, M. A., Lee, Y. K.",
+      "venue": "Clothing Cultures",
+      "date": "2017.12.01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8627/view.do",
+      "attachments": [
+        {
+          "label": "23.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1673/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "제 4 차 산업혁명 시대, 패션산업에 나타난 ICT 융합",
+      "author": "이윤경",
+      "venue": "한국디자인문화학회지",
+      "date": "2017.06.07",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8626/view.do",
+      "attachments": [
+        {
+          "label": "22.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1672/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Clothing sharing for efficiency use of the children's clothing in a sharing economy",
+      "author": "Lee, Y. K.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2017.05.28",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8623/view.do",
+      "attachments": [
+        {
+          "label": "21.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1671/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "American and Korean youths’ attachment to handcraft apparel and its relation to sustainability",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "Clothing and Textiles Research Journal",
+      "date": "2017.04.01",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8625/view.do",
+      "attachments": [
+        {
+          "label": "20.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1670/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Education for apparel sustainability from perspectives of design students from differing cultural contexts",
+      "author": "DeLong, M., Casto, M. A., Min, S., Lee, Y. K.",
+      "venue": "International Journal of Fashion Design",
+      "date": "2016.04.27",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8622/view.do",
+      "attachments": [
+        {
+          "label": "19.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1669/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Re-Birth design analysis for developing sustainable fashion products",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "한국의류학회지",
+      "date": "2016.03.15",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8620/view.do",
+      "attachments": [
+        {
+          "label": "18.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1668/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Improving Creative Design Skills",
+      "author": "Lee, Y. K., DeLong, M.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2016.03.10",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8621/view.do",
+      "attachments": [
+        {
+          "label": "17.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1667/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "The emerging Korean designer in the South Korean fashion industry: Interview with Yoon Kyung Lee",
+      "author": "DeLong, M.",
+      "venue": "Fashion Practice",
+      "date": "2015.10.15",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8619/view.do",
+      "attachments": [
+        {
+          "label": "16.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1666/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "A men's following up image change and the aspect of ideal appearance type of Korean and Chinese men-focused on men in their 20s to their 40s",
+      "author": "Lee, Y. K., Jung, D., Bian, L.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2015.08.23",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8617/view.do",
+      "attachments": [
+        {
+          "label": "15.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1665/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "외모관리 행동과 이상적 연령 추구경향-20~ 30 대를 중심으로",
+      "author": "이윤경, 이혜원",
+      "venue": "한국의류학회지",
+      "date": "2015.04.22",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8618/view.do",
+      "attachments": [
+        {
+          "label": "14.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1664/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "패션에서의 지속가능성과 감성적 디자인",
+      "author": "이윤경",
+      "venue": "한국디자인포럼",
+      "date": "2014.10.28",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8615/view.do",
+      "attachments": [
+        {
+          "label": "13.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1663/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Attachment Transition from Suit to Casual Wear via TED Speakers' Clothing-Behavior in Different Cultural Contexts",
+      "author": "Lee, Y. K., Youn, C.",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2014.02.17",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8616/view.do",
+      "attachments": [
+        {
+          "label": "12.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1662/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "서도호와 Hussein Chalayan 작품에 나타난 창의성",
+      "author": "이윤경",
+      "venue": "한국디자인포럼",
+      "date": "2013.10.25",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8614/view.do",
+      "attachments": [
+        {
+          "label": "11.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1661/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "전문분야에 따른 의복 선택에 관한 연구: TED 강연자를 중심으로",
+      "author": "윤초롱, 이윤경",
+      "venue": "한국디자인문화학회지",
+      "date": "2013.03.21",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8613/view.do",
+      "attachments": [
+        {
+          "label": "10.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1660/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "쟈크 데리다에 의한 차연의 해체적 관점에서 본 현대 패션의 아이템 간 연계적 특성 변화",
+      "author": "이윤경",
+      "venue": "한국디자인문화학회지",
+      "date": "2012.12.21",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8612/view.do",
+      "attachments": [
+        {
+          "label": "9.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1659/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "LANVIN 디자인에 나타난 미적 특성-Alber Elbaz 를 중심으로",
+      "author": "이윤경",
+      "venue": "한국디자인문화학회지",
+      "date": "2012.06.21",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8611/view.do",
+      "attachments": [
+        {
+          "label": "8.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1658/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "프랙탈 기하학 특성을 활용한 칵테일 니트 드레스 디자인 개발",
+      "author": "이윤경",
+      "venue": "한국디자인문화학회지",
+      "date": "2010.09.20",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8610/view.do",
+      "attachments": [
+        {
+          "label": "7.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1657/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "A study on the colors minimalism fashion and fine arts in 1960s",
+      "author": "Lee, Y. K.",
+      "venue": "Korea Society of Design Trend",
+      "date": "2010.05.25",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8609/view.do",
+      "attachments": [
+        {
+          "label": "6.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1656/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Non-Euclidean Geometrical Characteristics of Hyperspace in Costume",
+      "author": "Lee, Y. K., Kim, M. J.",
+      "venue": "Journal of the Korean Society of Costume",
+      "date": "2010.04.23",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8608/view.do",
+      "attachments": [
+        {
+          "label": "5.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1655/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "유유아 체형에 적합한 커버롤 디자인 개발",
+      "author": "이윤경, 김민자, 남윤자",
+      "venue": "한국의류학회지",
+      "date": "2010.01.25",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8607/view.do",
+      "attachments": [
+        {
+          "label": "4.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1654/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "복식에 표현된 초공간 패러다임",
+      "author": "이윤경",
+      "venue": "서울대학교 대학원 박사학위논문",
+      "date": "2009.08.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8606/view.do",
+      "attachments": [],
+      "links": [
+        {
+          "label": "http://www.riss.kr/link?id=T11809314",
+          "url": "http://www.riss.kr/link?id=T11809314"
+        }
+      ]
+    },
+    {
+      "title": "패션과 Arte Povera 에 표현된물질성",
+      "author": "이윤경, 김민자",
+      "venue": "복식",
+      "date": "2009.05.15",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8604/view.do",
+      "attachments": [
+        {
+          "label": "2.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1653/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "디지털 매체를 활용한 한국적 이미지 패션 디자인 개발: Maya (Qualoth) 프로그램을 활용한 3 차원 모델링",
+      "author": "이윤경, 김민자",
+      "venue": "복식",
+      "date": "2008.07.18",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/8603/view.do",
+      "attachments": [
+        {
+          "label": "1.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1652/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Innovative Changes by Young Designer Entrepreneurs in the Korean Fashion Industry",
+      "author": "Lee, Y. K.",
+      "venue": "복식",
+      "date": "2025. June",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/11155/view.do",
+      "attachments": [
+        {
+          "label": "3_young designer.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1962/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Innovation and Diffusion of A-Jae Fashion - Reverse Generational Influence in South Korea -",
+      "author": "Lee, Y. K.",
+      "venue": "복식",
+      "date": "2025. 10 (Oct).",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10592/view.do",
+      "attachments": [],
+      "links": [
+        {
+          "label": "https://doi.org/10.7233/jksc.2025.75.5.086",
+          "url": "https://doi.org/10.7233/jksc.2025.75.5.086"
+        }
+      ]
+    },
+    {
+      "title": "A Qualitative Comparison of Upcycling and Conventional Design Development in a Fashion Design Studio Class",
+      "author": "Desheng Li?Yo o n Ky ung Le e *",
+      "venue": "Journal of the Korean Society of Clothing and Textiles",
+      "date": "2025. 10 (Oct)",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10593/view.do",
+      "attachments": [],
+      "links": [
+        {
+          "label": "https://doi.org/10.5850/JKSCT.2025.49.5.1061",
+          "url": "https://doi.org/10.5850/JKSCT.2025.49.5.1061"
+        }
+      ]
+    },
+    {
+      "title": "Creative Design Discipline through Convergence of Fashion and Classical Music",
+      "author": "Yoon Kyung Lee†",
+      "venue": "the Korean Society of Clothing and Textiles",
+      "date": "2025. 10 (Oct)",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10594/view.do",
+      "attachments": [],
+      "links": [
+        {
+          "label": "https://doi.org/10.5850/JKSCT.2025.49.5.944",
+          "url": "https://doi.org/10.5850/JKSCT.2025.49.5.944"
+        }
+      ]
+    },
+    {
+      "title": "Effective Fashion Design Collection Implementation with Generative AI: ChatGPT and Dall-E",
+      "author": "Chaehi Ryu & Yoon Kyung Lee*",
+      "venue": "Clothing and Textiles Research Journal",
+      "date": "2025. 06(June) 22",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/354/10425/view.do",
+      "attachments": [
+        {
+          "label": "50.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1860/fileDown.do"
+        }
+      ],
+      "links": []
+    }
+  ],
+  "conferences": [
+    {
+      "title": "REINVENTING HAUTE COUTURE FOR FUTURE FASHION: VIRTUAL AND PHYGITAL EXTENSIONS IN DIGITAL ECOSYSTEMS",
+      "author": "Han Ju Kyoung and Yoon Kyung Lee*,",
+      "venue": "ICCT 2026",
+      "date": "2026.May.23rd",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/11011/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "업사이클링 패션제품의 생산 시스템 구축을 위한 모듈러 디자인과 VR평가",
+      "author": "김유미 ㆍ 이윤경",
+      "venue": "한국의류학회 2025추계",
+      "date": "2025.Oct.25th",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10968/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Multimodal Sensory Stimulation in Fashion Design Creativity -An EEG Based Neuroscientific Study with Music-",
+      "author": "YOON KYUNG LEE*1) SEUNGYON KIM2) SAE-AHM KIM2)",
+      "venue": "한국의류학회 2025추계",
+      "date": "2025.Oct.25th",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10969/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "한국사회 아비투스 관점에서 본 K-패션 세대별 형성과 실천 구조 분석 ?시니어 세대와 Gen Z 세대 비교",
+      "author": "유현서, 이윤경",
+      "venue": "한국복식학회 2026춘계",
+      "date": "2025.May.9th",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/11008/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "AI-Wardrobe Utilize Strategy for the Spread of Sustainable Apparel Behavior among Gen Z Consumers",
+      "author": "Yoojeong Park & Yoon Kyung Lee*",
+      "venue": "2025 Annual Conference ITAA",
+      "date": "2025. November 18-22",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10428/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Modular Design for the Establishment of a Systematic Production System for Upcycling Fashion Design: Utilizing Men’s Shirts with 3D CLO",
+      "author": "Youmi Jin & Yoon Kyung Lee*",
+      "venue": "2025 Annual Conference ITAA",
+      "date": "2025. November 18-22",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10429/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Innovative Changes by Young Designer Entrepreneurs in the Korean Fashion Industry",
+      "author": "Yoon Kyung Lee* ㆍ Hee soon Yang",
+      "venue": "한국복식학회 2025추계",
+      "date": "2025. Nov. 15",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10970/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Perceptions of modernity and tradition in sustainable fashion products: Generation Z in Pakistan",
+      "author": "Amna Rauf & Yoon Kyung Lee",
+      "venue": "한국의류학회 2025춘계",
+      "date": "2025. 04(April).19",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10333/view.do",
+      "attachments": [
+        {
+          "label": "002.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1813/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "USING OPEN AI TO SEE FASHION COLLECTIONS BEFORE ANYONE ELSE DOES",
+      "author": "Chaehi Ryu & Yoonkyung Lee*",
+      "venue": "ICCT 2024",
+      "date": "2024.05.11",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9185/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "How Classical Music Can Inspire Fashion Design Creation",
+      "author": "Lee, Y. K.",
+      "venue": "ICCT 2024",
+      "date": "2024. May. 12",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9187/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Could Punk Style Be the New Solution for Upcycled Fashion?",
+      "author": "Desheng Li & Yoon Kyung Lee*",
+      "venue": "ITAA 2024",
+      "date": "2024. 11. 19-23",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9921/view.do",
+      "attachments": [
+        {
+          "label": "itaa_2024_conference_program.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1776/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Effective Human-AI Interation for Multisensory Creative Fashion Design with Open AI",
+      "author": "Yoon Kyung Lee",
+      "venue": "한국의류학회 2024 추계",
+      "date": "2024. 10. 19",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9918/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Upcycle design versus general design development in fshion design studio class",
+      "author": "Desheng Li & Yoon Kyung Lee",
+      "venue": "한국의류학회 2024추계",
+      "date": "2024. 10. 19",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9919/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Metaverse Research Trends and Analysis to Predict the Direction of the Meta-Fashion Market",
+      "author": "Yoon Kyung Lee & Namhee Yoon",
+      "venue": "한국패션디자인회 2024춘계",
+      "date": "2024. 05.25",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9216/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Using OpenAI to Forecast Fashion Trends and Design Development",
+      "author": "Lee, Y. K., & Ryu, C. H.",
+      "venue": "2023 ITAA-KSCT Joint",
+      "date": "2023.11.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8817/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "모듈링 기법을 활용한 업사이클링 패션디자인 개발 - 폐기 의류를 중심으로",
+      "author": "류채희, 안세정, 이주연, 장주연, 최윤서, 윤초롱, 이윤경",
+      "venue": "한국의류학회 2023추계",
+      "date": "2023.10...",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8821/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Z세대 소비자의 소비성향에 따른 업사이클링 패션 브랜드 및 제품에 대한 인식",
+      "author": "김수현, 이하림, 서희빈, 윤초롱, 이윤경",
+      "venue": "한국의류학회 2023추계",
+      "date": "2023.10..",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8820/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "패션제품의 업사이클링 디자인 단계에 따른 선호도 - Z세대 소비자와 Re;code를 중심으로",
+      "author": "서유나, 신현경, 이지안, 윤초롱, 이윤경",
+      "venue": "한국의류학회 2023추계",
+      "date": "2023.10.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8819/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Hyper-reality Expressed in Social Media Personal Profile Photos and Fashion Model Images",
+      "author": "Lee, Y. K.",
+      "venue": "한국의류학회 2023춘계",
+      "date": "2023.05....",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8826/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "지속가능한 패션제품의 창의성 평가",
+      "author": "박유정, 이윤경",
+      "venue": "한국의류학회 2023춘계",
+      "date": "2023.05...",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8825/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "메타패션에 나타난 Z세대 크리에이터 디자인 분석 - 제페토 스튜디오를 중심으로",
+      "author": "박유정, 이윤경",
+      "venue": "2023춘계 패션디자인학회",
+      "date": "2023.05..",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8830/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "AI, Chat GPT 활용한 패션디자인의 트렌드 예측 - 2023 F/W 남성복 Fashion Trend를 중심으로",
+      "author": "류채희, 이윤경",
+      "venue": "2023 춘계 패션디자인학회",
+      "date": "2023.05.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8824/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Could Punk Style Be the Solution for Upcycled Fashion",
+      "author": "Desheng Li & Yoon Kyung Lee",
+      "venue": "ITAA 2024",
+      "date": "2023. Nov.19",
+      "attachmentCount": 1,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9920/view.do",
+      "attachments": [
+        {
+          "label": "itaa_2024_conference_program.pdf",
+          "url": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/1775/fileDown.do"
+        }
+      ],
+      "links": []
+    },
+    {
+      "title": "Creative Design Discipline through Convergence of Fashion and Classical Music",
+      "author": "Lee, Y. K.",
+      "venue": "ITAA2023",
+      "date": "2023. Nov.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8818/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "처용무복의 시대적 고찰과 현대적 활용",
+      "author": "백수진, 이윤경",
+      "venue": "2023 한국의류학회 추계학술대회 구두발표",
+      "date": "2023. 10. 21",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/9000/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Avatar Design Characteristics of Metaverse Creators - Focusing on the Gen Z among Zepeto Creators",
+      "author": "Lee, Y. K.",
+      "venue": "한국의류학회 2022추계",
+      "date": "2022.10..",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8823/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "여성복 온라인 쇼핑몰에서 디자이너의 역할에 대한 비교분석 - 익명의 패션 쇼핑몰과 디자이너 브랜드 쇼핑몰을 중심으로",
+      "author": "김문수, 이윤경",
+      "venue": "2022 추계 패션디자인학회",
+      "date": "2022.10.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8822/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Perception of the Use of Generative Adversarial Networks of Artificial Intelligent in Fashion Design",
+      "author": "Lee, Y. K.",
+      "venue": "ICCT 2022",
+      "date": "2022.05.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8816/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Implementation of complex systems in fashion design creation using artificial intelligence",
+      "author": "Lee, Y. K.",
+      "venue": "ITAA 2021",
+      "date": "2021.11.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8815/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Innovation and Distribution of a New Look: A-JAE Fashion in South Korea",
+      "author": "Lee, Y. K., & DeLong, M.",
+      "venue": "ITAA2020",
+      "date": "2020.11.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8814/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Collaborative Economy and Sharing Clothing:Efficient Clothing Use of the Retired Korean Men to Sustainability",
+      "author": "Lee, Y.K., & DeLong, M.",
+      "venue": "University of Minnesota 100years Conference",
+      "date": "2018.09.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8813/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Analysis of Korean and Chinese female consumer taste in preference design in the on-line shopping malls: G-market and Tobao",
+      "author": "Zosang & Lee, Y.K.",
+      "venue": "ICCT 2018",
+      "date": "2018.04.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8812/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Knowledge Convergence and Co-Creation Learning: The Personal Customization System on Apparel Design",
+      "author": "Lee, Y. K.",
+      "venue": "ITAA 2017",
+      "date": "2017.11.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8811/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Re-Birth Product Development for Sustainable Apparel Design Practice",
+      "author": "Lee, Y.K., & DeLong, M.",
+      "venue": "ITAA 2016",
+      "date": "2016.11.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8810/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Sustainable Clothing from User Perspective",
+      "author": "DeLong, M., Casto, M.A. ., Lee, Y.K., & Min, S.",
+      "venue": "ITAA 2015",
+      "date": "2015,10",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8809/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Ideal Body Images of Korean and Chinese Men’s Masculinity",
+      "author": "Lee, Y.K., Jung, D.W, & Byun, R.W.",
+      "venue": "ITAA 2014",
+      "date": "2014.11..",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8808/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "A Comparison of Responses to Handcrafted Apparel Products among American and Korean Youth",
+      "author": "Lee, Y.K., & DeLong, M.",
+      "venue": "ITAA 2014",
+      "date": "2014.11.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8807/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Dual Facets of Luxury: Exploring the Perspectives of Users and Observers to the Value of Luxury Goods",
+      "author": "Park, S.B., Lee, Y.K., & Hwang, H.J.",
+      "venue": "2014 Fashion Communication Conference",
+      "date": "2014.05.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8806/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Attachment to Clothing and Implications for Sustainability within a Cultural Context",
+      "author": "DeLong, M., Lee, Y.K., Min, S., & Casto, M.A.",
+      "venue": "ITAA 2013",
+      "date": "2013.10..",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8805/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Perception of Apparel Sustainability Based upon Cultural Differences among Design Students",
+      "author": "DeLong, M., Min, S., Lee, Y.K., & Casto, M.A.",
+      "venue": "ITAA 2013",
+      "date": "2013.10.",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8804/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Using the Creative Idea Development Model in Fashion Design Class :Focus on Compound Model",
+      "author": "Lee, Y. K.",
+      "venue": "2012 ITAA-KSCT",
+      "date": "2012.11",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/8803/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "웨어러블 생태계에서의 패션을 통한 포스트-디바이스 상호작용 -미학과 지능의 융합적 관점을 중심으로",
+      "author": "김여경, 이윤경",
+      "venue": "한국복식학회 2026춘계",
+      "date": "2026. May 9th",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/11009/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Generative AI 기반 피드백의 교육적 활용 가능성 탐색",
+      "author": "류채희,이윤경_Chaehi Ryu and Yoon Kyung Lee*",
+      "venue": "학국패션디자인학회",
+      "date": "2026. May 30th",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/11012/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Generative Textile Pattern Design Using Korean Traditional Motifs: OpenAI as Learning Tool",
+      "author": "Yoon Kyung Lee",
+      "venue": "한국복식학회 2025춘계",
+      "date": "2025. May 31",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10426/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Upcycling Product Activation Strategy according to GenZ Consumer Consumption Characteristics",
+      "author": "Yoon Kyung Lee",
+      "venue": "한국패션디자인회 2025춘계",
+      "date": "2025. May 31",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10427/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "A CREATIVE FASHION DESIGN PROCESS INTEGRATING GENERATIVE AI, VR, AND CL3D",
+      "author": "Desheng Li and Yoon Kyung Lee*,",
+      "venue": "ICCT 2026",
+      "date": "2025. May 23rd",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/11010/view.do",
+      "attachments": [],
+      "links": []
+    },
+    {
+      "title": "Innovative Changes by Young Designer Entrepreneurs in the Korean Fashion Industry",
+      "author": "Yoon Kyung Lee* ㆍYang Hee-soon †",
+      "venue": "한국복식학회 2025추계",
+      "date": "2025. 11(Nov) 15",
+      "attachmentCount": 0,
+      "source": "https://fashiondesign.pusan.ac.kr/thesis/fashiondesign/355/10591/view.do",
+      "attachments": [],
+      "links": []
+    }
+  ],
+  "awards": [
+    {
+      "date": "2026.06.23",
+      "title": "AI 창작 챌린지 공모전(부산대학교 AX정보화 혁신본부)_대상_제목: 부산대 일기_리더셩",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2026.05.30",
+      "title": "Best Paper Oral Presentation_우수 논문 발표상, 한국패션디자인학회(KCI). 2026 The Korean Society of Fashion. Ryu, Chaehi; Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2025.11.15",
+      "title": "Best Reviewer Prize_우수 사독상, 한국패션디자인학회지(KCI). 2025 The Korean Society of Fashion Design. Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2025.5.20",
+      "title": "The 9th Milan Design Week: Exhibition of Outstanding Works from Design Departments of Chinese Universities, 저장성 1등상_리 더셩",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2025.04.19",
+      "title": "Best Reviewer Prize, Journal of the Korean Society of Clothing and Textiles (SCOPUS). 2025 The Korean Society of Clothing and Textiles. Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2025.3.12",
+      "title": "THE 10TH \"PUYUAN CUP\" PH VALUE CHINA KNITWEAR DESIGNER COMPETITION 동상_리더셩",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.11.30",
+      "title": "2024 Humen Cup China Women's Fashion Design Competition 입선_리더셩",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.10.28",
+      "title": "THE 10TH \"PUYUAN CUP\" PH VALUE CHINA KNITWEAR DESIGNER COMPETITION 입선 - 리더셩, 위샤오첸 (지도 교수: 이윤경)",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.09.07",
+      "title": "The 24th 'Humen Cup' International Youth Design Competition 입선_리더셩",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.07.12",
+      "title": "2024 업사이클링 컨테스트 'I CHANGED IT. AND U?'_입선_류채희, 안세정, 이주연, 장주연, 최윤서",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.05.25",
+      "title": "Outstanding Reviewer Award, International Journal of Costume and Fashion (IJCF). Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.05.16",
+      "title": "2024 부산국제디자인 어워드_패션디자인 파트_아이디어상_작품명: Ocean's Breath - PUS_리더셩, 위샤오체, 양샤오치엔, 류채희 [2024 Busan International Design Award_Fashion Design Part_Idea Prize Winner_Name: Ocean's Breath - PUS_Li, Desheng, Chaehi Ryu]",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.05.11",
+      "title": "A winner of 2024 ICCT Graduate Student Research Competition. Ryu, Chaehi; Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2024.01.24",
+      "title": "2023년도 부산대학교 LINK 3.0사업. 인재양성부문 우수교원. 이윤경 [2024.01.24 2023 Pusan National University LINK 3.0 Project. Outstanding faculty member in human resource development. Yoon Kyung Lee]",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2023.10.21",
+      "title": "2023한국의류학회 추계학술대회 우수논문발표상(구두부문). 서유나,신현경,이지안,윤초롱,이윤경 [2023.10.21 Outstanding Paper Presentation Award (Oral Division) at the 2023 Korean Society of Apparel and Textiles Autumn Conference. Seo, Yuna; Shin, Hyun Kyung; Lee, Jian; Yoon, Chorong; Lee, Yoon Kyung]",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2023.03.",
+      "title": "Best Reviewer Prize, Journal of the Korean Society of Clothing and Textiles (SCOPUS). 2022 The Korean Society of Clothing and Textiles. Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    },
+    {
+      "date": "2022.10.",
+      "title": "Best Reviewer Prize, The Journal of Fashion and Textiles (SCIE). 2022 The Korean Society of Clothing and Textiles. Lee, Yoon Kyung",
+      "source": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do"
+    }
+  ],
+  "works": [
+    {
+      "title": "L'OFFICIEL Fashion Magazine & China Textile City ― Outstanding Works from the Fashion Design Masters Competition",
+      "date": "2025.05.28",
+      "description": "Designer: LIDESHENG",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120550606_50318.jpg",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1728385/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120550606_50318.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120655318_85279.gif",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120824355_42881.gif",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120846621_04057.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120905347_12200.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_120923147_54765.jpg"
+      ]
+    },
+    {
+      "title": "The 9th Milan Design Week: Exhibition of Outstanding Works from Design Departments of Chinese Universities",
+      "date": "2025.05.22",
+      "description": "The 9th Milan Design Week: Exhibition of Outstanding Works from Design Departments of Chinese Universities, 저장성 1등상 디자이너: 리 더셩",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_123100692_49796.gif",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1727700/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250528_123100692_49796.gif",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250522_142747319_06797.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250522_142756239_67570.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/05/20250522_142805045_48911.jpeg"
+      ]
+    },
+    {
+      "title": "2024 Humen Cup China Women's Fashion Design Competition",
+      "date": "2025.03.14",
+      "description": "2024 Humen Cup China Women's Fashion Design Competition 입선 디자이너: 리더셩",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213919112_91530.jpeg",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1711987/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213919112_91530.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213937594_11585.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_214030518_08235.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_214058826_41435.jpeg"
+      ]
+    },
+    {
+      "title": "THE 10TH \"PUYUAN CUP\" PH VALUE CHINA KNITWEAR DESIGNER COMPETITION",
+      "date": "2025.03.14",
+      "description": "THE 10TH \"PUYUAN CUP\" PH VALUE CHINA KNITWEAR DESIGNER COMPETITION 동상 디자이너: 리더셩",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213329401_97775.jpeg",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1711986/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213329401_97775.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213338312_10781.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213347743_16662.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213400895_37596.jpeg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2025/03/20250314_213414005_46400.jpeg"
+      ]
+    },
+    {
+      "title": "THE 10TH \"PUYUAN CUP\" PH VALUE CHINA KNITWEAR DESIGNER COMPETITION",
+      "date": "2024.11.04",
+      "description": "THE 10TH \"PUYUAN CUP\" PH VALUE CHINA KNITWEAR DESIGNER COMPETITION 입선 - 리더셩, 위샤오첸 (지도 교수: 이윤경)",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/11/20241104_213657657_83843.jpg",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1695913/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/11/20241104_213657657_83843.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/11/20241104_213712125_74418.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/11/20241104_213724870_84694.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/11/20241104_213743801_86608.jpg",
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/11/20241104_213756382_33028.jpg"
+      ]
+    },
+    {
+      "title": "The 24th 'Humen Cup' International Youth Design Competition",
+      "date": "2024.09.12",
+      "description": "The 24th 'Humen Cup' International Youth Design Competition 입선작 디자이너 : 리더셩",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/09/20240912_152431594_36016.jpg",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1564120/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2024/09/20240912_152431594_36016.jpg"
+      ]
+    },
+    {
+      "title": "RESILIENCE",
+      "date": "2024.05.17",
+      "description": "2024 업사이클링 리폼 컨테스트 출품작 디자이너 : 류채희, 안세정, 이주연, 장주연, 최윤서",
+      "image": "https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534163/artclView.do",
+      "attachments": [
+        {
+          "label": "resilience.jpg",
+          "url": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/890325/download.do"
+        }
+      ],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715906536733100.tmp"
+      ]
+    },
+    {
+      "title": "Ocean's Breath-PUS",
+      "date": "2024.05.17",
+      "description": "2024 부산국제디자인어워드(ibda, 입다) 공모전 출품작_아이디어상 수상 디자이너 : 리더셩, 위샤오첸, 양샤오치엔, 류채희",
+      "image": "https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905922961100.tmp",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534159/artclView.do",
+      "attachments": [
+        {
+          "label": "ocean1.jpg",
+          "url": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/890321/download.do"
+        },
+        {
+          "label": "ocean2.jpg",
+          "url": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/890322/download.do"
+        }
+      ],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905922961100.tmp",
+        "https://fashiondesign.pusan.ac.kr/sites/fashiondesign/atchmnfl/bbs/17869/temp_1715905924932100.tmp"
+      ]
+    },
+    {
+      "title": "Eve-eve",
+      "date": "2023.10.05",
+      "description": "Eve-eve March 14th 2021",
+      "image": "https://fashiondesign.pusan.ac.kr/dext5editordata/2023/10/20231005_211128489_54516.jpg",
+      "source": "https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1229250/artclView.do",
+      "attachments": [],
+      "images": [
+        "https://fashiondesign.pusan.ac.kr/dext5editordata/2023/10/20231005_211128489_54516.jpg"
+      ]
+    }
+  ],
+  "sources": {
+    "professor": "https://fashiondesign.pusan.ac.kr/fashiondesign/71508/subview.do",
+    "members": "https://fashiondesign.pusan.ac.kr/fashiondesign/71516/subview.do",
+    "alumni": "https://fashiondesign.pusan.ac.kr/fashiondesign/72664/subview.do",
+    "publications": "https://fashiondesign.pusan.ac.kr/fashiondesign/71512/subview.do",
+    "conferences": "https://fashiondesign.pusan.ac.kr/fashiondesign/71520/subview.do",
+    "awards": "https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do",
+    "works": "https://fashiondesign.pusan.ac.kr/fashiondesign/71514/subview.do"
+  },
+  "updatedAt": "2026-11-11"
+}
