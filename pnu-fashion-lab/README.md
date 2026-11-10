@@ -1,36 +1,35 @@
 # PNU Fashion Design Lab
 
-A Korean-first, English-switchable introduction website for Pusan National University Fashion Design Lab.
+Korean-first, English-switchable introduction website for Pusan National University Fashion Design Lab.
 
-## Contents
+## Current design — 2026-11-10
 
-- Original opening video from DESHENG LI’s portfolio.
-- The lab introduction and three research directions supplied on 2026-11-10.
-- Eight selected images / films, attributed to their original designers.
-- Professor profile, official member and alumni links, academic archive, and contact details.
-- Responsive layouts, accessible research tabs, work filters, native dialog media viewer, fullscreen video, language switching, and reduced-motion support.
-- An original animated textile field. This is explicitly conceptual and is not presented as a research prototype.
+- Original multicolour SVG FASHION letters: drag, elastic return, click reactions and palette remix.
+- Oversized editorial typography, black stages, cream research accordion, purple people section and lime closing.
+- User-supplied Korean introduction with clickable animated emoji and original smiley illustrations.
+- Three research themes: creativity, culture and society, future clothing and technology.
+- Six attributed works in a draggable, filterable gallery with a keyboard-accessible detail viewer.
+- The original portfolio opening video is in its own film section, with native playback, fullscreen and full-window fallback.
+- Blue particle sphere, fabric and dress forms can be rotated, morphed and speed-adjusted. This is a conceptual visual experiment, not a research finding or prototype.
+- Original professor photograph displayed in colour.
+- Official members, alumni, publications, conferences, awards and contact links.
+- Global animation pause, reduced-motion preference, offscreen/hidden-page animation and video pausing, responsive navigation and dialog focus handling.
 
 ## Files and operation
 
-`index.html` is a buildless page containing all CSS and JavaScript. It uses no JavaScript packages, externally loaded fonts or analytics. Media is loaded from the existing portfolio and university domains; network access is required. From this repository’s existing Pages root, the page is under `/pnu-fashion-lab/`.
+`index.html` is a buildless page containing CSS, JavaScript and SVG. No JavaScript dependencies or analytics. Media comes from the existing personal portfolio and university domains; Google Fonts provides optional font resources. Network access is required. The existing Pages route is `/pnu-fashion-lab/`. The repository homepage is unchanged.
 
-The existing root page is not edited.
+## Validation
 
-## Validation completed
+- Embedded JavaScript syntax validated; unique IDs and all internal anchors checked.
+- Desktop browser visual review of hero, About, research, gallery, film, particle field and people.
+- Narrow 390 × 844 iframe review, including menu open/close, About wrapping, filtering, media viewer and particle shape selection; no horizontal document overflow.
+- Filtered gallery modal contained only the selected category and retained original credits/source links.
+- Opening film loaded and played; full-window fallback rendered successfully in the review browser. Native device fullscreen remains browser-dependent.
+- Korean/English text switching and clickable reaction feedback verified.
+- Professor image loaded from the original source with no grayscale filter.
 
-- JavaScript syntax compiled successfully in the available JavaScript runtime.
-- All internal anchors, static JavaScript ID queries and aria-controls resolve to unique IDs.
-- Referenced personal portfolio assets were verified against the repository tree.
-- Official university archive links were resolved from the university site.
-- Selected portfolio images were visually inspected from the original files.
-- Original source and authors are available from every work’s detail viewer.
-
-## Validation pending
-
-The execution and browser environment was unavailable during creation. Browser rendering, mobile overflow, native video fullscreen, media playback and university image hotlink behavior have not been tested. The page includes media error states with original-source links.
-
-## Content sources
+## Sources
 
 - Lab: https://fashiondesign.pusan.ac.kr/fashiondesign/index.do
 - Professor: https://fashiondesign.pusan.ac.kr/fashiondesign/71508/subview.do
@@ -41,18 +40,11 @@ The execution and browser environment was unavailable during creation. Browser r
 - Awards: https://fashiondesign.pusan.ac.kr/fashiondesign/71509/subview.do
 - Contact: https://fashiondesign.pusan.ac.kr/fashiondesign/71518/subview.do
 - RESILIENCE: https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534163/artclView.do
-- Ocean’s Breath-PUS: https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1534159/artclView.do
 - L’OFFICIEL: https://fashiondesign.pusan.ac.kr/bbs/fashiondesign/17869/1728385/artclView.do
-- Personal portfolio: https://lidesheng.art/
+- Portfolio: https://lidesheng.art/
 
-The latest lab introduction and research-direction text came directly from the user. The heading “미래의복와 기술” was normalized to the grammatically correct “미래의복과 기술”; the research substance was preserved.
+The introduction and research text were supplied by the user. “미래의복와 기술” was normalized to “미래의복과 기술” without changing research substance.
 
-## Design references inspected
+## Visual references
 
-- Gentle Monster Stories: https://www.gentlemonster.com/int/en/stories — image-led campaign hierarchy and restrained navigation.
-- Scrolltide Odaline: https://www.scrolltide.co/templates/odaline — progressive visual depth and focused fashion presentation. No premium code or assets were accessed or reused.
-- Scrolltide Murk: https://www.scrolltide.co/templates/murk — one coherent motion idea rather than a collection of unrelated effects.
-- Footer Design / Chaosmos: https://www.footer.design/sites/chaosmos — large typography and a deliberate closing composition. This reference was textually inspected; no visual screenshot review is claimed.
-- Supahero index was inspected as a discovery resource, but no individual asset or component was reused.
-
-All layout, CSS, JavaScript and the abstract motion field were created for this page. Original artworks and photographs remain the property of their respective creators. Reuse here follows the user’s express instruction; no blanket redistribution license is asserted.
+https://tigranz.com/ and the user’s supplied screenshots informed playful typography, black stages and animated inline reactions. The user’s supplied motion references informed blue glowing node networks and split ambient panels. All letter SVGs, smileys, layout, CSS, JavaScript and particle forms were written for this page; reference-site assets or source code were not reused. Artworks and photographs retain their original attribution and source links, under the user’s instruction to feature them.
