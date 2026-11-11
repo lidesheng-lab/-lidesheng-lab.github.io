@@ -655,7 +655,7 @@ menu.addEventListener('keydown',e=>{
 const track=$('#gallery-track');
 track.classList.add('jelly-ocean');
 track.innerHTML=works.map((w,i)=>'<article class="work jelly" data-category="'+w.category+'" style="--i:'+i+';--tint:'+['183,155,255','135,231,244','246,170,218','201,255,112'][i%4]+';--delay:-'+(i*1.7)+'s"><button type="button" class="jelly-button" data-work="'+w.id+'" aria-label="View '+w.title+'"><span class="jelly-creature"><span class="jelly-bell"><span class="jelly-picture"><img src="'+w.image+'" alt="'+w.alt+'" loading="lazy"></span><span class="jelly-shine"></span><span class="jelly-face" aria-hidden="true">• ◡ •</span></span><svg class="jelly-tentacles" viewBox="0 0 200 150" aria-hidden="true"><path d="M35 0 C5 40 75 60 35 130"/><path d="M65 0 C110 45 20 85 65 145"/><path d="M100 0 C65 45 135 80 100 138"/><path d="M135 0 C175 45 90 75 140 145"/><path d="M165 0 C130 40 195 70 160 118"/></svg></span><span class="jelly-title"><small>'+String(i+1).padStart(2,'0')+' / '+w.category.toUpperCase()+'</small>'+w.title+' <span aria-hidden="true">↗</span></span></button></article>').join('');
-const cards=$('.work',track);
+const cards=$$('.work',track);
 cards.forEach((card,i)=>{
  const w=works[i],standard=document.createElement('div');standard.className='standard-work';standard.hidden=true;
  standard.innerHTML='<button type="button" class="work-image" data-work="'+w.id+'" aria-label="View '+w.title+'"><img src="'+w.image+'" alt="'+w.alt+'" loading="lazy"><span class="image-unavailable" hidden>IMAGE UNAVAILABLE</span></button><div class="work-caption"><h3>'+w.title+'</h3><span>'+w.category.toUpperCase()+'</span></div><p>'+w.credit+'</p>';
