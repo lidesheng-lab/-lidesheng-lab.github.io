@@ -223,6 +223,17 @@ html[lang="zh-CN"] :is(h2,h3,.line-link,.archive-row b){overflow-wrap:anywhere}
 @media(max-width:650px){#gallery-track.jelly-ocean{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 18px;padding:48px 20px 60px;margin:20px 8px 0;border-radius:28px}#gallery-track .jelly:nth-child(3n+2){margin-top:0}#gallery-track .jelly:nth-child(even){margin-top:40px}.jelly-title{font-size:11px}.jelly-face{font-size:15px;letter-spacing:4px}.jelly-title small{font-size:8px}.jelly-tentacles{stroke-width:3}}
 @media(prefers-reduced-motion:reduce){.jelly,.jelly-bell,.jelly-tentacles path{animation:none!important}}
 
+
+/* Compact, free-swimming pool; filtered galleries keep their original card layout. */
+#gallery-track.jelly-ocean{display:block;height:500px;min-height:0;padding:0;margin-top:22px;overflow:hidden;contain:layout paint}
+#gallery-track.jelly-ocean .jelly,#gallery-track.jelly-ocean .jelly:nth-child(n){position:absolute;left:0;top:0;width:var(--swim-size,130px);max-width:none;margin:0;animation:none;will-change:transform}
+.jelly-ocean .jelly-title{position:absolute;top:70%;left:-15%;width:130%;padding:6px;border-radius:10px;background:#141023e8;font-size:10px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:5}
+.jelly-ocean .jelly-title small{display:none}
+.jelly-ocean .jelly:focus-within .jelly-title{opacity:1}
+.jelly-ocean .jelly-face{font-size:13px;letter-spacing:3px}
+@media(hover:hover){.jelly-ocean .jelly:hover .jelly-title{opacity:1}}
+@media(max-width:650px){#gallery-track.jelly-ocean{height:410px;padding:0;margin:18px 8px 0;border-radius:24px}.jelly-ocean .jelly-face{font-size:10px;letter-spacing:2px}.jelly-ocean .jelly-title{font-size:9px}}
+
 </style><link rel="stylesheet" href="archive.css?v=native-20261111"></head><body>
 <audio id="lab-music" src="assets/lab-background.m4a" autoplay loop preload="auto" playsinline></audio>
 <button id="music-toggle" class="sound-control" type="button" aria-label="배경 음악 켜기" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="music-label">음악 켜기</span></button>
@@ -672,6 +683,8 @@ function setFilter(next){
  const all=next==='all';track.classList.toggle('jelly-ocean',all);$('#works').classList.toggle('jelly-active',all);
  let n=0;cards.forEach(c=>{c.hidden=!all&&c.dataset.category!==next;c.classList.toggle('jelly',all);$('.jelly-button',c).hidden=!all;$('.standard-work',c).hidden=all;if(!c.hidden)c.style.setProperty('--slot',n++);});
  track.scrollLeft=0;
+ cards.forEach(c=>{if(!all)c.style.removeProperty("transform");});
+ requestAnimationFrame(()=>{if(all){poolWidth=0;layoutPool();}syncOcean();});
  updateGallery();
 }
 $$('[data-filter]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
@@ -679,8 +692,67 @@ function slide(dir){const c=cards.find(c=>!c.hidden);if(c)track.scrollBy({left:d
  $('#gallery-prev').addEventListener('click',()=>slide(-1));$('#gallery-next').addEventListener('click',()=>slide(1));
  track.addEventListener('scroll',updateGallery,{passive:true});
  track.addEventListener('keydown',e=>{if(filter==='all'||e.target!==track)return;if(e.key==='ArrowRight'){e.preventDefault();slide(1);}if(e.key==='ArrowLeft'){e.preventDefault();slide(-1);}});
-let oceanVisible=true;
-function syncOcean(){track.classList.toggle('jelly-rest',!moving||document.hidden||!oceanVisible||viewer.open);}
+
+let oceanVisible=true,poolFrame=0,poolLast=0,poolWidth=0,poolHeight=0;
+const swimmers=cards.map((el,i)=>({el,i,x:0,y:0,tx:0,ty:0,size:0,speed:8+Math.random()*9,hold:false,phase:Math.random()*Math.PI*2}));
+function poolTarget(p,inside=false){
+ const edge=inside?0:p.size*.8;
+ p.tx=-edge+Math.random()*(poolWidth-p.size+2*edge);
+ p.ty=-edge+Math.random()*(poolHeight-p.size*1.45+2*edge);
+}
+function layoutPool(){
+ if(filter!=='all')return;
+ const w=track.clientWidth,h=track.clientHeight;
+ if(w===poolWidth&&h===poolHeight)return;
+ poolWidth=w;poolHeight=h;
+ swimmers.forEach((p,i)=>{
+  const base=w<650?Math.max(70,Math.min(94,w*.225)):Math.min(148,w*.14);
+  p.size=base*[1.13,.78,.96,1.2,.85,1.04,.72,.92,1.08][i%9];
+  p.el.style.setProperty('--swim-size',p.size+'px');
+  p.x=(i%3+.5)*w/3-p.size/2+(Math.random()-.5)*16;
+  p.y=(Math.floor(i/3)+.45)*h/3-p.size*.55;
+  poolTarget(p,true);paintSwimmer(p);
+ });
+}
+function paintSwimmer(p){
+ const tilt=moving?Math.sin(p.phase)*9:0;
+ p.el.style.transform='translate3d('+p.x.toFixed(2)+'px,'+p.y.toFixed(2)+'px,0) rotate('+tilt.toFixed(2)+'deg)';
+}
+function swimPool(now){
+ poolFrame=0;
+ if(filter!=='all'||!moving||document.hidden||!oceanVisible||viewer.open){poolLast=0;return;}
+ const dt=poolLast?Math.min((now-poolLast)/1000,.05):0;poolLast=now;
+ swimmers.forEach(p=>{
+  if(p.hold)return;
+  const dx=p.tx-p.x,dy=p.ty-p.y,d=Math.hypot(dx,dy);
+  if(d<3)poolTarget(p,p.x<0||p.y<0||p.x+p.size>poolWidth||p.y+p.size*1.4>poolHeight);
+  else{p.x+=dx/d*p.speed*dt;p.y+=dy/d*p.speed*dt;}
+  p.phase+=dt*.65;paintSwimmer(p);
+ });
+ poolFrame=requestAnimationFrame(swimPool);
+}
+function syncOcean(){
+ const rest=filter!=='all'||!moving||document.hidden||!oceanVisible||viewer.open;
+ track.classList.toggle('jelly-rest',rest);
+ if(rest){cancelAnimationFrame(poolFrame);poolFrame=0;poolLast=0;}
+ else{layoutPool();if(!poolFrame)poolFrame=requestAnimationFrame(swimPool);}
+}
+swimmers.forEach(p=>{
+ p.el.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')p.hold=true;});
+ p.el.addEventListener('pointerleave',()=>{p.hold=p.el.contains(document.activeElement);});
+ p.el.addEventListener('pointerdown',()=>{p.hold=true;});
+ p.el.addEventListener('pointerup',()=>{p.hold=p.el.contains(document.activeElement);});
+ p.el.addEventListener('pointercancel',()=>{p.hold=false;});
+ p.el.addEventListener('focusin',()=>{
+  if(filter!=='all')return;p.hold=true;
+  p.x=Math.max(8,Math.min(poolWidth-p.size-8,p.x));
+  p.y=Math.max(8,Math.min(poolHeight-p.size*1.5-8,p.y));paintSwimmer(p);
+ });
+ p.el.addEventListener('focusout',()=>{p.hold=false;});
+});
+window.addEventListener('resize',()=>{layoutPool();syncOcean();});
+window.addEventListener('pagehide',()=>{cancelAnimationFrame(poolFrame);poolFrame=0;poolLast=0;});
+window.addEventListener('pageshow',syncOcean);
 motionListeners.push(syncOcean);
 if('IntersectionObserver'in window)new IntersectionObserver(es=>{oceanVisible=es[0].isIntersecting;syncOcean();},{rootMargin:'150px'}).observe(track);
 viewer.addEventListener('close',syncOcean);
