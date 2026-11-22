@@ -351,4 +351,93 @@ document.addEventListener('contextmenu',event=>{
 document.addEventListener('dragstart',event=>{
   if(isProtectedImage(event.target)) event.preventDefault();
 });
-</script></body></html>
+</script><dialog id="cohort14-opening" aria-labelledby="cohort14-title">
+  <canvas aria-hidden="true"></canvas>
+  <div class="opening-copy">
+    <div class="opening-edition">第 14 期 · 正在招生</div>
+    <h2 id="cohort14-title">AI 服装设计<br>大师课</h2>
+    <div class="opening-en" lang="en">AI FASHION DESIGN MASTERCLASS</div>
+  </div>
+  <button type="button" aria-label="跳过片头，进入课程介绍">跳过片头 <span aria-hidden="true">↗</span></button>
+</dialog>
+<style>
+#cohort14-opening:not([open]){display:none}
+#cohort14-opening[open]{position:fixed;inset:0;margin:0;width:100%;height:100%;max-width:none;max-height:none;box-sizing:border-box;border:0;padding:0;overflow:hidden;background:#10171c;color:#dbe5e7}
+#cohort14-opening::backdrop{background:transparent}
+#cohort14-opening.leaving{opacity:0;transition:opacity .38s ease}
+#cohort14-opening canvas{position:absolute;inset:0;width:100%;height:100%}
+#cohort14-opening .opening-copy{position:absolute;left:7%;top:50%;transform:translateY(-40%);pointer-events:none}
+#cohort14-opening .opening-edition{color:#c1dbe6;font:500 clamp(15px,1.35vw,22px)/1.5 sans-serif;letter-spacing:.13em}
+#cohort14-title{margin:.24em 0;font:500 clamp(46px,min(6.4vw,12vh),122px)/1.12 Georgia,"Songti SC","Noto Serif CJK SC",serif;letter-spacing:-.035em}
+#cohort14-opening .opening-en{font:500 clamp(11px,.94vw,18px)/1.4 Arial,sans-serif;letter-spacing:.17em}
+#cohort14-opening[open] .opening-copy>*{animation:cohort14-reveal .68s cubic-bezier(.2,.7,.3,1) both}
+#cohort14-opening[open] h2{animation-delay:.28s}
+#cohort14-opening[open] .opening-en{animation-delay:.48s}
+#cohort14-opening button{position:absolute;top:auto;right:max(5%,env(safe-area-inset-right));bottom:max(5%,env(safe-area-inset-bottom));min-height:44px;padding:8px 19px;border:1px solid #73828b;border-radius:100px;background:#10171ce6;color:#f2f6f7;font:14px/1.4 sans-serif;cursor:pointer}
+#cohort14-opening button span{margin-left:.65em}
+@keyframes cohort14-reveal{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
+@media(max-aspect-ratio:4/5){#cohort14-opening .opening-copy{top:auto;bottom:18%;transform:none}#cohort14-title{font-size:clamp(44px,12vw,84px)}}
+@media(prefers-reduced-motion:reduce){#cohort14-opening *{animation:none!important}}
+</style>
+<script>
+(()=>{
+  const panel=document.getElementById('cohort14-opening');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const key='course-opening-14-seen';
+  if(location.hash || reduced.matches || !panel.showModal)return;
+  try{if(sessionStorage.getItem(key))return}catch{}
+  const canvas=panel.querySelector('canvas'), ctx=canvas.getContext('2d');
+  if(!ctx)return;
+  const start=performance.now();
+  let frame,timer,width,height;
+  function resize(){
+    width=innerWidth;height=innerHeight;
+    const dpr=Math.min(devicePixelRatio||1,1.75);
+    canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  function dismiss(){
+    clearTimeout(timer);cancelAnimationFrame(frame);
+    removeEventListener('resize',resize);
+    if(panel.open)panel.close();
+    panel.remove();
+  }
+  function draw(now){
+    const t=(now-start)/1000,portrait=width/height<.8;
+    const zoom=1+.62*Math.exp(-2*t);
+    const scale=(portrait?Math.min(width/765,height/1340):Math.min(width/1570,height/1040))*zoom;
+    ctx.clearRect(0,0,width,height);ctx.save();
+    ctx.translate(width*(portrait?.59:.77),height*(portrait?.31:.53));ctx.scale(scale,scale);
+    function edge(u){
+      const points=[];
+      for(let i=0;i<=22;i++){
+        const v=i/22;
+        const a=-1.27+2.39*u+.15*Math.sin(t*.52)+.39*Math.sin(v*2.6+u*2.4+t*.28);
+        const rad=95+480*v+66*Math.sin(u*5.7+v*3+t*.24);
+        points.push([rad*Math.sin(a)+120*Math.sin(v*4+u*2.3+t*.18),130-rad*Math.cos(a)*1.14+150*Math.sin(u*5+v*3.4+t*.28)+190*(1-v)]);
+      }return points;
+    }
+    let left=edge(0);
+    for(let j=0;j<128;j++){
+      const right=edge((j+1)/128),k=.5+.5*Math.sin(j/128*6.8-1.2+t*.32);
+      const val=j%2?62+102*k:139+106*k;
+      ctx.fillStyle=ctx.strokeStyle='rgb('+[val*.87,val*.96,Math.min(255,val+10)].map(Math.round).join(',')+')';
+      ctx.beginPath();ctx.moveTo(...left[0]);
+      for(let i=1;i<left.length;i++)ctx.lineTo(...left[i]);
+      for(let i=right.length-1;i>=0;i--)ctx.lineTo(...right[i]);
+      ctx.closePath();ctx.fill();ctx.lineWidth=.6;ctx.stroke();left=right;
+    }
+    ctx.restore();frame=requestAnimationFrame(draw);
+  }
+  panel.querySelector('button').onclick=dismiss;
+  panel.addEventListener('cancel',e=>{e.preventDefault();dismiss()});
+  addEventListener('pagehide',dismiss,{once:true});
+  resize();panel.showModal();
+  try{sessionStorage.setItem(key,'1')}catch{}
+  addEventListener('resize',resize);
+  frame=requestAnimationFrame(draw);
+  timer=setTimeout(()=>{panel.classList.add('leaving');timer=setTimeout(dismiss,400)},3200);
+})();
+</script>
+
+</body></html>
