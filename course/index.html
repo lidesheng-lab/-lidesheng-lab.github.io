@@ -276,7 +276,7 @@ details[open] .lesson{animation:open .35s ease both}
 .audience{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 3vw}
 .audience article{display:flex;flex-direction:column;padding:22px 0 30px;border-top:1px solid var(--line)}
 .audience-number{font:400 22px/1 Georgia,serif;color:var(--accent)}
-.audience h4{font:500 21px/1.45 var(--serif);margin:14px 0 10px}
+.audience h4{font:500 21px/1.45 var(--serif);margin:14px 0 14px;flex:1}
 .audience p{flex:1;font-size:14px;color:var(--mist)}
 .audience-focus{font-size:11px;letter-spacing:.06em;padding-top:12px;border-top:1px solid var(--line);color:#cbd8de}
 .materials{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6vw;align-items:center}
@@ -413,7 +413,7 @@ footer{display:flex;justify-content:space-between;gap:16px;padding:22px var(--m)
   .outcomes h4{margin:0 0 4px;font-size:18px}
   .outcomes span{font-size:20px;grid-row:1/3}
   .school-list li{font-size:16px;padding:13px 0}
-  .audience article{padding:18px 0 22px}
+  .audience article{display:grid;grid-template-columns:2.2em 1fr;padding:16px 0}.audience article>*:not(.audience-number){grid-column:2}.audience-number{grid-row:1/3;padding-top:4px}.audience h4{margin:0 0 6px!important}.audience-focus{border-top:0!important;padding-top:0!important}
   .audience h4{font-size:19px;margin:10px 0 8px}
   .materials .image-open{max-width:none}
   .contact{padding-block:80px 100px}
@@ -742,7 +742,7 @@ document.querySelectorAll('[data-carousel]').forEach(carousel=>{
   </div>
   <div id="audience">
     <div class="sub-head"><div><div class="kicker">Who this is for / 适合人群</div><h3>找到适合你的学习方向。</h3></div><p>无论从学习、教学还是设计实践出发，都可以围绕自己的目标，连接AI创作与服装设计。</p></div>
-    <div class="audience"><article><span class="audience-number">01</span><h4>设计专业学生</h4><p>面向希望参加服装设计大赛，以及准备考研或留学作品集的设计专业学生。将AI用于主题研究、系列创作与设计表达，系统整理效果图、款式图和个人作品集。</p><div class="audience-focus">服装设计大赛 · 考研作品集 · 留学作品集</div></article><article><span class="audience-number">02</span><h4>院校教师与教研人员</h4><p>希望了解AI服装设计的完整流程，将创作方法、案例实践与数字设计工具融入教学研究。</p><div class="audience-focus">方法体系 · 案例实践 · 数字教学</div></article><article><span class="audience-number">03</span><h4>企业服装设计师</h4><p>面向企业在职设计师及准备应聘企业设计岗位的设计师。将AI融入灵感探索、系列开发与设计提案，并整理适用于简历投递及面试展示的作品集。</p><div class="audience-focus">企业设计开发 · 求职投递 · 作品集展示</div></article><article><span class="audience-number">04</span><h4>独立设计师与品牌主理人</h4><p>希望建立从系列服装开发到品牌视觉传播的工作流程，创作AI时尚Campaign与动态影像，并搭建线上作品展示空间。</p><div class="audience-focus">系列风格 · 品牌视觉 · 个人网站</div></article><article><span class="audience-number">05</span><h4>时尚视觉与内容创作者</h4><p>希望围绕服装开展AI模特塑造、场景与光影设计、AI时尚Campaign及动态影像创作，拓展时尚视觉表达。</p><div class="audience-focus">AI模特 · AI时尚Campaign · 动态影像</div></article><article><span class="audience-number">06</span><h4>希望系统进阶的AI学习者</h4><p>具备AI图像生成实践经验，希望进一步掌握独有创作技巧，从单幅视觉探索进阶到完整的系列服装设计项目。</p><div class="audience-focus">独有技巧 · 系列统筹 · 完整流程</div></article></div>
+    <div class="audience"><article><span class="audience-number">01</span><h4>设计专业学生</h4><div class="audience-focus">服装设计大赛 · 考研作品集 · 留学作品集</div></article><article><span class="audience-number">02</span><h4>院校教师与教研人员</h4><div class="audience-focus">方法体系 · 案例实践 · 数字教学</div></article><article><span class="audience-number">03</span><h4>企业服装设计师</h4><div class="audience-focus">企业设计开发 · 求职投递 · 作品集展示</div></article><article><span class="audience-number">04</span><h4>独立设计师与品牌主理人</h4><div class="audience-focus">系列风格 · 品牌视觉 · 个人网站</div></article><article><span class="audience-number">05</span><h4>时尚视觉与内容创作者</h4><div class="audience-focus">AI模特 · AI时尚Campaign · 动态影像</div></article><article><span class="audience-number">06</span><h4>希望系统进阶的AI学习者</h4><div class="audience-focus">独有技巧 · 系列统筹 · 完整流程</div></article></div>
   </div>
   </section>
 
