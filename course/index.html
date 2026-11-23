@@ -1066,7 +1066,7 @@ document.addEventListener('dragstart',event=>{
   if(matchMedia('(hover:hover) and (pointer:fine)').matches){
     const cur=document.createElement('div');cur.className='cursor';cur.setAttribute('aria-hidden','true');cur.innerHTML='<span>VIEW</span>';cur.style.opacity='0';document.body.appendChild(cur);
     let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;
-    addEventListener('pointermove',e=>{if(cur.style.opacity==='0'){cx=e.clientX;cy=e.clientY;cur.style.opacity='1'}tx=e.clientX;ty=e.clientY;cur.classList.toggle('big',!!e.target.closest?.('.image-open'))},{passive:true});
+    addEventListener('pointermove',e=>{if(!e.clientX&&!e.clientY)return;if(cur.style.opacity==='0'){cx=e.clientX;cy=e.clientY;cur.style.opacity='1'}tx=e.clientX;ty=e.clientY;cur.classList.toggle('big',!!e.target.closest?.('.image-open'))},{passive:true});
     (function loop(){cx+=(tx-cx)*.25;cy+=(ty-cy)*.25;cur.style.transform=`translate(${cx}px,${cy}px)`;requestAnimationFrame(loop)})();
     document.querySelectorAll('.pill,.guest-controls button').forEach(b=>{
       b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.setProperty('--mx',((e.clientX-r.left-r.width/2)*.18).toFixed(1)+'px');b.style.setProperty('--my',((e.clientY-r.top-r.height/2)*.25).toFixed(1)+'px')});
