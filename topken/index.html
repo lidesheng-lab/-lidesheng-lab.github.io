@@ -292,6 +292,14 @@ p{margin:0}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.deck{scroll-behavior:auto}}
 .close .company-email{margin:18px 0 0;font-size:15px;color:var(--mute)}
 .close .company-email a{display:inline-block;padding:8px 0;color:var(--teal);text-underline-offset:4px}
+
+@media(max-width:760px){
+  .s.close{padding-top:max(24px,env(safe-area-inset-top));padding-bottom:max(80px,calc(66px + env(safe-area-inset-bottom)))}
+  .s.close>.wrap{flex:none;margin:auto 0}
+  .close .lead{font-size:15px;line-height:1.65;text-wrap:balance}
+  .close .company-email{margin-top:14px}
+  .close .company-email a{padding:10px 0}
+}
 </style>
 </head>
 <body>
